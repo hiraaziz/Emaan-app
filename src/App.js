@@ -3,7 +3,8 @@ import Navbar from './components/navigationBar/Navbar';
 import Topheader from './components/topHeader/Topheader';
 import Middlebar from './components/middleBar/Middlebar';
 import Banner from './components/banner/Banner';
-import ProgramCards from './components/programs/ProgramCards';
+import Vision from './components/vision/Vision';
+import Programs from './components/programs/Programs';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Middlebar/>
       <Navbar/>
       <Banner/>
-      <ProgramCards/>
+      <Vision/>
+      <Programs/>
     </div>
   );
 }
