@@ -1,8 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap');
 @import "react-alice-carousel/lib/alice-carousel.css";
 .alice-carousel__wrapper{
-    height: 400px;
+    height: 420px;
+    
 }
