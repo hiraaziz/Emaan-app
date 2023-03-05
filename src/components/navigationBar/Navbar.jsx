@@ -45,6 +45,16 @@ const Navbar = () => {
       funcName: login,
     },
   ];
+
+  const onCloseNav = (value) => {
+    if (value == "about") setAboutOpen(false);
+    else if (value === "program") setprogram(false);
+    else if (value === "department") setdepartment(false);
+    else if (value === "admission") setAdmission(false);
+    else if (value === "qec") setQec(false);
+    else if (value === "acadmics") setacadmics(false);
+    else if (value === "login") setLogin(false);
+  };
   const toggleDropdown = (value) => {
     setAboutOpen(false);
     setprogram(false);
@@ -55,36 +65,34 @@ const Navbar = () => {
     setQec(false);
 
     if (value == "about") setAboutOpen(!aboutOpen);
-    else if (value == "program") setprogram(!program);
-    else if (value == "department") setdepartment(!department);
-    else if (value == "admission") setAdmission(!admission);
-    else if (value == "qec") setQec(!qec);
-    else if (value == "acadmics") setacadmics(!acadmics);
-    else if (value == "login") setLogin(!login);
+    else if (value === "program") setprogram(!program);
+    else if (value === "department") setdepartment(!department);
+    else if (value === "admission") setAdmission(!admission);
+    else if (value === "qec") setQec(!qec);
+    else if (value === "acadmics") setacadmics(!acadmics);
+    else if (value === "login") setLogin(!login);
   };
 
   return (
     <div className="bg-maroon w-full h-16 flex justify-center">
-      <div className="flex justify-evenly items-center list-none h-full w-600 text-gray-100 font-semibold">
+      <div className="flex justify-evenly items-center list-none h-full w-600 text-gray-100 font-medium">
         <button>Home</button>
         {nav.map((nav, ind) => (
-          <div className="relative">
+          <div className="relative " onMouseLeave={() => onCloseNav(nav.value)}>
             <button
-              onClick={() => toggleDropdown(nav.value)}
-              className="flex items-center"
+              className="flex items-center transition ease-in-out delay-50 duration-300 p-4
+              hover:scale-110"
+              onMouseEnter={() => toggleDropdown(nav.value)}
             >
               {nav.name}
-              <span className="px-2 mt-1">
-                <BiChevronDown />
-              </span>
             </button>
             {nav.funcName && (
-              <div className=" absolute left-0 py-2 mt-2 w-48 bg-black text-white-100 rounded-md shadow-lg z-10">
+              <div className=" absolute left-0  py-2 w-48 bg-black text-white-100 rounded-md shadow-lg z-10">
                 {links[ind].map((link) => (
                   <>
                     <a
                       href="#"
-                      className="block px-4 py-2 hover:text-black hover:bg-gray-100"
+                      className="block px-4 py-2 text-sm hover:text-black hover:bg-gray-100"
                     >
                       {link}
                     </a>
