@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AliceCarousel from "react-alice-carousel";
-import { GrBusinessService } from "react-icons/gr";
+import { motion } from "framer-motion";
 import {
   FcAcceptDatabase,
   FcBullish,
@@ -56,7 +56,18 @@ const itemlist = [
 
 const Programs = () => {
   return (
-    <div className="w-900 mt-40 mb-20 m-auto ">
+    <div className="flex flex-col justify-center items-center w-900 mt-20 mb-20 m-auto ">
+      <div className="mb-16">
+        <motion.div
+          initial={{ x: -80 }}
+          animate={{ x: 0 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          className="font-bold text-4xl mb-1 "
+        >
+          ACADEMIC PROGRAMS
+        </motion.div>
+        <div className="bg-maroon w-96 h-1 ml-4"></div>
+      </div>
       <AliceCarousel
         mouseTracking
         autoPlay
