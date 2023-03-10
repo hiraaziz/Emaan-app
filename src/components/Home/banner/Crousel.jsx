@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 const Crousel = ({ images }) => {
-  console.log(images);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  console.log(images);
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
@@ -52,47 +60,49 @@ const Crousel = ({ images }) => {
           </div>
         </div>
       ) : (
-        <div className="flex w-full h-400">
-          <div className="w-500">
-            <img
-              src={images[currentIndex].img}
-              alt="banner"
-              className="h-[518px] w-full"
-            />
-          </div>
-          <div className="flex flex-col w-500 justify-center items-start pl-20">
-            <motion.div
-              initial={{ x: -80 }}
-              animate={{ x: 0 }}
-              transition={{ ease: "easeOut", duration: 2 }}
-              className="font-extrabold text-9xl"
-            >
-              {images[currentIndex].courseName}
-            </motion.div>
-            <h3 className="font-medium text-3xl w-96 mb-3">
-              {images[currentIndex].title}
-            </h3>
-            <h4 className="font-medium text-maroon text-2xl pt-3">
-              {images[currentIndex].length} Years
-            </h4>
-            <h4 className="font-medium text-3xl mb-6">Degree Program</h4>
-            <p className="font-bold text-maroon text-xl border-4 p-3 rounded-lg mb-6 border-maroon">
+        <div
+          className="bg-cover bg-center "
+          style={{
+            backgroundImage: `url(${images[currentIndex].img})`,
+            height: "520px",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="flex flex-col w-full justify-center items-start text-white pl-20">
+            <div className="mt-12 ml-20">
+              <motion.div
+                initial={{ x: -80 }}
+                animate={{ x: 0 }}
+                transition={{ ease: "easeOut", duration: 2 }}
+                className="font-extrabold text-9xl"
+              >
+                {images[currentIndex].courseName}
+              </motion.div>
+              <h3 className="font-semibold text-5xl w-05 mb-3">
+                {images[currentIndex].title}
+              </h3>
+              <h4 className="font-medium text-white mt-20 py-2 flex text-4xl">
+                {images[currentIndex].length} Years
+              </h4>
+              <h4 className="font-medium text-4xl mb-6">Degree Program</h4>
+            </div>
+            {/* <p className="font-bold backdrop-blur-lg text-slate-100 text-xl border-4 p-3 rounded-lg mb-6 border-maroon">
               Morning / Evening
             </p>
             <button
               className="font-medium text-white bg-maroon border-2 border-maroon 
               rounded-full py-3 px-6 transition ease-in-out delay-150 duration-300 
-              hover:scale-110 self-center"
+              hover:scale-110 "
             >
               APPLY NOW
-            </button>
+            </button> */}
           </div>
         </div>
       )}
 
       <button
         className="absolute top-1/2 left-0 ml-10 transform  rounded-full focus:outline-none
-        transition ease-in-out delay-150 duration-300 border border-black p-4 
+        transition ease-in-out delay-150 duration-300 border border-white text-white p-4 
         hover:scale-150 backdrop-blur-sm"
         onClick={handlePrev}
       >
@@ -100,7 +110,7 @@ const Crousel = ({ images }) => {
       </button>
       <button
         className="absolute top-1/2 right-0 mr-10 transform rounded-full focus:outline-none
-        transition ease-in-out delay-150 duration-300 border border-black p-4
+        transition ease-in-out delay-150 duration-300 border border-white text-white p-4
         hover:scale-150 backdrop-blur-sm"
         onClick={handleNext}
       >

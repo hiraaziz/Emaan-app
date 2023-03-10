@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { links } from "./constant";
 import { BiChevronDown } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [value, setvalue] = useState("");
@@ -9,7 +10,8 @@ const Navbar = () => {
   const [department, setdepartment] = useState(false);
   const [admission, setAdmission] = useState(false);
   const [qec, setQec] = useState(false);
-  const [acadmics, setacadmics] = useState(false);
+  const [academics, setacademics] = useState(false);
+  const [research, setresearch] = useState(false);
   const [login, setLogin] = useState(false);
 
   const nav = [
@@ -30,14 +32,19 @@ const Navbar = () => {
       funcName: admission,
     },
     {
-      name: "Acadmics",
-      value: "acadmics",
-      funcName: acadmics,
+      name: "Academics",
+      value: "academics",
+      funcName: academics,
     },
     {
       name: "QEC",
       value: "qec",
       funcName: qec,
+    },
+    {
+      name: "Research",
+      value: "research",
+      funcName: research,
     },
     {
       name: "Login",
@@ -52,7 +59,8 @@ const Navbar = () => {
     else if (value === "department") setdepartment(false);
     else if (value === "admission") setAdmission(false);
     else if (value === "qec") setQec(false);
-    else if (value === "acadmics") setacadmics(false);
+    else if (value === "academics") setacademics(false);
+    else if (value === "research") setresearch(false);
     else if (value === "login") setLogin(false);
   };
   const toggleDropdown = (value) => {
@@ -60,27 +68,31 @@ const Navbar = () => {
     setprogram(false);
     setdepartment(false);
     setAdmission(false);
-    setacadmics(false);
+    setacademics(false);
     setLogin(false);
     setQec(false);
+    setresearch(false);
 
-    if (value == "about") setAboutOpen(!aboutOpen);
+    if (value === "about") setAboutOpen(!aboutOpen);
     else if (value === "program") setprogram(!program);
     else if (value === "department") setdepartment(!department);
     else if (value === "admission") setAdmission(!admission);
     else if (value === "qec") setQec(!qec);
-    else if (value === "acadmics") setacadmics(!acadmics);
+    else if (value === "academics") setacademics(!academics);
+    else if (value === "research") setresearch(!research);
     else if (value === "login") setLogin(!login);
   };
 
   return (
-    <div className="bg-maroon w-full h-16 flex justify-center">
-      <div className="flex justify-evenly items-center list-none h-full w-600 text-gray-100 font-medium">
-        <button>Home</button>
+    <div className=" bg-maroon w-full h-16 flex justify-center">
+      <div className=" hidden md:flex justify-evenly items-center list-none h-full w-900 text-gray-100 font-medium">
+        <button>
+          <Link to="/">Home</Link>
+        </button>
         {nav.map((nav, ind) => (
           <div className="relative " onMouseLeave={() => onCloseNav(nav.value)}>
             <button
-              className="flex items-center transition ease-in-out delay-50 duration-300 p-4
+              className="flex items-center transition ease-in-out delay-50 duration-300 
               hover:scale-110"
               onMouseEnter={() => toggleDropdown(nav.value)}
             >
@@ -90,12 +102,12 @@ const Navbar = () => {
               <div className=" absolute left-0  py-2 w-48 bg-black text-white-100 rounded-md shadow-lg z-10">
                 {links[ind].map((link) => (
                   <>
-                    <a
-                      href="#"
+                    <Link
+                      to={link.link}
                       className="block px-4 py-2 text-sm hover:text-black hover:bg-gray-100"
                     >
-                      {link}
-                    </a>
+                      {link.title}
+                    </Link>
                     <div className="w-900 h-px bg-gray-500 flex ml-2"></div>
                   </>
                 ))}
@@ -103,10 +115,20 @@ const Navbar = () => {
             )}
           </div>
         ))}
-
-        <button>Contact</button>
-        <button>Alumni</button>
+        <button>
+          <Link to="/certificates">Certificates</Link>
+        </button>
+        <button>
+          <Link to="/lms">LMS</Link>
+        </button>
+        <button>
+          <Link to="/contact">Contact</Link>
+        </button>
+        <button>
+          <Link to="/alumni">Alumni</Link>
+        </button>
       </div>
+      <div></div>
     </div>
   );
 };

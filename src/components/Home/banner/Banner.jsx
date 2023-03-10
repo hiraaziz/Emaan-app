@@ -3,6 +3,7 @@ import Crousel from "./Crousel";
 
 const Banner = () => {
   const itemlist = [
+    {},
     {
       img: "./administration.png",
       courseName: "BBA",
@@ -24,7 +25,7 @@ const Banner = () => {
     {
       img: "./webdesign.png",
       courseName: "ADP",
-      title: "Web Design and Development",
+      title: "Web Design & Development",
       length: 2,
     },
     {

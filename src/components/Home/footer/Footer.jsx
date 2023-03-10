@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex lg:flex lg:items-start lg:gap-8">
+        <div className="flex flex-col space-y-8  lg:flex-row lg:items-start lg:gap-8">
           {footernav.map((footer) => (
             <div class="flex flex-col justify-evenly w-1000">
               <p class="font-bold tracking-widest text-lightpink">
@@ -40,7 +40,7 @@ const Footer = () => {
               </p>
 
               <nav aria-label="Footer Navigation - Services" class="mt-6">
-                <ul class="space-y-4 text-sm w-48">
+                <ul class="space-y-2  text-sm w-48">
                   {footer.navs.map((nav) => (
                     <li>
                       <a
@@ -57,8 +57,8 @@ const Footer = () => {
           ))}
         </div>
 
-        <div class="mt-8 border-t border-pink pt-8">
-          <p class="text-xs text-gray-300 text-center">
+        <div class="mt-8 border-t border-pink pt-8 w-full">
+          <p class=" text-xs text-gray-300 text-center">
             &copy; 2021 – All rights reserved. • Powered by Emaan Institute of
             Management & Science
           </p>
