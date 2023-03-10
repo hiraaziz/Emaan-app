@@ -50,7 +50,7 @@ export const links = [
    [
     {
       title: "Student Login",
-      link: 'studentlogin'
+      link: '/login'
     }
    ]
     
