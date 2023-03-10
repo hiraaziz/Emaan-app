@@ -30,6 +30,7 @@ function App() {
         <Route path="/lms" element={<Lms/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/alumni" element={<Alumni/>} />
+        <Route path="/login" element={<Login/>} />
       </Routes>
       </BrowserRouter>
     </div>
