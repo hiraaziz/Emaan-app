@@ -31,6 +31,8 @@ function App() {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/alumni" element={<Alumni/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/oric" element={<Research/>} />
+     
       </Routes>
       </BrowserRouter>
     </div>
