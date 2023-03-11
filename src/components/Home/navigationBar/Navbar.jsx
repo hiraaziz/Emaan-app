@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { links } from "./constant";
-import { BiChevronDown } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { BsChevronCompactDown } from "react-icons/bs";
 
 const Navbar = () => {
   const [value, setvalue] = useState("");
@@ -13,6 +14,11 @@ const Navbar = () => {
   const [academics, setacademics] = useState(false);
   const [research, setresearch] = useState(false);
   const [login, setLogin] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   const nav = [
     {
@@ -84,7 +90,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" bg-maroon w-full h-16 flex justify-center">
+    <div className=" bg-maroon w-full h-16 flex-shrink flex justify-center">
       <div className=" hidden md:flex justify-evenly items-center list-none h-full w-900 text-gray-100 font-medium">
         <button>
           <Link to="/">Home</Link>
@@ -128,7 +134,69 @@ const Navbar = () => {
           <Link to="/alumni">Alumni</Link>
         </button>
       </div>
-      <div></div>
+
+      <div className=" flex justify-between items-center w-full md:hidden ">
+        <img
+          src={"./logo.jpeg"}
+          alt="logo"
+          className="inline-block w-24 h-24 rounded-full p-4"
+        />
+        <div className="text-white p-4">
+          <button onClick={toggleMenu}>
+            <GiHamburgerMenu className="w-8 h-8" />
+          </button>
+        </div>
+      </div>
+      {showMenu && (
+        <div className="md:hidden z-10 absolute top-16 right-0 left-0 bg-white">
+          <div className="flex flex-col justify-start items-start bg-white text-black p-4">
+            <button className="mb-2">
+              <Link to="/">Home</Link>
+            </button>
+            {nav.map((nav, ind) => (
+              <div className="w-full">
+                <button
+                  onClick={() => toggleDropdown(nav.value)}
+                  className="flex justify-between w-full"
+                >
+                  <h1 className="mb-2">{nav.name}</h1>
+                  <BsChevronCompactDown />
+                </button>
+                {nav.funcName && (
+                  <div className="pb-4">
+                    {links[ind].map((link) => (
+                      <>
+                        <Link
+                          to={link.link}
+                          className="block px-4 py-2 text-sm hover:text-black hover:bg-gray-100"
+                        >
+                          {link.title}
+                        </Link>
+                        <div className="w-900 h-px bg-gray-500 flex ml-2"></div>
+                      </>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+            <button className="mb-2">
+              <Link to="/certificates">Certificates</Link>
+            </button>
+
+            <button className="mb-2">
+              <Link to="/lms">LMS</Link>
+            </button>
+
+            <button className="mb-2">
+              <Link to="/contact">Contact</Link>
+            </button>
+
+            <button className="mb-2">
+              <Link to="/alumni">Alumni</Link>
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

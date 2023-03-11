@@ -68,17 +68,17 @@ const Crousel = ({ images }) => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="flex flex-col w-full justify-center items-start text-white pl-20">
-            <div className="mt-12 ml-20">
+          <div className="flex flex-col w-full justify-center items-center md:items-start text-white md:pl-20">
+            <div className="flex flex-col w-700 mt-12 ml-10  md:ml-20">
               <motion.div
                 initial={{ x: -80 }}
                 animate={{ x: 0 }}
                 transition={{ ease: "easeOut", duration: 2 }}
-                className="font-extrabold text-9xl"
+                className="font-extrabold w-700 md:w-auto text-6xl md:text-9xl "
               >
                 {images[currentIndex].courseName}
               </motion.div>
-              <h3 className="font-semibold text-5xl w-05 mb-3">
+              <h3 className="font-semibold text-3xl md:text-5xl md:w-05 md:mb-3">
                 {images[currentIndex].title}
               </h3>
               <h4 className="font-medium text-white mt-20 py-2 flex text-4xl">

@@ -66,7 +66,7 @@ const Programs = () => {
         >
           ACADEMIC PROGRAMS
         </motion.div>
-        <div className="bg-maroon w-96 h-1 ml-4"></div>
+        <div className="bg-maroon w-48 md:w-96 h-1 ml-4"></div>
       </div>
       <AliceCarousel
         mouseTracking
@@ -79,10 +79,10 @@ const Programs = () => {
         {itemlist.map((item) => (
           <div className=" w-800 h-96  drop-shadow-xl bg-white flex flex-col justify-start items-center">
             <img src={item.img} data-value="1" className="w-full h-60" />
-            <div className="flex justify-center items-start space-x-4 p-10 w-full h-12">
+            <div className="flex justify-center items-start space-x-4 pt-8 md:p-10 w-full h-12 ">
               {item.icon}
-              <div className="flex flex-col justify-center font-medium text-sm tracking-wide">
-                <h1>{item.courseName}</h1>
+              <div className="flex flex-col w-full justify-center font-medium text-sm tracking-wide">
+                <h1 className="text-sm">{item.courseName}</h1>
                 <h1 className="text-maroon">{item.courseLength}</h1>
               </div>
             </div>

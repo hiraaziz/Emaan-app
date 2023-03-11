@@ -2,7 +2,7 @@ import React from "react";
 
 const Middlebar = () => {
   return (
-    <div className=" hidden w-full md:flex justify-center">
+    <div className=" hidden w-full md:flex md:flex-shrink justify-center">
       <div className="w-400 flex items-center">
         <img src={"./logo.jpeg"} alt="logo" className="w-24 h-24" />
         <h1 className="font-bold font-gloock tracking-wider text-left text-black ">
