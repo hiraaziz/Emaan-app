@@ -11,8 +11,7 @@ import Lms from './components/Lms/Lms'
 import Login from './components/Login/Login'
 import Qec from './components/Qec/Qec'
 import Research from './components/Research/Research'
-import Admission from './components/Admission/Admission'
-
+import FeeStructure from './components/Admission/feeStructure/FeeStructure';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Topheader from './components/Home/topHeader/Topheader';
 
@@ -25,7 +24,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/aboutus" element={<Aboutus/>} />
         <Route path="/message" element={<Message/>} />
-       
+       <Route path='/feestructure' element={<FeeStructure/>}/>
         <Route path="/certificates" element={<Certificates/>} />
         <Route path="/lms" element={<Lms/>} />
         <Route path="/contact" element={<Contact/>} />
