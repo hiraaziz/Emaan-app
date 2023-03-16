@@ -1,11 +1,17 @@
 import React from "react";
 import { BsEye } from "react-icons/bs";
 import { CiTrophy } from "react-icons/ci";
+import { motion } from "framer-motion";
 
 const Vision = () => {
   return (
     <section className="flex flex-col items-center justify-between min-h-full  md:flex-row md:justify-center md:items-center w-full bg-slate-50 py-20">
-      <div className="flex flex-col justify-center w-full md:w-400 px-8">
+      <motion.div
+        initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ type: "spring", duration: 1.5 }}
+        className="flex flex-col justify-center w-full md:w-400 px-8"
+      >
         <h1 className="font-bold text-2xl tracking-wider mb-8">
           Welcome To{" "}
           <p className="font-black text-5xl text-maroon">Emaan Institue</p>
@@ -19,10 +25,15 @@ const Vision = () => {
           our motto to impart the best quality education to the people of
           Pakistan.
         </p>
-      </div>
+      </motion.div>
       <div className=" hidden md:block bg-maroon h-96 w-px rounded-full "></div>
 
-      <div className="flex flex-col w-full md:w-400 px-8 space-y-8">
+      <motion.div
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ type: "spring", duration: 1.5 }}
+        className="flex flex-col w-full md:w-400 px-8 space-y-8"
+      >
         <div className="flex flex-col">
           <div className="flex items-center space-x-6  text-maroon">
             <BsEye className="w-14 h-14" />
@@ -49,7 +60,7 @@ const Vision = () => {
             engage in their own lives, their communities, and the world.
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

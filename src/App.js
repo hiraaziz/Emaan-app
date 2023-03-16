@@ -14,6 +14,7 @@ import Research from './components/Research/Research'
 import FeeStructure from './components/Admission/feeStructure/FeeStructure';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Topheader from './components/Home/topHeader/Topheader';
+import Eligibility from './components/Admission/eligibility/Eligibility';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/aboutus" element={<Aboutus/>} />
         <Route path="/message" element={<Message/>} />
        <Route path='/feestructure' element={<FeeStructure/>}/>
+       <Route path='/eligibility' element={<Eligibility/>}/>
         <Route path="/certificates" element={<Certificates/>} />
         <Route path="/lms" element={<Lms/>} />
         <Route path="/contact" element={<Contact/>} />

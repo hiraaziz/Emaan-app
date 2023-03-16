@@ -3,6 +3,8 @@ import Footer from "../../Home/footer/Footer";
 import Middlebar from "../../Home/middleBar/Middlebar";
 import Navbar from "../../Home/navigationBar/Navbar";
 import Topheader from "../../Home/topHeader/Topheader";
+import styles from "./styles.module.css";
+import { motion } from "framer-motion";
 
 const FeeStructure = () => {
   return (
@@ -10,14 +12,30 @@ const FeeStructure = () => {
       <Topheader />
       <Middlebar />
       <Navbar />
-      <section className="flex flex-col justify-start items-center w-full h-screen">
-        <h1 className="text-3xl font-extrabold py-4">FEE STRUCTURE</h1>
-        <h2 className="text-2xl font-medium py-4">
+      <section
+        className="flex flex-col justify-start items-center w-full h-[150vh] lg:h-fit
+      mt-20 text-center mb-[320px] md:-mb-[150px] "
+      >
+        <motion.h1
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: "spring", duration: 1.5 }}
+          className="text-3xl font-extrabold "
+        >
+          FEE STRUCTURE
+        </motion.h1>
+        <motion.h2
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: "spring", duration: 1.5 }}
+          className="text-2xl font-medium pb-4"
+        >
           First Step To Quality And Affordable Education
-        </h2>
-        <div className="mt-20">
+        </motion.h2>
+        <div className="w-96 lg:w-[600px] h-[1px] bg-slate-400" />
+        <div className={styles.tablecss}>
           <table border="1" bordercolor="#d1d1d1">
-            <tr className="text-white bg-[#00683B]">
+            <tr className="text-white bg-[#00683B] text-center">
               <th>PROGRAM</th>
               <th>ADMISSION FEE</th>
               <th>PER SEMESTER FEE</th>
@@ -41,7 +59,9 @@ const FeeStructure = () => {
               <td>Rs 60,000</td>
             </tr>
             <tr>
-              <th colSpan={3}>DEPARTMENT OF COMPUTER SCIENCE</th>
+              <th colSpan={3} className="text-white bg-[#6C0404]">
+                DEPARTMENT OF COMPUTER SCIENCE
+              </th>
             </tr>
             <tr>
               <td>BS (Computer Science) 4 Years</td>
@@ -49,7 +69,9 @@ const FeeStructure = () => {
               <td>Rs 60,000</td>
             </tr>
             <tr>
-              <th colSpan={3}>2 YEARS ASSOCIATE DEGREE PROGRAM</th>
+              <th colSpan={3} className="text-white bg-[#6C0404]">
+                2 YEARS ASSOCIATE DEGREE PROGRAM
+              </th>
             </tr>
             <tr>
               <td>Business & Commerce</td>

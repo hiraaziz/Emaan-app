@@ -71,9 +71,9 @@ const Crousel = ({ images }) => {
           <div className="flex flex-col w-full justify-center items-center md:items-start text-white md:pl-20">
             <div className="flex flex-col w-700 mt-12 ml-10  md:ml-20">
               <motion.div
-                initial={{ x: -80 }}
-                animate={{ x: 0 }}
-                transition={{ ease: "easeOut", duration: 2 }}
+                initial={{ opacity: 0, x: -80 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ type: "spring", duration: 1.5 }}
                 className="font-extrabold w-700 md:w-auto text-6xl md:text-9xl "
               >
                 {images[currentIndex].courseName}
@@ -86,16 +86,6 @@ const Crousel = ({ images }) => {
               </h4>
               <h4 className="font-medium text-4xl mb-6">Degree Program</h4>
             </div>
-            {/* <p className="font-bold backdrop-blur-lg text-slate-100 text-xl border-4 p-3 rounded-lg mb-6 border-maroon">
-              Morning / Evening
-            </p>
-            <button
-              className="font-medium text-white bg-maroon border-2 border-maroon 
-              rounded-full py-3 px-6 transition ease-in-out delay-150 duration-300 
-              hover:scale-110 "
-            >
-              APPLY NOW
-            </button> */}
           </div>
         </div>
       )}

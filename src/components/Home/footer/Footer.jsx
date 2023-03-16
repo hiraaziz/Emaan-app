@@ -3,7 +3,7 @@ import { footernav } from "./constant";
 
 const Footer = () => {
   return (
-    <footer aria-label="Site Footer" class="bg-darkblue text-white">
+    <footer aria-label="Site Footer" class="bg-darkblue text-white ">
       <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className=" lg:flex lg:items-start lg:gap-8 mb-14">
           <div class="bg-white rounded-full w-28 ">
@@ -32,20 +32,20 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col space-y-8  lg:flex-row lg:items-start lg:gap-8">
+        <div className="flex flex-col lg:flex-row lg:items-start lg:gap-8">
           {footernav.map((footer) => (
-            <div class="flex flex-col justify-evenly w-1000">
-              <p class="font-bold tracking-widest text-lightpink">
+            <div class="flex flex-col justify-evenly w-1000 ">
+              <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
                 {footer.title}
               </p>
 
-              <nav aria-label="Footer Navigation - Services" class="mt-6">
-                <ul class="space-y-2  text-sm w-48">
+              <nav class="mt-6">
+                <ul class="space-y-2  text-sm w-32">
                   {footer.navs.map((nav) => (
-                    <li>
+                    <li className=" text-justify">
                       <a
                         href="#"
-                        class="text-gray-200 transition hover:opacity-75"
+                        class="text-gray-200 transition hover:opacity-75 "
                       >
                         {nav}
                       </a>
