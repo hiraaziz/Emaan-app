@@ -4,7 +4,7 @@ import Aboutus from './components/About/aboutus/Aboutus'
 import Message from './components/About/message/Message'
 import Academics from './components/Academics/Academics'
 import Alumni from './components/Alumni/Alumni'
-import Certificates from './components/Certificates/Certificates'
+import PHPwebdevelopement from './components/Certificates/PHPwebdevelopement'
 import Contact from './components/Contact/Contact'
 import Department from './components/Department/Department'
 import Lms from './components/Lms/Lms'
@@ -29,7 +29,7 @@ function App() {
         <Route path="/message" element={<Message/>} />
        <Route path='/feestructure' element={<FeeStructure/>}/>
        <Route path='/eligibility' element={<Eligibility/>}/>
-        <Route path="/certificates" element={<Certificates/>} />
+        <Route path="/PHPwebdevelopement" element={<PHPwebdevelopement/>} />
         <Route path="/scholarship" element={<Scholarship/>} />
         <Route path="/lms" element={<Lms/>} />
         <Route path="/contact" element={<Contact/>} />
