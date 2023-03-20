@@ -97,6 +97,10 @@ export const links = [
       }]
     },
     {
+      title: "Research Grants",
+      link: '/researchgrands'
+    },
+    {
       title: "Journals",
       link: '/'
     },
