@@ -30,19 +30,22 @@ export default function Oric() {
     <Topheader/>
     <Middlebar/>
     <Navbar/>
-      <div className='flex mt-6'>
+    <div className='flex '>
+      <div className=' '>
+      <div className='mt-6 mx-5'>
+        <div className='mx-5 w-28 rounded-full'><img src='Oric logo.jpeg' alt='none'/></div>
          <div className=''>
-           <h1 className='mt-6 mx-5 text-5xl font-serif'>Office of Research, <br></br>Innovation & Commercialization (ORIC)</h1>
+           <h1 className='mt-6 mx-5 text-4xl font-serif'>Office of Research, <br></br>Innovation & Commercialization (ORIC)</h1>
          </div>
-         <div className='mx-32 mt-11'>
+         {/* <div className='mx-28 mt-11'>
 
           <Researchquiklinks/>
         
-         </div>
+         </div> */}
         
       </div>
 
-      <div className='flex mt-6'>
+      <div className='flex mt-6 mx-5'>
         <div className='container mt-6 w-40'>
             <ul>
             <li className='mt-1 mx-3'><button onClick={() => setActiveComponent('A')} className='py-1 px-6 rounded hover:text-white hover:bg-red-900 text-lg w-48 border-2 border-red-900'><h1>Introduction</h1></button></li>
@@ -52,10 +55,17 @@ export default function Oric() {
             </ul>
 
         </div>
-        <div className='container mt-6 mx-20 box-content h-96 w-1/2 p-4 border-2 shadow-lg'>
+        <div className='container mt-6 mx-20 box-content h-96 max-w-6xl p-4 border-2 shadow-lg mb-10'>
             {renderComponent()}
         </div>
       </div>
+      </div>
+      <div className=' mt-32 w-1/3'>
+
+          <Researchquiklinks/>
+        
+         </div>
+    </div>
     <Footer/>
     </>
   )
