@@ -16,7 +16,8 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Topheader from './components/Home/topHeader/Topheader';
 import Eligibility from './components/Admission/eligibility/Eligibility';
 import Scholarship from './components/Admission/scholarship/Scholarship'
-
+import Oric from './components/Research/ORIC/Oric';
+import Researchgrands from './components/Research/ORIC/Research Grands/Researchgrands ';
 function App() {
   return (
     <div className="font-poppins">
@@ -34,7 +35,8 @@ function App() {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/alumni" element={<Alumni/>} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/oric" element={<Research/>} />
+        <Route path="/oric" element={<Oric/>} />
+        <Route path="/researchgrands" element={<Researchgrands/>}/>
      
       </Routes>
       </BrowserRouter>
