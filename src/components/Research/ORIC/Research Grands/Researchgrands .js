@@ -1,4 +1,8 @@
 import React from 'react'
+import Footer from '../../../Home/footer/Footer';
+import Middlebar from '../../../Home/middleBar/Middlebar';
+import Navbar from '../../../Home/navigationBar/Navbar';
+import Topheader from '../../../Home/topHeader/Topheader';
 import ReadMore from './ReadMore';
 // import ReadMore1 from './readmore'
 
@@ -7,6 +11,9 @@ export default function Researchgrands() {
 
   return (
    <>  
+   <Topheader/>
+   <Middlebar/>
+   <Navbar/>
       <div className='flex'>   
              <div className='w-2/3 mx-8 mt-6'>
                 <div className='text-4xl my-10 font-bold'>GRANT FOR RESEARCH FELLOWSHIP ABROAD / NATIONAL UNIVERSITIES</div>
@@ -17,6 +24,7 @@ export default function Researchgrands() {
 
             <div className='w-1/3 mt-28 drop-shadow-2xl'><img className='max-w-sm transition duration-300 ease-in-out hover:scale-110' src='researchgrands.jpeg' alt=''/></div>  
       </div>
+      <Footer/>
     </>
   );
 }
