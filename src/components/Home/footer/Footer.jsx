@@ -40,9 +40,9 @@ const Footer = () => {
               </p>
 
               <nav class="mt-6">
-                <ul class="space-y-2  text-sm w-32">
+                <ul class="space-y-2  text-sm w-[150px]">
                   {footer.navs.map((nav) => (
-                    <li className=" text-justify">
+                    <li className=" text-left">
                       <a
                         href="#"
                         class="text-gray-200 transition hover:opacity-75 "
