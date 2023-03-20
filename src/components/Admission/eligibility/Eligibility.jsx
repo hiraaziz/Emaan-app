@@ -13,8 +13,8 @@ const Eligibility = () => {
       <Middlebar />
       <Navbar />
       <section
-        className="flex flex-col justify-start items-center w-900 m-auto h-[160vh] lg:h-[180vh]
-      mt-20 text-center mb-[320px] md:-mb-[150px] "
+        className="flex flex-col justify-start items-center w-900 m-auto  
+       text-center mt-[100px] mb-20 overflow-scroll"
       >
         <motion.h1
           initial={{ opacity: 0, x: -30 }}
