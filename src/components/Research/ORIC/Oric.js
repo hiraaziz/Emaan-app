@@ -1,4 +1,8 @@
 import React, { useState } from 'react'
+import Footer from '../../Home/footer/Footer';
+import Middlebar from '../../Home/middleBar/Middlebar';
+import Navbar from '../../Home/navigationBar/Navbar';
+import Topheader from '../../Home/topHeader/Topheader';
 import Researchquiklinks from '../Researchquiklinks';
 import {Oricdata2, Oricdata3, Oricdata4} from './Oricdata';
 
@@ -23,6 +27,9 @@ export default function Oric() {
 
   return (
     <>
+    <Topheader/>
+    <Middlebar/>
+    <Navbar/>
       <div className='flex mt-6'>
          <div className=''>
            <h1 className='mt-6 mx-5 text-5xl font-serif'>Office of Research, <br></br>Innovation & Commercialization (ORIC)</h1>
@@ -49,7 +56,7 @@ export default function Oric() {
             {renderComponent()}
         </div>
       </div>
-
+    <Footer/>
     </>
   )
 }
