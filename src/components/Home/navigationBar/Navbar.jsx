@@ -13,8 +13,10 @@ const Navbar = () => {
   const [qec, setQec] = useState(false);
   const [academics, setacademics] = useState(false);
   const [research, setresearch] = useState(false);
-  const [login, setLogin] = useState(false);
+  const [lms, setlms] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [certificate, setCertificate] = useState(false);
+  const [submenu, setmenu] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -53,9 +55,14 @@ const Navbar = () => {
       funcName: research,
     },
     {
-      name: "Login",
-      value: "login",
-      funcName: login,
+      name: "LMS",
+      value: "lms",
+      funcName: lms,
+    },
+    {
+      name: "Certificate",
+      value: "certificate",
+      funcName: certificate,
     },
   ];
 
@@ -67,7 +74,8 @@ const Navbar = () => {
     else if (value === "qec") setQec(false);
     else if (value === "academics") setacademics(false);
     else if (value === "research") setresearch(false);
-    else if (value === "login") setLogin(false);
+    else if (value === "lms") setlms(false);
+    else if (value === "certificate") setCertificate(false);
   };
   const toggleDropdown = (value) => {
     setAboutOpen(false);
@@ -75,9 +83,10 @@ const Navbar = () => {
     setdepartment(false);
     setAdmission(false);
     setacademics(false);
-    setLogin(false);
+    setlms(false);
     setQec(false);
     setresearch(false);
+    setCertificate(false);
 
     if (value === "about") setAboutOpen(!aboutOpen);
     else if (value === "program") setprogram(!program);
@@ -86,7 +95,8 @@ const Navbar = () => {
     else if (value === "qec") setQec(!qec);
     else if (value === "academics") setacademics(!academics);
     else if (value === "research") setresearch(!research);
-    else if (value === "login") setLogin(!login);
+    else if (value === "lms") setlms(!lms);
+    else if (value === "certificate") setCertificate(!certificate);
   };
 
   return (
@@ -121,12 +131,7 @@ const Navbar = () => {
             )}
           </div>
         ))}
-        <button>
-          <Link to="/certificates">Certificates</Link>
-        </button>
-        <button>
-          <Link to="/lms">LMS</Link>
-        </button>
+
         <button>
           <Link to="/contact">Contact</Link>
         </button>
