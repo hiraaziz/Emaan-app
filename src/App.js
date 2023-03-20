@@ -17,7 +17,9 @@ import Topheader from './components/Home/topHeader/Topheader';
 import Eligibility from './components/Admission/eligibility/Eligibility';
 import Scholarship from './components/Admission/scholarship/Scholarship'
 import Oric from './components/Research/ORIC/Oric';
-import Researchgrands from './components/Research/ORIC/Research Grands/Researchgrands ';
+// import Researchgrands from './components/Research/ORIC/Research Grands/Researchgrands ';
+import Researchgrands1 from './components/Research/ORIC/Research Grands/Researchgrands1';
+import Researchgrands2 from './components/Research/ORIC/Research Grands/Researchgrands2';
 function App() {
   return (
     <div className="font-poppins">
@@ -36,7 +38,8 @@ function App() {
         <Route path="/alumni" element={<Alumni/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/oric" element={<Oric/>} />
-        <Route path="/researchgrands" element={<Researchgrands/>}/>
+        <Route path="/researchgrands" element={<Researchgrands1/>}/>
+        <Route path="/researchgrands2" element={<Researchgrands2/>}/>
      
       </Routes>
       </BrowserRouter>
