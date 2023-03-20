@@ -99,3 +99,6 @@ export const links = [
 
   //   ],
   //   ["Studnet Login", "Faculty Login", "Results"],
+  //reaearch = Oric => ['reaserch grants'=>{'grant for research fellowship abroad / national universities', 'research publications','grant proposals','resource developement initiative grants ','faculty / student / alumni research grant proposals','EIMS conference workshop grant program'}, 'research rewards'=>{'citation reward program form'}, 'research support program', 'faculty research information form', 'research support initiative','workshop','seminars','research article referal','opportunity to expand ypur research horizon'] , 
+  // journals=>['management science' , 'computer science'] , 
+ // conferences
