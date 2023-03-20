@@ -13,8 +13,8 @@ const FeeStructure = () => {
       <Middlebar />
       <Navbar />
       <section
-        className="flex flex-col justify-start items-center w-full h-[150vh] lg:h-fit
-      mt-20 text-center mb-[320px] md:-mb-[150px] "
+        className="flex flex-col justify-start items-center w-full  lg:h-fit
+      mt-20 text-center mb-[200px] md:mb-[150px] "
       >
         <motion.h1
           initial={{ opacity: 0, x: -30 }}
@@ -34,8 +34,12 @@ const FeeStructure = () => {
         </motion.h2>
         <div className="w-96 lg:w-[600px] h-[1px] bg-slate-400" />
         <div className={styles.tablecss}>
-          <table border="1" bordercolor="#d1d1d1">
-            <tr className="text-white bg-[#00683B] text-center">
+          <table
+            border="1"
+            bordercolor="#d1d1d1"
+            className="text-sm md:text-md"
+          >
+            <tr className="text-white bg-[#00683B] text-center ">
               <th>PROGRAM</th>
               <th>ADMISSION FEE</th>
               <th>PER SEMESTER FEE</th>
