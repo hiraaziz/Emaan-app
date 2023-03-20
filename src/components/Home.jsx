@@ -6,6 +6,7 @@ import Navbar from "./Home/navigationBar/Navbar";
 import Programs from "./Home/programs/Programs";
 import Topheader from "./Home/topHeader/Topheader";
 import Vision from "./Home/vision/Vision";
+import Navigationbar from "./Home/navigationBar/Navigationbar";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Topheader />
       <Middlebar />
       <Navbar />
+      {/* <Navigationbar /> */}
       <Banner />
       <Vision />
       <Programs />
