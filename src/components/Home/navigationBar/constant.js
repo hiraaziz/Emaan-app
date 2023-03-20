@@ -25,8 +25,16 @@ export const links = [
    ],
    [
     {
-      title: "Undergraduate Program",
-      link: 'undergraduateprog'
+      title: "Fee Structure",
+      link: '/feestructure'
+    },
+    {
+      title: "Eligibility",
+      link: '/eligibility'
+    },
+    {
+      title: "Scholarship",
+      link: '/scholarship'
     }
    ],
    [
@@ -86,6 +94,8 @@ export const links = [
   //     "Research Project/Thesis",
   //   ],
   //   [
-  //     "ORIC"
+  //     "ORIC",
+  //      "Research grants",--> ["in grants for research fellowship"]
+
   //   ],
   //   ["Studnet Login", "Faculty Login", "Results"],
