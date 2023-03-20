@@ -1,0 +1,113 @@
+.about-us-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-us-header {
+    background-image: url('./assests/Aboutbg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  
+  .about-us-header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .about-us-header:hover::before {
+    opacity: 0.5;
+  }
+  
+  .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .header-text h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+  
+
+  .welcome-section {
+    background-color: #f7f7f7;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    animation: heading 1s ease-in-out;
+
+  }
+  
+  
+  .welcome-container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  
+  .welcome-heading {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    color: #3d3939;
+    margin-bottom: 30px;
+    position: relative; /* Add position relative to enable absolute positioning of the red line */
+  }
+  .welcome-paragraph {
+    margin: 30px auto;
+    max-width: 900px;
+    padding: 0 20px;
+  }
+  .welcomered-underline {
+    width: 20%;
+    height: 4px;
+    background-color: #b8101e;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%); /* Center the element horizontally */
+    animation: underline 2s ease-in-out infinite;
+  }
+  
+
+
+  @keyframes underline {
+    0% {
+      transform: translateX(-50%) scaleX(0); /* Start with no width */
+    }
+    50% {
+      transform: translateX(-50%) scaleX(1.2); /* Scale up to a little larger than the original width */
+    }
+    100% {
+      transform: translateX(-50%) scaleX(0); /* End with no width again */
+    }
+  }
+
+  @keyframes heading {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
