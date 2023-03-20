@@ -29,7 +29,7 @@ function App() {
         <Route path="/message" element={<Message/>} />
        <Route path='/feestructure' element={<FeeStructure/>}/>
        <Route path='/eligibility' element={<Eligibility/>}/>
-        <Route path="/PHPwebdevelopement" element={<PHPwebdevelopement/>} />
+        <Route path="/phpwebdevelopement" element={<PHPwebdevelopement/>} />
         <Route path="/scholarship" element={<Scholarship/>} />
         <Route path="/lms" element={<Lms/>} />
         <Route path="/contact" element={<Contact/>} />
