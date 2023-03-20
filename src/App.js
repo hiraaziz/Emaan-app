@@ -15,19 +15,21 @@ import FeeStructure from './components/Admission/feeStructure/FeeStructure';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Topheader from './components/Home/topHeader/Topheader';
 import Eligibility from './components/Admission/eligibility/Eligibility';
+import Scholarship from './components/Admission/scholarship/Scholarship'
 
 function App() {
   return (
     <div className="font-poppins">
       <BrowserRouter>
       <Routes>
-  
+        
         <Route path="/" element={<Home/>} />
         <Route path="/aboutus" element={<Aboutus/>} />
         <Route path="/message" element={<Message/>} />
        <Route path='/feestructure' element={<FeeStructure/>}/>
        <Route path='/eligibility' element={<Eligibility/>}/>
         <Route path="/certificates" element={<Certificates/>} />
+        <Route path="/scholarship" element={<Scholarship/>} />
         <Route path="/lms" element={<Lms/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/alumni" element={<Alumni/>} />
