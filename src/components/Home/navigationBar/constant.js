@@ -20,7 +20,31 @@ export const links = [
    [
     {
       title: "Masters of Business Administration",
-      link: '/businessadmn'
+      link: '/'
+    },
+    {
+      title: "Bachleors of Computer Science BSCS",
+      link: '/'
+    },
+    {
+      title: "Bachleors of Business Administration BBA",
+      link: '/'
+    },
+    {
+      title: "ADP Business and Commerce",
+      link: '/'
+    },
+    {
+      title: "ADP Computer Networking",
+      link: '/'
+    },
+    {
+      title: "ADP Database Management Systems",
+      link: '/'
+    },
+    {
+      title: "ADP Web Design and Development",
+      link: '/'
     }
    ],
    [
@@ -39,28 +63,72 @@ export const links = [
    ],
    [
     {
-      title: "QEC Activities",
-      link: "qecactivities"
+      title: "Semester Rules",
+      link: "/"
+    },
+    {
+      title: "Academic Calender",
+      link: '/'
     }
    ],
    [
     {
       title: "Introduction",
       link: "intro"
+    },
+    {
+      title: "Qec Activities",
+      link: '/'
     }
    ],
    [
     {
       title: "ORIC",
-      link: 'oric'
+      link: '/oric',
+      links:[{
+        title: ' Research grants',
+        link: '/researchgrands',
+        sublinks: [
+          {
+            title: 'grant for research fellowship abroad / national universities',
+            link: '/'
+          }
+        ]
+      }]
+    },
+    {
+      title: "Research Grants",
+      link: '/researchgrands'
+    },
+    {
+      title: "Research grands2",
+      link: '/researchgrands2'
+    },
+    {
+      title: "Journals",
+      link: '/'
+    },
+    {
+      title: "Conferences",
+      link: '/'
     }
    ],
    [
     {
       title: "Student Login",
       link: '/login'
+    },
+    {
+      title: "Faculty Login",
+      link: '/login'
     }
-   ]
+   ],
+   [
+    {
+      title: "PHP Web Development",
+      link: '/phpwebdevelopement'
+    }
+    ]
     
   ];
   

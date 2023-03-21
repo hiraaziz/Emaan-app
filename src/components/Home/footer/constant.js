@@ -13,6 +13,6 @@ export const footernav = [
     },
     {
         title: 'GET IN TOUCH',
-        navs: ['info@emaan.edu.pk','hr@emaan.edu.pk','Hiring Statistics','Plot # A-2, Sector 28 Suparco Rd, Gulzar E Hijri Scheme 33, Karachi, Pakistan.']
+        navs: ['info@emaan.edu.pk','hr@emaan.edu.pk','Hiring Statistics','Plot # A-2, Sector 28 Suparco Rd, Gulzar-E-Hijri Scheme 33, Karachi, Pakistan.']
     }
 ]

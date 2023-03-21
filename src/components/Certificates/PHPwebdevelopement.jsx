@@ -4,16 +4,16 @@ import Middlebar from "../Home/middleBar/Middlebar";
 import Navbar from "../Home/navigationBar/Navbar";
 import Topheader from "../Home/topHeader/Topheader";
 
-const Certificates = () => {
+const PHPwebdevelopement = () => {
   return (
     <div>
       <Topheader />
       <Middlebar />
       <Navbar />
-      Certificates
+      PHPwebdevelopement
       <Footer />
     </div>
   );
 };
 
-export default Certificates;
+export default PHPwebdevelopement;
