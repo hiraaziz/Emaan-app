@@ -48,18 +48,15 @@ function App() {
 
        <Route path='/feestructure' element={<FeeStructure/>}/>
        <Route path='/eligibility' element={<Eligibility/>}/>
-<<<<<<< main
+
         <Route path="/mobileappdevelopement" element={<MobileAppdevelopement/>} />
         <Route path="/pythoncourse" element={<Pythoncourse/>} />
         <Route path="/blockchain" element={<Blockchain/>} />
         <Route path="/penetrationtesting" element={<PenetrationTesting/>} />
         <Route path="/ethicalhacking" element={<EthicalHacking/>} />
         <Route path="/netdevelopement" element={<NetDevelopment/>} />
+        {/* <Route path="/phpwebdevelopement" element={<PHPwebdevelopement/>} /> */}
 
-
-=======
-        <Route path="/phpwebdevelopement" element={<PHPwebdevelopement/>} />
->>>>>>> main
         <Route path="/scholarship" element={<Scholarship/>} />
         <Route path="/lms" element={<Lms/>} />
         <Route path="/contact" element={<Contact/>} />
