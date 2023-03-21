@@ -4,16 +4,15 @@ import Middlebar from "../Home/middleBar/Middlebar";
 import Navbar from "../Home/navigationBar/Navbar";
 import Topheader from "../Home/topHeader/Topheader";
 
-const PHPwebdevelopement = () => {
+const EthicalHacking = () => {
   return (
     <div>
       <Topheader />
       <Middlebar />
       <Navbar />
-      PHPwebdevelopement
-      <Footer />
+      <iframe src="https://drive.google.com/file/d/1H9bhM4Q1fcMa13DP-qi1PF5uzAmMtdTe/preview" width="100%" height="1160" allow="autoplay"></iframe>      <Footer />
     </div>
   );
 };
 
-export default PHPwebdevelopement;
+export default EthicalHacking;
