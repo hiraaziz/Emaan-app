@@ -105,11 +105,11 @@ export const links = [
       link: '/researchgrands2'
     },
     {
-      title: "Research grands 3",
+      title: "EIMS FACULTY / STUDENT / ALUMNI RESEARCH GRANT PROPOSAL (ERGP)",
       link: '/researchgrands3'
     },
     {
-      title: "Research grands 4",
+      title: "EIMS CONFERENCE WORKSHOP GRANT PROGRAM (CWGP)",
       link: '/researchgrands4'
     },
     {
