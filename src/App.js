@@ -2,14 +2,25 @@ import './App.css';
 import Home from './components/Home';
 import Aboutus from './components/About/aboutus/Aboutus'
 import Message from './components/About/message/Message'
+import Rector from './components/About/Rector/Rector'
+
 import Academics from './components/Academics/Academics'
 import Alumni from './components/Alumni/Alumni'
-import PHPwebdevelopement from './components/Certificates/PHPwebdevelopement'
+import MobileAppdevelopement from './components/Certificates/MobileAppdevelopement'
+import Pythoncourse from './components/Certificates/Pythoncourse'
+import Blockchain from './components/Certificates/Blockchain'
+import PenetrationTesting from './components/Certificates/PenetrationTesting'
+import EthicalHacking from './components/Certificates/EthicalHacking'
+import NetDevelopment from './components/Certificates/NetDevelopment'
+
+
 import Contact from './components/Contact/Contact'
 import Department from './components/Department/Department'
 import Lms from './components/Lms/Lms'
 import Login from './components/Login/Login'
 import Qec from './components/Qec/Qec'
+import FinalMsg from './components/Qec/FinalMsg'
+
 import Research from './components/Research/Research'
 import FeeStructure from './components/Admission/feeStructure/FeeStructure';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
@@ -29,9 +40,26 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/aboutus" element={<Aboutus/>} />
         <Route path="/message" element={<Message/>} />
+        <Route path="/rectormessages" element={<Rector/>} />
+        <Route path="/intro" element={<Qec/>} />
+        <Route path="/finalmessage" element={<FinalMsg/>} />
+
+
+
        <Route path='/feestructure' element={<FeeStructure/>}/>
        <Route path='/eligibility' element={<Eligibility/>}/>
+<<<<<<< main
+        <Route path="/mobileappdevelopement" element={<MobileAppdevelopement/>} />
+        <Route path="/pythoncourse" element={<Pythoncourse/>} />
+        <Route path="/blockchain" element={<Blockchain/>} />
+        <Route path="/penetrationtesting" element={<PenetrationTesting/>} />
+        <Route path="/ethicalhacking" element={<EthicalHacking/>} />
+        <Route path="/netdevelopement" element={<NetDevelopment/>} />
+
+
+=======
         <Route path="/phpwebdevelopement" element={<PHPwebdevelopement/>} />
+>>>>>>> main
         <Route path="/scholarship" element={<Scholarship/>} />
         <Route path="/lms" element={<Lms/>} />
         <Route path="/contact" element={<Contact/>} />
