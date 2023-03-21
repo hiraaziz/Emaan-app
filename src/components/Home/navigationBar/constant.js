@@ -97,11 +97,11 @@ export const links = [
       }]
     },
     {
-      title: "Research Grants",
-      link: '/researchgrands'
+      title: "Grant for research fellowship abroad / national universities",
+      link: '/researchgrands1'
     },
     {
-      title: "Research grands2",
+      title: "EIMS RESEARCH PUBLICATION GRANT PROPOSAL (PGP)",
       link: '/researchgrands2'
     },
     {
