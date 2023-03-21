@@ -9,12 +9,8 @@ export const links = [
       link: '/message'
     },
     {
-      title: "Board of Advisor",
-      link: '/bofadvisor'
-    },
-    {
-      title: "Board of Governerce",
-      link: '/bofgovernerce'
+      title: "Rector Messages",
+      link: '/rectormessages'
     }
    ],
    [
@@ -77,6 +73,10 @@ export const links = [
       link: "intro"
     },
     {
+      title: "Final Message",
+      link: "finalmessage"
+    },
+    {
       title: "Qec Activities",
       link: '/'
     }
@@ -105,6 +105,14 @@ export const links = [
       link: '/researchgrands2'
     },
     {
+      title: "Research grands 3",
+      link: '/researchgrands3'
+    },
+    {
+      title: "Research grands 4",
+      link: '/researchgrands4'
+    },
+    {
       title: "Journals",
       link: '/'
     },
@@ -125,9 +133,30 @@ export const links = [
    ],
    [
     {
-      title: "PHP Web Development",
-      link: '/phpwebdevelopement'
-    }
+      title: "Mobile App Development",
+      link: '/mobileappdevelopement'
+    },
+    {
+      title: "Python course",
+      link: '/pythoncourse'
+    },
+    {
+      title: "Blockchain",
+      link: '/blockchain'
+    },
+    {
+      title: "Penetration Testing",
+      link: '/penetrationtesting'
+    },
+    {
+      title: "Ethical Hacking",
+      link: '/ethicalhacking'
+    },
+    {
+      title: "Net Developement",
+      link: '/netdevelopement'
+    },
+    
     ]
     
   ];

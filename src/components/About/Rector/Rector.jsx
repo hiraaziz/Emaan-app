@@ -52,11 +52,9 @@ const Rector = () => {
       In conclusion, I urge you to embrace the opportunities for professional education that are available to you at this institution. Take advantage of the resources and support services that we provide and use them to achieve your full potential. With the right education and skills, you can make a significant impact on your chosen profession and contribute to building a better world.
 
       <br /><br />
-
-      <span class="bold-text">Prof: Dr. Nasir U Din Khan</span><br />
-      Rector<br />
-      Emaan Institute of Management & Science Karachi
-    </p>
+      <span className="bold-red">Prof: Dr. Nasir U Din Khan</span> <br/>
+  <span className="bold-red">Rector</span> <br/>
+  <span className="bold-red">Emaan Institute of Management & Sciences Karachi.</span></p>
     
   </div>
 </section>
@@ -75,9 +73,8 @@ In today's rapidly changing world, education is more important than ever before.
 
 
       <br /><br />
-      Rector<br />
-      Emaan Institute of Management & Science Karachi
-    </p>
+      <span className="bold-red">Rector</span> <br/>
+  <span className="bold-red">Emaan Institute of Management & Sciences Karachi.</span></p>
     
   </div>
 </section>

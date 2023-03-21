@@ -71,11 +71,11 @@
 
   }
   .red-line {
-    width: 25%;
+    width: 23%;
     height: 3.5px;
     background-color: #b8101e;
     position: absolute;
-    top: 215%; /* Adjust the top value to position the red line correctly */
+    top: 212%; /* Adjust the top value to position the red line correctly */
     left: 29%; /* Position the red line at the center of the heading */
     transform: translateX(-50%); /* Center the red line horizontally */
     animation: underline 2s ease-in-out infinite;
