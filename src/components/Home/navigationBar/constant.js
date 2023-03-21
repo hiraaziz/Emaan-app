@@ -70,7 +70,7 @@ export const links = [
    [
     {
       title: "Introduction",
-      link: "intro"
+      link: "/intro"
     },
     {
       title: "Final Message",
