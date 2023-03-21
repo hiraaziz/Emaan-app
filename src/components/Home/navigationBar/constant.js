@@ -97,19 +97,19 @@ export const links = [
       }]
     },
     {
-      title: "Research Grants",
-      link: '/researchgrands'
+      title: "Grant for research fellowship abroad / national universities",
+      link: '/researchgrands1'
     },
     {
-      title: "Research grands2",
+      title: "EIMS RESEARCH PUBLICATION GRANT PROPOSAL (PGP)",
       link: '/researchgrands2'
     },
     {
-      title: "Research grands 3",
+      title: "EIMS FACULTY / STUDENT / ALUMNI RESEARCH GRANT PROPOSAL (ERGP)",
       link: '/researchgrands3'
     },
     {
-      title: "Research grands 4",
+      title: "EIMS CONFERENCE WORKSHOP GRANT PROGRAM (CWGP)",
       link: '/researchgrands4'
     },
     {
