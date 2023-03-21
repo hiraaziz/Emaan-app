@@ -31,6 +31,8 @@ import Oric from './components/Research/ORIC/Oric';
 // import Researchgrands from './components/Research/ORIC/Research Grands/Researchgrands ';
 import Researchgrands1 from './components/Research/ORIC/Research Grands/Researchgrands1';
 import Researchgrands2 from './components/Research/ORIC/Research Grands/Researchgrands2';
+import Researchgrands3 from './components/Research/ORIC/Research Grands/Researchgrands3';
+import Researchgrands4 from './components/Research/ORIC/Research Grands/Researchgrands4';
 function App() {
   return (
     <div className="font-poppins">
@@ -63,8 +65,10 @@ function App() {
         <Route path="/alumni" element={<Alumni/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/oric" element={<Oric/>} />
-        <Route path="/researchgrands" element={<Researchgrands1/>}/>
+        <Route path="/researchgrands1" element={<Researchgrands1/>}/>
         <Route path="/researchgrands2" element={<Researchgrands2/>}/>
+        <Route path="/researchgrands3" element={<Researchgrands3/>}/>
+        <Route path="/researchgrands4" element={<Researchgrands4/>}/>
      
       </Routes>
       </BrowserRouter>
