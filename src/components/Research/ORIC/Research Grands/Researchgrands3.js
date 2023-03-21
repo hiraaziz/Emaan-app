@@ -16,7 +16,7 @@ export default function Researchgrands3() {
    <Navbar/>
       <div className='flex mb-32'>   
              <div className='w-2/3 mx-8 mt-6'>
-                <div className='text-4xl my-10 font-bold'>ILMA FACULTY / STUDENT / ALUMNI RESEARCH GRANT PROPOSAL (IRGP)<hr className='w-96 h-2 bg-red-800 mt-5'/></div>
+                <div className='text-4xl my-10 font-bold'>EIMS FACULTY / STUDENT / ALUMNI RESEARCH GRANT PROPOSAL (ERGP)<hr className='w-96 h-2 bg-red-800 mt-5'/></div>
                 
                  <div>
                       <ReadMore previewText={text.substring(0, 300)} fullText={text} />
