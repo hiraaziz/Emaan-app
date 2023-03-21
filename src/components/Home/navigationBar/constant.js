@@ -74,7 +74,7 @@ export const links = [
     },
     {
       title: "Final Message",
-      link: "finalmessage"
+      link: "/finalmessage"
     },
     {
       title: "Qec Activities",
