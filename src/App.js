@@ -28,7 +28,9 @@ import Topheader from './components/Home/topHeader/Topheader';
 import Eligibility from './components/Admission/eligibility/Eligibility';
 import Scholarship from './components/Admission/scholarship/Scholarship'
 import Oric from './components/Research/ORIC/Oric';
-import Researchgrands from './components/Research/ORIC/Research Grands/Researchgrands ';
+// import Researchgrands from './components/Research/ORIC/Research Grands/Researchgrands ';
+import Researchgrands1 from './components/Research/ORIC/Research Grands/Researchgrands1';
+import Researchgrands2 from './components/Research/ORIC/Research Grands/Researchgrands2';
 function App() {
   return (
     <div className="font-poppins">
@@ -46,6 +48,7 @@ function App() {
 
        <Route path='/feestructure' element={<FeeStructure/>}/>
        <Route path='/eligibility' element={<Eligibility/>}/>
+<<<<<<< main
         <Route path="/mobileappdevelopement" element={<MobileAppdevelopement/>} />
         <Route path="/pythoncourse" element={<Pythoncourse/>} />
         <Route path="/blockchain" element={<Blockchain/>} />
@@ -54,13 +57,17 @@ function App() {
         <Route path="/netdevelopement" element={<NetDevelopment/>} />
 
 
+=======
+        <Route path="/phpwebdevelopement" element={<PHPwebdevelopement/>} />
+>>>>>>> main
         <Route path="/scholarship" element={<Scholarship/>} />
         <Route path="/lms" element={<Lms/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/alumni" element={<Alumni/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/oric" element={<Oric/>} />
-        <Route path="/researchgrands" element={<Researchgrands/>}/>
+        <Route path="/researchgrands" element={<Researchgrands1/>}/>
+        <Route path="/researchgrands2" element={<Researchgrands2/>}/>
      
       </Routes>
       </BrowserRouter>
