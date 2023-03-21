@@ -105,6 +105,14 @@ export const links = [
       link: '/researchgrands2'
     },
     {
+      title: "Research grands 3",
+      link: '/researchgrands3'
+    },
+    {
+      title: "Research grands 4",
+      link: '/researchgrands4'
+    },
+    {
       title: "Journals",
       link: '/'
     },
