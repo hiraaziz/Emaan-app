@@ -185,14 +185,6 @@ const Navbar = () => {
               </div>
             ))}
             <button className="mb-2">
-              <Link to="/certificates">Certificates</Link>
-            </button>
-
-            <button className="mb-2">
-              <Link to="/lms">LMS</Link>
-            </button>
-
-            <button className="mb-2">
               <Link to="/contact">Contact</Link>
             </button>
 

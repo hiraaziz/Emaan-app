@@ -16,7 +16,7 @@ export const links = [
    [
     {
       title: "Masters of Business Administration",
-      link: '/'
+      link: '/mba'
     },
     {
       title: "Bachleors of Computer Science BSCS",
@@ -55,6 +55,10 @@ export const links = [
     {
       title: "Scholarship",
       link: '/scholarship'
+    },
+    {
+      title: "Admission Policy",
+      link: '/admissionpolicy'
     }
    ],
    [

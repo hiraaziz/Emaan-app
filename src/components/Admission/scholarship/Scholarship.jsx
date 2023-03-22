@@ -111,7 +111,21 @@ const Scholarship = () => {
             following criteria:
           </li>
         </motion.div>
-
+        <div
+          className="flex flex-col justify-start items-center w-700 h-[170px]
+         bg-maroon text-white text-sm md:text-md"
+        >
+          <h1 className="bg-black w-full text-center py-2">
+            Criteria for Availing Scholarship
+          </h1>
+          <p>1. Highest GPA in the Class</p>
+          <p>2. Highest CGPA in the Class</p>
+          <p>3. 75% Class Attendance</p>
+          <p>4. Punctuality of classes</p>
+          <p className="mb-4">
+            5. Disciplinary Behavior with Management and Faculty Members
+          </p>
+        </div>
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
