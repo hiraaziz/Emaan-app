@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const LinksRight = () => {
   return (
-    <div className="my-8">
+    <div className="hidden md:block">
       <h1 className="font-medium text-xl">Quick Links</h1>
       <div className="w-20 h-[2px] bg-maroon" />
       <div className="mt-4">
@@ -13,7 +13,7 @@ const LinksRight = () => {
           <GoDash />
           <h1 className="text-gray-600">Admissions</h1>
         </div>
-        <ul className="text-gray-600">
+        <ul className="text-gray-600 ml-4">
           <Link to="/" className="flex space-x-2 items-center px-4 py-2">
             <GoDash />
             <li>Fee Structure</li>
