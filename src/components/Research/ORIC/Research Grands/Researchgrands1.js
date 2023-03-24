@@ -16,7 +16,7 @@ export default function Researchgrands1() {
    <Navbar/>
       <div className='flex mb-32'>   
              <div className='w-2/3 mx-8 mt-6'>
-                <div className='text-4xl my-10 font-bold'>GRANT FOR RESEARCH FELLOWSHIP ABROAD / NATIONAL UNIVERSITIES<hr className='w-96 h-2 bg-red-800 mt-5'/></div>
+                <div className='text-4xl my-10 font-bold'>GRANT FOR RESEARCH FELLOWSHIP ABROAD / NATIONAL UNIVERSITIES<hr className='w-96 h-1.5 bg-red-800 mt-4'/></div>
                  <div>
                       <ReadMore previewText={text.substring(0, 300)} fullText={text} />
                  </div>
