@@ -34,6 +34,9 @@ import Researchgrands3 from './components/Research/ORIC/Research Grands/Research
 import Researchgrands4 from './components/Research/ORIC/Research Grands/Researchgrands4';
 import AdmissionPolicy from './components/Admission/admissionpolicy/AdmissionPolicy';
 import Mba from './components/Department/masterbusinessadministration/Mba';
+import Cs from './components/Department/bachleorComputerScience/Cs';
+import Bba from './components/Department/bachelorBusinessAdministration/Bba';
+
 function App() {
   return (
     <div className="font-poppins">
@@ -47,7 +50,8 @@ function App() {
         <Route path="/intro" element={<Qec/>} />
         <Route path="/finalmessage" element={<FinalMsg/>} />
         <Route path="/mba" element={<Mba/>}/>
-
+        <Route path='/cs' element={<Cs/>}/>
+        <Route path='/Bba' element={<Bba/>}/>
 
        <Route path='/feestructure' element={<FeeStructure/>}/>
        <Route path='/eligibility' element={<Eligibility/>}/>

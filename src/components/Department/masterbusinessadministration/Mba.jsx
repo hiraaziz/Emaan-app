@@ -37,7 +37,7 @@ const Mba = () => {
               <img
                 src={"/MBA33.jpg"}
                 alt="mba"
-                className="w-[350px] h-[200px] md:w-[600px] md:h-[350px] rounded-md shadow-lg"
+                className="w-[300px] h-[200px] md:w-[600px] md:h-[350px] rounded-md shadow-lg"
               />
               <div>
                 <h1 className="font-semibold text-xl tracking-wider text-maroon">
@@ -96,8 +96,11 @@ const Mba = () => {
           <ChakraProvider>
             <AccordionCard />
           </ChakraProvider>
+          <button className="m-auto px-6 py-2 bg-maroon text-white rounded-md mt-10">
+            Apply Now
+          </button>
         </div>
-        <div className="basis-1/5 ">
+        <div className="basis-1/5 hidden lg:block">
           <LinksRight />
         </div>
       </section>

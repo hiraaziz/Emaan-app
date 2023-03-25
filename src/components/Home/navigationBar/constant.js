@@ -20,11 +20,11 @@ export const links = [
     },
     {
       title: "Bachleors of Computer Science BSCS",
-      link: '/'
+      link: '/cs'
     },
     {
       title: "Bachleors of Business Administration BBA",
-      link: '/'
+      link: '/bba'
     },
     {
       title: "ADP Business and Commerce",
