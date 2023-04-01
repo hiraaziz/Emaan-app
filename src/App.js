@@ -36,7 +36,7 @@ import AdmissionPolicy from './components/Admission/admissionpolicy/AdmissionPol
 import Mba from './components/Department/masterbusinessadministration/Mba';
 import Cs from './components/Department/bachleorComputerScience/Cs';
 import Bba from './components/Department/bachelorBusinessAdministration/Bba';
-
+import { Commerce } from './components/Department/commerce/Commerce';
 function App() {
   return (
     <div className="font-poppins">
@@ -52,6 +52,7 @@ function App() {
         <Route path="/mba" element={<Mba/>}/>
         <Route path='/cs' element={<Cs/>}/>
         <Route path='/Bba' element={<Bba/>}/>
+        <Route path='/commerce' element={<Commerce/>}/>
 
        <Route path='/feestructure' element={<FeeStructure/>}/>
        <Route path='/eligibility' element={<Eligibility/>}/>
