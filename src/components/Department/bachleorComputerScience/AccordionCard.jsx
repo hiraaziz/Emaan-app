@@ -11,9 +11,9 @@ const AccordionCard = () => {
   return (
     <Accordion
       allowToggle
-      className="m-auto mt-10 w-[200px] md:w-[400px] lg:w-[1100px]"
+      className="m-auto mt-10 w-[200px] md:w-[400px] lg:w-[1100px] flex  flex-wrap justify-evenly py-10"
     >
-      <AccordionItem>
+      <AccordionItem className="w-[480px] h-fit border-2 border-black mb-4">
         <h2>
           <AccordionButton>
             <Box as="span" flex="1" textAlign="left" fontWeight="medium">
@@ -30,7 +30,7 @@ const AccordionCard = () => {
         </AccordionPanel>
       </AccordionItem>
 
-      <AccordionItem>
+      <AccordionItem className="w-[480px] h-fit border-2 border-black mb-4">
         <h2>
           <AccordionButton>
             <Box as="span" flex="1" textAlign="left" fontWeight="medium">
@@ -46,7 +46,7 @@ const AccordionCard = () => {
         </AccordionPanel>
       </AccordionItem>
 
-      <AccordionItem>
+      <AccordionItem className="w-[480px] h-fit border-2 border-black mb-4">
         <h2>
           <AccordionButton>
             <Box as="span" flex="1" textAlign="left" fontWeight="medium">
