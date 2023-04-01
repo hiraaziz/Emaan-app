@@ -28,7 +28,7 @@ export const links = [
     },
     {
       title: "ADP Business and Commerce",
-      link: '/'
+      link: '/commerce'
     },
     {
       title: "ADP Computer Networking",
