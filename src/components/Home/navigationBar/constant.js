@@ -77,7 +77,7 @@ export const links = [
       link: "/intro"
     },
     {
-      title: "Final Message",
+      title: "Message",
       link: "/finalmessage"
     },
     {
