@@ -32,15 +32,15 @@ export const links = [
     },
     {
       title: "ADP Computer Networking",
-      link: '/'
+      link: '/networking'
     },
     {
       title: "ADP Database Management Systems",
-      link: '/'
+      link: '/database'
     },
     {
       title: "ADP Web Design and Development",
-      link: '/'
+      link: '/web'
     }
    ],
    [
