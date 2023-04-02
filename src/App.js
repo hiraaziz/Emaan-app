@@ -37,6 +37,10 @@ import Mba from './components/Department/masterbusinessadministration/Mba';
 import Cs from './components/Department/bachleorComputerScience/Cs';
 import Bba from './components/Department/bachelorBusinessAdministration/Bba';
 import { Commerce } from './components/Department/commerce/Commerce';
+import { Database } from './components/Department/database/Database';
+import { Networking } from './components/Department/compnetworking/Networking';
+import { Web } from './components/Department/wedesign/Web';
+
 function App() {
   return (
     <div className="font-poppins">
@@ -53,6 +57,9 @@ function App() {
         <Route path='/cs' element={<Cs/>}/>
         <Route path='/Bba' element={<Bba/>}/>
         <Route path='/commerce' element={<Commerce/>}/>
+        <Route path='/database' element={<Database/>}/>
+        <Route path='/networking' element={<Networking/>}/>
+        <Route path='/web' element={<Web/>}/>
 
        <Route path='/feestructure' element={<FeeStructure/>}/>
        <Route path='/eligibility' element={<Eligibility/>}/>
