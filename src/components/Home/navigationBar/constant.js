@@ -5,11 +5,11 @@ export const links = [
       link : '/aboutus'
     },
     {
-      title: "Chairmen Message",
+      title: "Message",
       link: '/message'
     },
     {
-      title: "Rector Message",
+      title: "Rector Messages",
       link: '/rectormessages'
     }
    ],
@@ -77,7 +77,7 @@ export const links = [
       link: "/intro"
     },
     {
-      title: "Final Message Director",
+      title: "Final Message",
       link: "/finalmessage"
     },
     {
@@ -128,11 +128,11 @@ export const links = [
    [
     {
       title: "Student Login",
-      link: '/lms'
+      link: '/login'
     },
     {
       title: "Faculty Login",
-      link: '/lms'
+      link: '/login'
     }
    ],
    [

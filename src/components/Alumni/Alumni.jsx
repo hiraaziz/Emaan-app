@@ -1,13 +1,11 @@
 import React from "react";
 import './alumni.css';
-import Footer from "../../Home/footer/Footer";
-import Middlebar from "../../Home/middleBar/Middlebar";
-import Navbar from "../../Home/navigationBar/Navbar";
-import Topheader from "../../Home/topHeader/Topheader";
-import AlumniBanner from '../AlumniBanner/AlumniBanner';
-import AlumniSuccess from '../AlumniSucsess/AlumniSucess';
-import AlumniGallery from '../AlumniGallery/AlumGallery';
-
+import Footer from "../Home/footer/Footer";
+import Middlebar from "../Home/middleBar/Middlebar";
+import Navbar from "../Home/navigationBar/Navbar";
+import Topheader from "../Home/topHeader/Topheader";
+import AlumniBanner from './AlumniBanner';
+import AlumniSuccess from './AlumniSucess';
 
 
 const Alumni = () => {
@@ -32,8 +30,8 @@ const Alumni = () => {
       </div>  
     </section>
     <AlumniBanner/>
+   
     <AlumniSuccess/>
-    <AlumniGallery/>
       <Footer />
     </div>
   );

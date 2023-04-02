@@ -5,7 +5,7 @@
     height: 700px;
     width: 100%;
     position: relative; /* add position relative to make ::before work */
-    background-image: url('../assests/BgAlumni.png');
+    background-image: url('../Alumni/assests/BgAlumni.png');
     background-size: cover;
     background-position: center;
   }

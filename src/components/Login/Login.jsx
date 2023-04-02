@@ -4,16 +4,16 @@ import Middlebar from "../Home/middleBar/Middlebar";
 import Navbar from "../Home/navigationBar/Navbar";
 import Topheader from "../Home/topHeader/Topheader";
 
-const Lms = () => {
+const Login = () => {
   return (
     <div>
       <Topheader />
       <Middlebar />
       <Navbar />
-      Lms
+      Login
       <Footer />
     </div>
   );
 };
 
-export default Lms;
+export default Login;
