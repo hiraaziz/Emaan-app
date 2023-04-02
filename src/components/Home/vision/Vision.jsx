@@ -13,8 +13,8 @@ const Vision = () => {
         className="flex flex-col justify-center w-full md:w-400 px-8"
       >
         <h1 className="font-bold text-2xl tracking-wider mb-8">
-          Welcome To{" "}
-          <p className="font-black text-5xl text-maroon">Emaan Institue</p>
+          WELCOME TO{" "}
+          <p className="font-black text-4xl text-maroon">EMAAN INSTITUE OF TECHNOLOGY</p>
         </h1>
         <p className="font-normal  w-900">
           EMAAN INSTITUTE OF MANAGEMENT & SCIENCES (EIMS) has been established
