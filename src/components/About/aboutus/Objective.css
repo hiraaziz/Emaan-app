@@ -1,33 +1,31 @@
 .objective-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   list-style: none;
-  padding: 40px;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 0;
   margin: 5%;
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .objective-list li {
   border-radius: 9px;
-  padding: 20px;
+  padding: 20px 20px 20px 40px;
   opacity: 0;
   transform: translateY(50px);
   transition: all 1.5s ease-in-out;
-}
-
-.objective-list li.animate {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-.objective-heading {
-  font-size: 42px;
-  font-weight: bold;
-  text-align: center;
-  color: #9c1414;
-  top: 60px;
   position: relative;
+  width: 80%;
+  display: flex; /* Add display flex */
+}
+
+.objective-list li::before {
+  content: "✔";
+  color: rgb(168, 3, 3);
+  font-size: 22px;
+  margin-right: 10px;
 }
 
 .objective-list li.animate {
@@ -38,35 +36,40 @@
 .objective-heading {
   font-size: 42px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
+  margin-left: 8%; /* Add margin-left to match list margin */
   color: #9c1414;
   top: 60px;
   position: relative;
 }
 
 .objective-list li {
-  background-color: #ebebeb !important;
+  background-color: #ffffff !important;
 }
 
 .objective-list li:hover,
 .objective-list li:focus {
-  animation: bubble 0.5s ease-out;
   transform: scale(1.05);
-  box-shadow: none; /* Remove the box-shadow property */
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 2;
 }
 
-@keyframes bubble {
-  0% {
+.objective-list li:hover::before,
+.objective-list li:focus::before {
+  transform: scale(1.2); /* Scale the checkmark on hover/focus */
+}
+
+.objective-list li:active {
+  transform: scale(0.95); /* Add zoom effect on click */
+}
+
+@keyframes zoom {
+  from {
     transform: scale(1);
-    opacity: 1;
   }
-  50% {
+  to {
     transform: scale(1.1);
-    opacity: 0.8;
-  }
-  100% {
-    transform: scale(1.05);
-    opacity: 1;
   }
 }
 

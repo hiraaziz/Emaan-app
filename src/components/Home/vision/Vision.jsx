@@ -14,7 +14,7 @@ const Vision = () => {
       >
         <h1 className="font-bold text-2xl tracking-wider mb-8">
           Welcome To{" "}
-          <p className="font-black text-5xl text-maroon">Emaan Institue</p>
+          <p className="font-black text-5xl text-maroon">Emaan Institute</p>
         </h1>
         <p className="font-normal  w-900">
           EMAAN INSTITUTE OF MANAGEMENT & SCIENCES (EIMS) has been established
