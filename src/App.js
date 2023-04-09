@@ -34,13 +34,10 @@ import Researchgrands3 from './components/Research/ORIC/Research Grands/Research
 import Researchgrands4 from './components/Research/ORIC/Research Grands/Researchgrands4';
 import AdmissionPolicy from './components/Admission/admissionpolicy/AdmissionPolicy';
 import Mba from './components/Department/masterbusinessadministration/Mba';
-<<<<<<< Updated upstream
 import Cs from './components/Department/bachleorComputerScience/Cs';
 import Bba from './components/Department/bachelorBusinessAdministration/Bba';
-
-=======
 import SeminarsandWorkshop, { Seminars } from './components/Research/ORIC/Seminars/SeminarsandWorkshop';
->>>>>>> Stashed changes
+
 function App() {
   return (
     <div className="font-poppins">
