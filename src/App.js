@@ -36,10 +36,14 @@ import AdmissionPolicy from './components/Admission/admissionpolicy/AdmissionPol
 import Mba from './components/Department/masterbusinessadministration/Mba';
 import Cs from './components/Department/bachleorComputerScience/Cs';
 import Bba from './components/Department/bachelorBusinessAdministration/Bba';
+
+import SeminarsandWorkshop, { Seminars } from './components/Research/ORIC/Seminars/SeminarsandWorkshop';
+
 import { Commerce } from './components/Department/commerce/Commerce';
 import { Database } from './components/Department/database/Database';
 import { Networking } from './components/Department/compnetworking/Networking';
 import { Web } from './components/Department/wedesign/Web';
+
 
 function App() {
   return (
@@ -83,6 +87,7 @@ function App() {
         <Route path="/researchgrands2" element={<Researchgrands2/>}/>
         <Route path="/researchgrands3" element={<Researchgrands3/>}/>
         <Route path="/researchgrands4" element={<Researchgrands4/>}/>
+        <Route path="/Seminars" element={<SeminarsandWorkshop/>}/>
      
       </Routes>
       </BrowserRouter>

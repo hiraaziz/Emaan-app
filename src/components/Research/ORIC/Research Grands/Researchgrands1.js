@@ -4,6 +4,7 @@ import Middlebar from '../../../Home/middleBar/Middlebar';
 import Navbar from '../../../Home/navigationBar/Navbar';
 import Topheader from '../../../Home/topHeader/Topheader';
 import ReadMore from './ReadMore';
+import Researchquiklinks from '../../Researchquiklinks';
 // import ReadMore1 from './readmore'
 
 export default function Researchgrands1() {
@@ -16,13 +17,15 @@ export default function Researchgrands1() {
    <Navbar/>
       <div className='flex mb-32'>   
              <div className='w-2/3 mx-8 mt-6'>
-                <div className='text-4xl my-10 font-bold'>GRANT FOR RESEARCH FELLOWSHIP ABROAD / NATIONAL UNIVERSITIES<hr className='w-96 h-2 bg-red-800 mt-5'/></div>
+                <div className='text-4xl my-10 font-bold'>GRANT FOR RESEARCH FELLOWSHIP ABROAD / NATIONAL UNIVERSITIES<hr className='w-96 h-1.5 bg-red-800 mt-4'/></div>
                  <div>
                       <ReadMore previewText={text.substring(0, 300)} fullText={text} />
                  </div>
              </div>  
-
-            <div className='w-1/3 mt-28 drop-shadow-2xl'><img className='max-w-sm transition duration-300 ease-in-out hover:scale-110' src='Grant For Research fellowship.jpeg' alt=''/></div>  
+            <div>
+            <div className='w-1/3 mt-28 drop-shadow-2xl'><img className='max-w-sm transition duration-300 ease-in-out hover:scale-110' src='Grant For Research fellowship.jpeg' alt=''/></div> 
+            <div className='mt-10'><Researchquiklinks/></div> 
+            </div>
       </div>
       <Footer/>
     </>
