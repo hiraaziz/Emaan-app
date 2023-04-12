@@ -36,7 +36,14 @@ import AdmissionPolicy from './components/Admission/admissionpolicy/AdmissionPol
 import Mba from './components/Department/masterbusinessadministration/Mba';
 import Cs from './components/Department/bachleorComputerScience/Cs';
 import Bba from './components/Department/bachelorBusinessAdministration/Bba';
+
 import SeminarsandWorkshop, { Seminars } from './components/Research/ORIC/Seminars/SeminarsandWorkshop';
+
+import { Commerce } from './components/Department/commerce/Commerce';
+import { Database } from './components/Department/database/Database';
+import { Networking } from './components/Department/compnetworking/Networking';
+import { Web } from './components/Department/wedesign/Web';
+
 
 function App() {
   return (
@@ -53,6 +60,10 @@ function App() {
         <Route path="/mba" element={<Mba/>}/>
         <Route path='/cs' element={<Cs/>}/>
         <Route path='/Bba' element={<Bba/>}/>
+        <Route path='/commerce' element={<Commerce/>}/>
+        <Route path='/database' element={<Database/>}/>
+        <Route path='/networking' element={<Networking/>}/>
+        <Route path='/web' element={<Web/>}/>
 
        <Route path='/feestructure' element={<FeeStructure/>}/>
        <Route path='/eligibility' element={<Eligibility/>}/>

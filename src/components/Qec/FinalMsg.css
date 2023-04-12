@@ -2,3 +2,22 @@
     font-weight: bold;
     color: rgb(73, 69, 69);
   }
+
+  .Greenred-underline {
+    width: 18%;
+    height: 4px;
+    background-color: #085014;
+    position: absolute;
+    top: 648px; /* Adjust the top value to position the red line correctly */
+    left: 20%; /* Position the red line at the center of the heading */
+ 
+  }
+
+  .Qecmessage-heading1 {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(138, 10, 10);
+    margin-bottom: 28px;
+    position: relative;
+  }

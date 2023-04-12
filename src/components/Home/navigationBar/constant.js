@@ -28,19 +28,19 @@ export const links = [
     },
     {
       title: "ADP Business and Commerce",
-      link: '/'
+      link: '/commerce'
     },
     {
       title: "ADP Computer Networking",
-      link: '/'
+      link: '/networking'
     },
     {
       title: "ADP Database Management Systems",
-      link: '/'
+      link: '/database'
     },
     {
       title: "ADP Web Design and Development",
-      link: '/'
+      link: '/web'
     }
    ],
    [
@@ -77,7 +77,7 @@ export const links = [
       link: "/intro"
     },
     {
-      title: "Final Message",
+      title: "Message",
       link: "/finalmessage"
     },
     {
