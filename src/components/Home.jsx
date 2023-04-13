@@ -7,6 +7,7 @@ import Programs from "./Home/programs/Programs";
 import Topheader from "./Home/topHeader/Topheader";
 import Vision from "./Home/vision/Vision";
 import News from "./Home/News/News";
+import Event from "./Home/LifeAtEman/Event";
 import About from "./Home/Aboutus/About";
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
       <News/>
       <About/>
       <Programs />
+      <Event/>
       <Footer />
     </div>
   );
