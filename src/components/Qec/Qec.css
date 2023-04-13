@@ -4,7 +4,7 @@
   }
   
   .qecIntro-header {
-    background-image: url('../About/aboutus/assests/shade.jpg');
+    background-image: url('../../../public/shade.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

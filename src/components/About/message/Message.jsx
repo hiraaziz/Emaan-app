@@ -3,6 +3,7 @@ import Navbar from "../../Home/navigationBar/Navbar";
 import Footer from "../../Home/footer/Footer";
 import Middlebar from "../../Home/middleBar/Middlebar";
 import Topheader from "../../Home/topHeader/Topheader";
+
 import "./Message.css";
 
 const Message = () => {
@@ -12,18 +13,19 @@ const Message = () => {
       <Middlebar />
       <Navbar />
 
-      <div className="messHead-container">
-        <header className="message-header">
-          <div className="message-text">
-            <h1>Message</h1>
-          </div>
-        </header>
+      <div className="chairImg-container">
+        <div className="chair-image-container">
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
+        </div>
+        <div className="chair-info-container">
+          <div className="chair-name">Dr Raza Mughal</div>
+          <div className="chair-description"> Chairmen of EIMS</div>
+        </div>
       </div>
 
       <section class="message-section">
         <div class="message-container">
           <h2 class="message-heading1">MESSAGE OF CHAIRMEN</h2>
-          <div class="red-underline"></div>
           <h3 class="message-heading2">Dr Raza Mughal</h3>
           <div class="message-paragraph">
             <div class="bold-Red">Dear Students,</div>

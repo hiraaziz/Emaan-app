@@ -5,7 +5,6 @@ import Middlebar from "../Home/middleBar/Middlebar";
 import Navbar from "../Home/navigationBar/Navbar";
 import Topheader from "../Home/topHeader/Topheader";
 import AlumniBanner from './AlumniBanner';
-import AlumniSuccess from './AlumniSucess';
 
 
 const Alumni = () => {
@@ -18,7 +17,7 @@ const Alumni = () => {
       <div className="alumni-hero__text">
       <div className="typewriter">
        <h1 className="Alumni-head">
-           <span>Emaan Alumni!</span>
+           <span>Emaan Events!</span>
        </h1>
         <p>
         EMAAN INSTITUTE OF MANAGEMENT & SCIENCES (EIMS) has been established via Sindh Act No: XXXV of 2018 and recognized by HEC (Higher Education Commission) as Degree Awarding Institute.        </p>
@@ -31,7 +30,6 @@ const Alumni = () => {
     </section>
     <AlumniBanner/>
    
-    <AlumniSuccess/>
       <Footer />
     </div>
   );

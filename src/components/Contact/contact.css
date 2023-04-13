@@ -1,0 +1,134 @@
+.contact-header {
+  background-image: url('../../../public/contact.jpg');
+  background-color: rgba(255, 255, 255, 0.925); /* black with 50% opacity */
+  background-blend-mode: multiply; /* blend background image with black */
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  padding: 50px;
+  height: 400px;
+  text-align: center;
+}
+
+.contact-heading {
+  color: #ad1c1c;
+  font-weight: 540;
+  font-size: 2.8rem;
+  margin-top: 5%;
+  text-transform: uppercase;
+}
+.contact-info-container {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to bottom, #8a0700, #c22f2f);
+  padding: 74px;
+  color: #fff;
+  margin-top: -9%; /* move the container up by 50 pixels */
+  max-width: 82%; /* decrease the maximum width to 80% */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18%;
+  border-radius: 25px;
+}
+
+.contact-info-item.address {
+  margin-left: -3%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.contact-info-item.mail {
+  margin-left: -38px;
+  text-align: center;
+}
+.contact-info-item h2 {
+  font-family: Georgia, serif;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.contact-info-item.mail p {
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-info-item.phone p {
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 18px;
+  margin-left: 2px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px; /* set the minimum height as required */
+  margin-top: -8%;
+  margin-bottom: 10%;
+}
+
+.map-column {
+  flex: 1;
+  margin-left: 110px; /* adjust the margin as required */
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 70px; /* adjust the margin as required */
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 85%;
+  padding: 10px;
+  margin-bottom: 30px; /* add some margin between the input fields */
+  border: none;
+  border-radius: 5px;
+  outline: 1px solid #940000; /* add this line to change the outline color */
+  margin-top: -10px; /* adjust the margin-top value as required */
+}
+textarea {
+  width: 85%;
+  height: 170px; /* set the height to 200px or any value you prefer */
+  padding: 10px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  outline: 1px solid #940000;
+  margin-top: -10px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  width: 20%;
+  border: none;
+  border-radius: 5px;
+  background-color: #920505;
+  color: white;
+  font-weight: bold;
+  margin-left: 1%;
+  margin-top: -18px;
+}
+.map-heading {
+  font-size: 35px;
+  font-weight: bold;
+  color: #860707;
+  margin-bottom: 20px;
+  margin-left: 15%;
+}
+.form-heading {
+  font-size: 35px;
+  font-weight: bold;
+  color: #860707;
+  margin-bottom: 26px; /* add some margin between the form heading and the form */
+  margin-left: -20%;
+}
