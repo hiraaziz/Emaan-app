@@ -123,6 +123,10 @@ export const links = [
     {
       title: "Conferences",
       link: '/'
+    },
+    {
+      title: "Seminars",
+      link: '/Seminars'
     }
    ],
    [
