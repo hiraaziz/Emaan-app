@@ -1,38 +1,44 @@
-import React, { useEffect, useRef } from 'react';
-import './Mission.css';
+import React from "react";
+import { BsEye } from "react-icons/bs";
+import { CiTrophy } from "react-icons/ci";
+import { motion } from "framer-motion";
 
-const Mission = () => {
-  const missionVisionRef = useRef(null);
-
-  useEffect(() => {
-    const missionVision = missionVisionRef.current;
-    const handleScroll = () => {
-      if (window.scrollY >= missionVision.offsetTop - window.innerHeight / 2) {
-        missionVision.classList.add('animate');
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+const Mision = () => {
   return (
-    <div className="mission-vision-container" ref={missionVisionRef}>
-        <div className="mission-box">
-          <h2 className="mission-heading">Our Mission</h2>
-          <p className="mission-text">
-            Provide superior undergraduate and graduate programs that are technology-enriched and responsive to the needs of students and the evolving workplace. Prepare young people to find their place in the world.
+    <section className="flex flex-col items-center justify-between min-h-full md:flex-row md:justify-center md:items-center w-full py-20">
+      <div className="flex flex-col justify-center w-full md:w-400 px-8 border-r-2 border-red-800">
+        <div className="flex items-center space-x-6 text-maroon">
+          <BsEye className="w-14 h-14" />
+          <h1 className="font-extrabold text-3xl">OUR VISION</h1>
+        </div>
+        <p className="font-normal">
+          We believe that curiosity is at the heart of every academic pursuit.
+          A desire to learn, the courage to question and a passion for
+          discovery are present in everything we do. We encourage students to
+          dream, to think critically, creatively, and insightfully, and we
+          engage in their own lives, their communities, and the world.
+        </p>
+      </div>
+      <div className="flex flex-col w-full md:w-400 px-8 space-y-8">
+        <div className="flex flex-col">
+          <div className="flex items-center space-x-6 text-maroon">
+            <CiTrophy className="w-14 h-14" />
+            <h1 className="font-extrabold text-3xl">OUR MISSION</h1>
+          </div>
+          <p className="font-normal">
+            We believe that curiosity is at the heart of every academic pursuit.
+            A desire to learn, the courage to question and a passion for
+            discovery are present in everything we do. We encourage students to
+            dream, to think critically, creatively, and insightfully, and we
+            engage in their own lives, their communities, and the world.
           </p>
         </div>
-        <div className="vision-box">
-          <h2 className="vision-heading">Our Vision</h2>
-          <p className="vision-text">
-            We believe that curiosity is at the heart of every academic pursuit. A desire to learn, the courage to question and a passion for discovery are present in everything we do. We encourage students to dream, to think critically, creatively, and insightfully, and we engage in their own lives, their communities, and the world.
-          </p>
-        </div>
-    
+      </div>
+    </section>
+  );
+};
 
-    </div>
-  )
-}
 
-export default Mission;
+export default Mision;
+
 
