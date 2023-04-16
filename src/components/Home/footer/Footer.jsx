@@ -1,4 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
+import { MapContainer } from "react-leaflet/MapContainer";
+import { TileLayer } from "react-leaflet/TileLayer";
+import { Marker } from "react-leaflet/Marker";
+import { Popup } from "react-leaflet/Popup";
+import { useMap } from "react-leaflet/hooks";
+import "leaflet/dist/leaflet.css";
 import { footernav } from "./constant";
 
 const Footer = () => {
@@ -32,36 +38,106 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row lg:items-start lg:gap-8">
-          {footernav.map((footer) => (
+        <div className="flex flex-col  lg:gap-8">
+          <section className="flex">
             <div class="flex flex-col justify-evenly w-1000 ">
               <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
-                {footer.title}
+                GET IN TOUCH
               </p>
 
               <nav class="mt-6">
                 <ul class="space-y-2  text-sm w-[150px]">
-                  {footer.navs.map((nav) => (
-                    <li className=" text-left">
-                      <a
-                        href="#"
-                        class="text-gray-200 transition hover:opacity-75 "
-                      >
-                        {nav}
-                      </a>
-                    </li>
-                  ))}
+                  <li className=" text-left flex flex-col">
+                    <a
+                      href="#"
+                      class="text-gray-200 transition hover:opacity-75 "
+                    >
+                      info@emaan.edu.pk
+                    </a>
+                    <a
+                      href="#"
+                      class="text-gray-200 transition hover:opacity-75 "
+                    >
+                      Hiring Statistics
+                    </a>
+                    <a
+                      href="#"
+                      class="text-gray-200 transition hover:opacity-75 "
+                    >
+                      Plot # A-2, Sector 28 Suparco Rd, Gulzar-E-Hijri Scheme
+                      33, Karachi, Pakistan
+                    </a>
+                  </li>
                 </ul>
               </nav>
             </div>
-          ))}
-        </div>
 
-        <div class="mt-8 border-t border-pink pt-8 w-full">
-          <p class=" text-xs text-gray-300 text-center">
-            &copy; 2021 – All rights reserved. • Powered by Emaan Institute of
-            Management & Science
-          </p>
+            <div class="flex flex-col justify-evenly w-1000 ">
+              <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
+                Useful Links
+              </p>
+
+              <nav class="mt-6">
+                <ul class="space-y-2  text-sm w-[150px]">
+                  <li className=" text-left flex flex-col">
+                    <a
+                      href="#"
+                      class="text-gray-200 transition hover:opacity-75 "
+                    >
+                      Semester Rules
+                    </a>
+                    <a
+                      href="#"
+                      class="text-gray-200 transition hover:opacity-75 "
+                    >
+                      Academic Calender
+                    </a>
+                    <a
+                      href="#"
+                      class="text-gray-200 transition hover:opacity-75 "
+                    >
+                      Eligibility Criteria
+                    </a>
+                    <a
+                      href="#"
+                      class="text-gray-200 transition hover:opacity-75 "
+                    >
+                      Scholarship Policy
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="flex flex-col justify-evenly w-1000  h-[200px]">
+              <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
+                LOCATION
+              </p>
+
+              <MapContainer
+                center={[51.505, -0.09]}
+                zoom={13}
+                scrollWheelZoom={false}
+              >
+                <TileLayer
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <Marker position={[51.505, -0.09]}>
+                  <Popup>
+                    A pretty CSS3 popup. <br /> Easily customizable.
+                  </Popup>
+                </Marker>
+              </MapContainer>
+            </div>
+          </section>
+
+          <div class="mt-8 border-t border-pink pt-8 w-full">
+            <p class=" text-xs text-gray-300 text-center">
+              &copy; 2021 – All rights reserved. • Powered by Emaan Institute of
+              Management & Science
+            </p>
+          </div>
         </div>
       </div>
     </footer>
