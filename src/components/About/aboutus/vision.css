@@ -1,0 +1,34 @@
+.AboutVision-container {
+  display: flex;
+  align-items: center;
+}
+
+.Vision-image-container {
+  width: 42%;
+  margin-left: 5%;
+}
+
+.Mission-image-container img {
+  max-width: 100%;
+}
+
+.Vision-message-container {
+  width: 40%; /* Decrease the width to 40% */
+  padding: 0 20px;
+  margin-left: 8%;
+}
+
+.Vision-message-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: rgb(114, 0, 0);
+  font-weight: 700;
+  font-family: Georgia, serif;
+}
+
+.Vision-message-container p {
+  font-size: 17px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: Georgia, serif;
+}

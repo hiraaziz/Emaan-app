@@ -7,6 +7,7 @@ import Footer from "../../Home/footer/Footer";
 import Middlebar from "../../Home/middleBar/Middlebar";
 import Topheader from "../../Home/topHeader/Topheader";
 import "./AboutUs.css";
+import Vision from "./Vision";
 
 const Aboutus = () => {
   const welcomeSectionRef = useRef(null);
@@ -97,6 +98,7 @@ const Aboutus = () => {
 
       {/* Render the Mission component */}
       <Mission />
+      <Vision/>
       <Objective />
 
       <Footer />
