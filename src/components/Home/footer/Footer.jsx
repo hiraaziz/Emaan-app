@@ -38,9 +38,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col  lg:gap-8">
-          <section className="flex">
-            <div class="flex flex-col justify-evenly w-1000 ">
+        <div className="flex flex-col  lg:gap-8 ">
+          <section className="flex flex-col md:flex-row md:h-[400px] items-start md:space-x-4">
+            <div class="flex flex-col justify-evenly w-full md:w-1/5  ">
               <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
                 GET IN TOUCH
               </p>
@@ -72,7 +72,7 @@ const Footer = () => {
               </nav>
             </div>
 
-            <div class="flex flex-col justify-evenly w-1000 ">
+            <div class="flex flex-col justify-evenly w-full md:w-1/5 mt-[20px] md:mt-0">
               <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
                 Useful Links
               </p>
@@ -109,26 +109,55 @@ const Footer = () => {
               </nav>
             </div>
 
-            <div class="flex flex-col justify-evenly w-1000  h-[200px]">
+            <div class="flex flex-col justify-evenly w-full md:w-2/5 mt-[20px] md:mt-0">
+              <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
+                GALLERY
+              </p>
+              <div className="flex gap-4">
+                <div>
+                  <img
+                    src={"/gallery1.jpg"}
+                    alt="gallery1"
+                    className="w-[180px] h-[130px] border-2 border-white"
+                  />
+                  <img
+                    src={"/gallery2.jpg"}
+                    alt="gallery2"
+                    className="w-[180px] h-[130px] border-2 border-white mt-4"
+                  />
+                </div>
+
+                <div>
+                  <img
+                    src={"/gallery3.jpg"}
+                    alt="gallery3"
+                    className="w-[180px] h-[130px] border-2 border-white"
+                  />
+                  <img
+                    src={"/gallery4.jpg"}
+                    alt="gallery4"
+                    className="w-[180px] h-[130px] border-2 border-white mt-4"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col justify-evenly w-full md:w-1/5 mt-[20px] md:mt-0">
               <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
                 LOCATION
               </p>
 
-              <MapContainer
-                center={[51.505, -0.09]}
-                zoom={13}
-                scrollWheelZoom={false}
-              >
-                <TileLayer
-                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                <Marker position={[51.505, -0.09]}>
-                  <Popup>
-                    A pretty CSS3 popup. <br /> Easily customizable.
-                  </Popup>
-                </Marker>
-              </MapContainer>
+              <div className="map-column">
+                <h2 class="map-heading">Campus Location</h2>
+                <iframe
+                  width="100%"
+                  height="300"
+                  frameborder="0"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.8306360444846!2d67.13064331500616!3d24.947263584006545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339e95b79a3e5%3A0xb2e46cb7217938ca!2sEmaan%20Institute%20of%20Management%20and%20Sciences!5e0!3m2!1sen!2s!4v1649882604706!5m2!1sen!2s"
+                ></iframe>
+              </div>
             </div>
           </section>
 

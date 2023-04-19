@@ -9,7 +9,6 @@ import Vision from "./Home/vision/Vision";
 import News from "./Home/News/News";
 import Event from "./Home/LifeAtEman/Event";
 import About from "./Home/Aboutus/About";
-import Map from "./Home/Map";
 
 const Home = () => {
   return (
@@ -24,7 +23,6 @@ const Home = () => {
       <Programs />
       <Event />
       <Footer />
-      <Map />
     </div>
   );
 };
