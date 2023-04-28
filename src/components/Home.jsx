@@ -9,13 +9,15 @@ import Vision from "./Home/vision/Vision";
 import News from "./Home/News/News";
 import Event from "./Home/LifeAtEman/Event";
 import About from "./Home/Aboutus/About";
+import ShowMenu from "./Home/navigationBar/ShowMenu";
+import NavMenu from "./Home/navigationBar/DropdownMenu";
 
 const Home = () => {
   return (
     <div>
       <Topheader />
       <Middlebar />
-      <Navbar />
+      <NavMenu />
       <Banner />
       <Vision />
       <News />
