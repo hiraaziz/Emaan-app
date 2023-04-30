@@ -4,6 +4,7 @@ import Middlebar from '../../../Home/middleBar/Middlebar';
 import Navbar from '../../../Home/navigationBar/Navbar';
 import Topheader from '../../../Home/topHeader/Topheader';
 import ReadMore from './ReadMore';
+import Researchquiklinks from '../../Researchquiklinks';
 // import ReadMore1 from './readmore'
 
 export default function Researchgrands2() {
@@ -21,9 +22,13 @@ export default function Researchgrands2() {
                  <div>
                       <ReadMore previewText={text.substring(0, 300)} fullText={text} />
                  </div>
-             </div>  
+             </div>
 
-            <div className='w-1/3 mt-28 drop-shadow-2xl'><img className='max-w-sm transition duration-300 ease-in-out hover:scale-110' src='Call for Emaan Research.jpeg' alt=''/></div>  
+             <div>
+            <div className='w-1/3 mt-28 drop-shadow-2xl'><img className='max-w-sm transition duration-300 ease-in-out hover:scale-110' src='Call for Emaan Research.jpeg' alt=''/></div> 
+            <div className='mt-10'><Researchquiklinks/></div> 
+            </div>
+           
       </div>
       <Footer/>
     </>
