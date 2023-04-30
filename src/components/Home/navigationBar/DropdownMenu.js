@@ -59,23 +59,23 @@ const NavMenu = () => {
           subDropdownItems: [
             {
                 label: 'MBA 2 years',
-                link:'/'
+                link:'/mba'
               },
               {
                 label: 'MBA 1.5 years',
-                link:'/'
+                link:'/mba'
               },
               {
                   label: 'BBA 4 years',
-                  link:'/'
+                  link:'/bba'
               },
               {
                   label: 'BBA 2 years',
-                  link:'/'
+                  link:'/bba'
               },
               {
                   label: 'ADP Business & Commerce (2 years)',
-                  link:'/'
+                  link:'/commerce'
                 },
           ],
         },
@@ -85,23 +85,23 @@ const NavMenu = () => {
             subDropdownItems: [
                 {
                     label: 'BSCS (4 years)',
-                    link:'/'
+                    link:'/cs'
                   },
                   {
                     label: 'BSCS (2.5 years)',
-                    link:'/'
+                    link:'/cs'
                   },
                   {
                       label: 'ADP Web Design & Development',
-                      link:'/'
+                      link:'/web'
                   },
                   {
                       label: 'ADP Computer Networking',
-                      link:'/'
+                      link:'/networking'
                   },
                   {
                       label: 'ADP Database Management System',
-                      link:'/'
+                      link:'/database'
                     },
             ],
           }
