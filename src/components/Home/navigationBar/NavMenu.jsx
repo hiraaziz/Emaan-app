@@ -21,7 +21,6 @@ const NavMenu = () => {
           link: "/aboutus",
         },
         {
-
           label: "Chairmen Message",
           link: "/message",
         },
@@ -45,7 +44,6 @@ const NavMenu = () => {
           link: "/",
         },
         {
-
           label: "Board of Governors",
           link: "/",
         },
@@ -186,15 +184,51 @@ const NavMenu = () => {
       link: "/",
       dropdownItems: [
         {
-          label: "Sub Item 4.1",
+          label: "ORIC",
+          link: "/oric",
           hasSubDropdowns: true,
           subDropdownItems: [
-            { label: "Sub Sub Item 4.1.1" },
-            { label: "Sub Sub Item 4.1.2" },
+            {
+              label: "Research grants",
+              link: "/",
+              hasSubDropdowns: true,
+              subDropdownItems: [
+                {
+                  label:
+                    "grant for research fellowship abroad / national universities",
+                  link: "/",
+                  label: "research publications",
+                  link: "/",
+                  label: "grant proposals",
+                  link: "/",
+                  label: "resource developement initiative grants",
+                  link: "/",
+                  label: "faculty / student / alumni research grant proposals",
+                  link: "/",
+                  label: "EIMS conference workshop grant program",
+                  link: "/",
+                },
+              ],
+            },
+            {
+              label: "Research Rewards",
+              link: "/",
+              hasSubDropdowns: true,
+              dropdownItems: [
+                {
+                  label: "citation reward program form",
+                  link: "/",
+                },
+              ],
+            },
+            { label: "research support program", link: "/" },
+            { label: "faculty research information form", link: "/" },
+            { label: "research support initiative", link: "/" },
+            { label: "workshop", link: "/" },
           ],
         },
-        { label: "Sub Item 4.2" },
-        { label: "Sub Item 4.3" },
+        { label: "Journals", link: "/" },
+        { label: "Conferences", link: "/" },
       ],
     },
     {
