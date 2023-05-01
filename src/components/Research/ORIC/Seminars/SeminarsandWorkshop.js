@@ -14,7 +14,7 @@ export default function SeminarsandWorkshop() {
   return (
    <>  
    <Topheader/>
-   <NavMenu/>
+   <Middlebar/>
    <NavMenu/>
       <div className=''>   
            <div className='flex mb-24 mt-10'>
