@@ -1,10 +1,4 @@
-import React, { Component } from "react";
-import { MapContainer } from "react-leaflet/MapContainer";
-import { TileLayer } from "react-leaflet/TileLayer";
-import { Marker } from "react-leaflet/Marker";
-import { Popup } from "react-leaflet/Popup";
-import { useMap } from "react-leaflet/hooks";
-import "leaflet/dist/leaflet.css";
+import React from "react";
 import { footernav } from "./constant";
 
 const Footer = () => {
@@ -73,7 +67,7 @@ const Footer = () => {
                 </nav>
               </div>
 
-              <div class="flex flex-col justify-evenly w-full mt-[20px] md:mt-0">
+              <div class="flex flex-col justify-evenly w-full mt-[20px] md:mt-8">
                 <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
                   Useful Links
                 </p>
@@ -144,19 +138,20 @@ const Footer = () => {
               </div>
             </div>
 
-            <div class="flex flex-col justify-evenly w-full md:w-2/5 mt-[20px] md:mt-0">
+            <div class="flex flex-col justify-center items-start w-full md:w-2/5 mt-[20px] md:mt-0">
               <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
                 LOCATION
               </p>
 
-              <div className="map-column">
+              <div className="map-column ml-0">
                 <h2 class="map-heading">Campus Location</h2>
                 <iframe
                   width="100%"
-                  height="300"
+                  height="350"
                   frameborder="0"
                   marginheight="0"
                   marginwidth="0"
+                  className="md:w-[450px]"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.8306360444846!2d67.13064331500616!3d24.947263584006545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339e95b79a3e5%3A0xb2e46cb7217938ca!2sEmaan%20Institute%20of%20Management%20and%20Sciences!5e0!3m2!1sen!2s!4v1649882604706!5m2!1sen!2s"
                 ></iframe>
               </div>
