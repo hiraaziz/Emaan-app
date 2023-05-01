@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../Home/footer/Footer";
 import Middlebar from "../../Home/middleBar/Middlebar";
-import Navbar from "../../Home/navigationBar/Navbar";
+import NavMenu from "../../Home/navigationBar/NavMenu";
 import Topheader from "../../Home/topHeader/Topheader";
 import { motion } from "framer-motion";
 
@@ -10,7 +10,7 @@ const Scholarship = () => {
     <section>
       <Topheader />
       <Middlebar />
-      <Navbar />
+      <NavMenu />
       <div className="w-full my-24  flex flex-col items-center justify-evenly">
         <motion.h1
           initial={{ opacity: 0, x: -30 }}

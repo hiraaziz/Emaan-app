@@ -12,20 +12,21 @@ const FinalMsg = () => {
       <Middlebar />
       <Navbar />
 
-      <div className="messHead-container">
-        <header className="message-header">
-          <div className="message-text">
-            <h1>Final Message Director</h1>
-          </div>
-        </header>
+      <div className="chairImg-container">
+        <div className="chair-image-container">
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
+        </div>
+        <div className="chair-info-container">
+          <div className="chair-name">Saleem Raza Bhatti (Ph.D.)</div>
+          <div className="chair-description">Director Quality Enhancement Cell</div>
+        </div>
       </div>
 
       <section class="message-section">
         <div class="message-container">
           <h2 class="Qecmessage-heading1">DIRECTOR (QEC) MESSAGE:</h2>
-          <div class="Greenred-underline"></div>
-          <h3 class="message-heading2">Saleem Raza Bhatti (Ph.D.)</h3>
-          <p class="message-paragraph">
+          <h3 class="Qecmessage-heading2">Saleem Raza Bhatti (Ph.D.)</h3>
+          <p class="Qecmessage-paragraph">
             "Education is the basis of progress, and innovative. Quality
             education is the key to unlocking our full potential as individuals
             and as a society. Through education, we learn new skills, enhance
@@ -69,12 +70,12 @@ const FinalMsg = () => {
             willingness to experiment and take risks. Let's inspire the next
             generation of learners to dream big and push the boundaries of
             what's possible!<br></br>
-            <span className="bold-red">Saleem Raza Bhatti (Ph.D.)</span> <br />
-            <span className="bold-red">
+            <span className="bold-grey">Saleem Raza Bhatti (Ph.D.)</span> <br />
+            <span className="bold-grey">
               Director Quality Enhancement Cell
             </span>{" "}
             <br />
-            <span className="bold-red">
+            <span className="bold-grey">
               Emaan Institute of Management & Sciences Karachi.
             </span>
           </p>

@@ -39,74 +39,76 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col  lg:gap-8 ">
-          <section className="flex flex-col md:flex-row md:h-[400px] items-start md:space-x-4">
-            <div class="flex flex-col justify-evenly w-full md:w-1/5  ">
-              <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
-                GET IN TOUCH
-              </p>
+          <section className="flex flex-col md:flex-row md:h-[400px] items-start md:space-x-2">
+            <div className="md:w-1/5">
+              <div class="flex flex-col justify-evenly w-full   ">
+                <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
+                  GET IN TOUCH
+                </p>
 
-              <nav class="mt-6">
-                <ul class="space-y-2  text-sm w-[150px]">
-                  <li className=" text-left flex flex-col">
-                    <a
-                      href="#"
-                      class="text-gray-200 transition hover:opacity-75 "
-                    >
-                      info@emaan.edu.pk
-                    </a>
-                    <a
-                      href="#"
-                      class="text-gray-200 transition hover:opacity-75 "
-                    >
-                      Hiring Statistics
-                    </a>
-                    <a
-                      href="#"
-                      class="text-gray-200 transition hover:opacity-75 "
-                    >
-                      Plot # A-2, Sector 28 Suparco Rd, Gulzar-E-Hijri Scheme
-                      33, Karachi, Pakistan
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+                <nav class="mt-6">
+                  <ul class="space-y-2  text-sm w-[150px]">
+                    <li className=" text-left flex flex-col">
+                      <a
+                        href="#"
+                        class="text-gray-200 transition hover:opacity-75 "
+                      >
+                        info@emaan.edu.pk
+                      </a>
+                      <a
+                        href="#"
+                        class="text-gray-200 transition hover:opacity-75 "
+                      >
+                        Hiring Statistics
+                      </a>
+                      <a
+                        href="#"
+                        class="text-gray-200 transition hover:opacity-75 "
+                      >
+                        Plot # A-2, Sector 28 Suparco Rd, Gulzar-E-Hijri Scheme
+                        33, Karachi, Pakistan
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
 
-            <div class="flex flex-col justify-evenly w-full md:w-1/5 mt-[20px] md:mt-0">
-              <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
-                Useful Links
-              </p>
+              <div class="flex flex-col justify-evenly w-full mt-[20px] md:mt-0">
+                <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
+                  Useful Links
+                </p>
 
-              <nav class="mt-6">
-                <ul class="space-y-2  text-sm w-[150px]">
-                  <li className=" text-left flex flex-col">
-                    <a
-                      href="#"
-                      class="text-gray-200 transition hover:opacity-75 "
-                    >
-                      Semester Rules
-                    </a>
-                    <a
-                      href="#"
-                      class="text-gray-200 transition hover:opacity-75 "
-                    >
-                      Academic Calender
-                    </a>
-                    <a
-                      href="#"
-                      class="text-gray-200 transition hover:opacity-75 "
-                    >
-                      Eligibility Criteria
-                    </a>
-                    <a
-                      href="#"
-                      class="text-gray-200 transition hover:opacity-75 "
-                    >
-                      Scholarship Policy
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+                <nav class="mt-6">
+                  <ul class="space-y-2  text-sm w-[150px]">
+                    <li className=" text-left flex flex-col">
+                      <a
+                        href="#"
+                        class="text-gray-200 transition hover:opacity-75 "
+                      >
+                        Semester Rules
+                      </a>
+                      <a
+                        href="#"
+                        class="text-gray-200 transition hover:opacity-75 "
+                      >
+                        Academic Calender
+                      </a>
+                      <a
+                        href="#"
+                        class="text-gray-200 transition hover:opacity-75 "
+                      >
+                        Eligibility Criteria
+                      </a>
+                      <a
+                        href="#"
+                        class="text-gray-200 transition hover:opacity-75 "
+                      >
+                        Scholarship Policy
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
 
             <div class="flex flex-col justify-evenly w-full md:w-2/5 mt-[20px] md:mt-0">
@@ -142,7 +144,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div class="flex flex-col justify-evenly w-full md:w-1/5 mt-[20px] md:mt-0">
+            <div class="flex flex-col justify-evenly w-full md:w-2/5 mt-[20px] md:mt-0">
               <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
                 LOCATION
               </p>

@@ -5,11 +5,11 @@ export const links = [
       link : '/aboutus'
     },
     {
-      title: "Message",
+      title: "Chairmen Message",
       link: '/message'
     },
     {
-      title: "Rector Messages",
+      title: "Rector Message",
       link: '/rectormessages'
     }
    ],

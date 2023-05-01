@@ -8,8 +8,6 @@
   padding: 0;
   margin: 5%;
   transition: opacity 1s ease-out, transform 1s ease-out;
-  font-family: Georgia, serif;
-
 }
 
 .objective-list li {
@@ -36,14 +34,14 @@
 }
 
 .objective-heading {
-  font-size: 2.4rem;
+  font-size: 42px;
   font-weight: bold;
   text-align: left;
   margin-left: 8%; /* Add margin-left to match list margin */
-  color: #7c0101;
+  color: #810000;
   top: 60px;
   position: relative;
-  font-family: Georgia, serif;
+  font-family: Ogg Regular;
 
 }
 

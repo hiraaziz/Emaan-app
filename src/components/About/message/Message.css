@@ -98,5 +98,72 @@
   font-family: Georgia, serif;
 
 }
+@media (max-width: 767px) {
+  .chairImg-container {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 5%;
+    padding-bottom: 30px;
+  }
 
+  .chair-image-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .chair-image-container img {
+    width: 100%;
+    max-height: 370px; /* Set a maximum height for the image */
+
+  }
+  .chair-info-container {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .chair-name {
+    font-size: 18px;
+  }
+
+  .chair-description {
+    font-size: 17px;
+  }
+  .Recmessage-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+    
+    .message-container {
+    max-width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+    
+    .message-heading1 {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 5px;
+    }
+    
+    .message-heading2 {
+    font-size: 19px;
+    text-align: left;
+    margin-bottom: 14px;
+    }
+    
+    .message-paragraph {
+    font-size: 15px;
+    text-align: justify;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    .bold-Red {
+    font-size: 14px;
+    }
+    
+    .bold-grey {
+    font-size: 14px;
+    }
+}
 

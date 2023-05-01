@@ -1,23 +1,162 @@
-.bold-red {
-    font-weight: bold;
-    color: rgb(73, 69, 69);
+.chairImg-container {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 10%;
+  background: linear-gradient(to right, #640109, #c72727
+  ); 
+}
+
+.chair-image-container {
+  width: 30%;
+}
+
+.chair-image-container img {
+  width: 88%;
+  height: auto;
+}
+
+.chair-info-container {
+  width: 70%;
+  padding-left: 50px;
+}
+
+.chair-name {
+  font-size: 42px;
+  font-weight: bold;
+  color: white; /* set heading color to white */
+  font-family: Georgia, serif;
+
+}
+.chair-description {
+  font-size: 33px;
+  font-weight: bold;
+  color: rgb(255, 255, 255); /* change color as needed */
+  font-family: Georgia, serif;
+
+}
+
+
+.bold-grey {
+  color: rgb(90, 90, 90);
+  font-weight: bold;
+  font-size: 18px;
+}
+.Qecmessage-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(224, 224, 224);
+}
+
+.Qecmessage-text h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.Qecmessage-section {
+  background-color: #f8f8f8ec;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  animation: heading 1s ease-in-out;
+}
+
+.message-container {
+  max-width: 80%;
+  margin-left: 10%;
+  margin-right: auto;
+}
+
+.Qecmessage-heading1 {
+  font-size: 38px;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(138, 10, 10);
+  margin-bottom: 2px;
+  position: relative;
+  font-family: Georgia, serif;
+}
+.Qecmessage-heading2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(138, 10, 10);
+  margin-bottom: 20px;
+  position: relative;
+  font-family: Georgia, serif;
+}
+.Qecmessage-paragraph {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 115%;
+  color: rgb(80, 80, 80);
+  font-family: Georgia, serif;
+
+}
+@media (max-width: 767px) {
+  .chairImg-container {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 5%;
+    padding-bottom: 30px;
   }
 
-  .Greenred-underline {
-    width: 18%;
-    height: 4px;
-    background-color: #085014;
-    position: absolute;
-    top: 648px; /* Adjust the top value to position the red line correctly */
-    left: 20%; /* Position the red line at the center of the heading */
- 
+  .chair-image-container {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
-  .Qecmessage-heading1 {
-    font-size: 45px;
-    font-weight: bold;
+  .chair-image-container img {
+    width: 100%;
+    max-height: 370px; /* Set a maximum height for the image */
+
+  }
+  .chair-info-container {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .chair-name {
+    font-size: 18px;
+  }
+
+  .chair-description {
+    font-size: 17px;
+  }
+  .Recmessage-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+    
+    .Qecmessage-container {
+    max-width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+    
+    .Qecmessage-heading1 {
+    font-size: 20px;
     text-align: left;
-    color: rgb(138, 10, 10);
-    margin-bottom: 28px;
-    position: relative;
-  }
+    margin-bottom: 5px;
+    }
+    
+    .Qecmessage-heading2 {
+    font-size: 19px;
+    text-align: left;
+    margin-bottom: 14px;
+    }
+    
+    .Qecmessage-paragraph {
+    font-size: 15px;
+    text-align: justify;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    .bold-grey {
+    font-size: 14px;
+    }
+}
+

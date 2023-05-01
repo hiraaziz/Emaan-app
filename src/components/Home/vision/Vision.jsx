@@ -16,7 +16,7 @@ const Vision = () => {
           Welcome To{" "}
           <p className="font-black text-5xl text-maroon">Emaan Institute</p>
         </h1>
-        <p className="font-normal  w-900">
+        <p className="font-normal  w-900 text-justify">
           EMAAN INSTITUTE OF MANAGEMENT & SCIENCES (EIMS) has been established
           via Sindh Act No: XXXV of 2018 and recognized by HEC (Higher Education
           Commission) as Degree Awarding Institute. EMAAN INSTITUTE OF
@@ -39,7 +39,7 @@ const Vision = () => {
             <BsEye className="w-14 h-14" />
             <h1 className="font-extrabold text-3xl">OUR VISION</h1>
           </div>
-          <p className="font-normal">
+          <p className="font-normal text-justify">
             Provide superior undergraduate and graduate programs that are
             technology-enriched and responsive to the needs of students and the
             evolving workplace. Prepare young people to find their place in the
@@ -52,7 +52,7 @@ const Vision = () => {
             <CiTrophy className="w-14 h-14" />
             <h1 className="font-extrabold text-3xl">OUR MISSION</h1>
           </div>
-          <p className="font-normal">
+          <p className="font-normal text-justify">
             We believe that curiosity is at the heart of every academic pursuit.
             A desire to learn, the courage to question and a passion for
             discovery are present in everything we do. We encourage students to

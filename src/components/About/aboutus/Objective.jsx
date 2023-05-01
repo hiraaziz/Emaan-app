@@ -25,7 +25,7 @@ const Objective = () => {
 
   return (
     <div className="objective-container" ref={objectiveRef}>
-    <h2 className="objective-heading">Our Objectives</h2>
+    <h2 className="objective-heading">OUR OBJECTIVES</h2>
     <ul className="objective-list">
       <li>To explore the frontiers of knowledge through independent research, as well as in collaboration with other entities in business or education having similar goals. To establish a ‘Research & Development’ Centre which explores the secrets of triumph in every arena of life.</li>
       <li>To prepare students in order to cater to national and international organizational requirements and build leaders of tomorrow who have the ability to think laterally critically and tolerate cultural, social, linguistic, ethnic, religious and racial differences.</li>

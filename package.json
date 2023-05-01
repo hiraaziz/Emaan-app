@@ -11,17 +11,13 @@
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.13",
     "framer-motion": "^10.8.5",
-<<<<<<< HEAD
-    "install": "^0.13.0",
-    "npm": "^9.6.4",
-=======
     "leaflet": "^1.9.3",
->>>>>>> b82b8b21ad1fb07f3c7fc4d83dd6fda8d9d5e7fb
     "pdfjs-dist": "^3.4.120",
     "postcss": "^8.4.21",
     "react": "^18.2.0",
-    "react-alice-carousel": "^2.7.0",
+    "react-alice-carousel": "^2.7.1",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
     "react-intersection-observer": "^9.4.3",
     "react-leaflet": "^4.2.1",
     "react-modal": "^3.16.1",
