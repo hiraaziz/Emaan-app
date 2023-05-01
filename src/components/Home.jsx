@@ -6,6 +6,8 @@ import Navbar from "./Home/navigationBar/Navbar";
 import Programs from "./Home/programs/Programs";
 import Topheader from "./Home/topHeader/Topheader";
 import Vision from "./Home/vision/Vision";
+import News from "./Home/News/News";
+import About from "./Home/Aboutus/About";
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
       <Navbar />
       <Banner />
       <Vision />
+      <News/>
+      <About/>
       <Programs />
       <Footer />
     </div>
