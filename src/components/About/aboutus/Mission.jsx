@@ -1,44 +1,29 @@
-import React from "react";
-import { BsEye } from "react-icons/bs";
-import { CiTrophy } from "react-icons/ci";
-import { motion } from "framer-motion";
+import React from 'react'
+import './Mission.css'
 
-const Mision = () => {
+const Mission = () => {
   return (
-    <section className="flex flex-col items-center justify-between min-h-full md:flex-row md:justify-center md:items-center w-full py-20">
-      <div className="flex flex-col justify-center w-full md:w-400 px-8 border-r-2 border-red-800">
-        <div className="flex items-center space-x-6 text-maroon">
-          <BsEye className="w-14 h-14" />
-          <h1 className="font-extrabold text-3xl">OUR VISION</h1>
-        </div>
-        <p className="font-normal">
-          We believe that curiosity is at the heart of every academic pursuit.
-          A desire to learn, the courage to question and a passion for
-          discovery are present in everything we do. We encourage students to
-          dream, to think critically, creatively, and insightfully, and we
-          engage in their own lives, their communities, and the world.
-        </p>
+    <div className="AboutMission-container">
+      <div className="Mission-image-container">
+        <img src={process.env.PUBLIC_URL + '/mission.jpg'} alt="Mission Image" />
       </div>
-      <div className="flex flex-col w-full md:w-400 px-8 space-y-8">
-        <div className="flex flex-col">
-          <div className="flex items-center space-x-6 text-maroon">
-            <CiTrophy className="w-14 h-14" />
-            <h1 className="font-extrabold text-3xl">OUR MISSION</h1>
-          </div>
-          <p className="font-normal">
-            We believe that curiosity is at the heart of every academic pursuit.
+      <div className="Mission-message-container">
+        <h2 className="Mission-message-heading">OUR MISSION</h2>
+        <p className="Mission-message-paragraph">We believe that curiosity is at the heart of every academic pursuit.
             A desire to learn, the courage to question and a passion for
             discovery are present in everything we do. We encourage students to
             dream, to think critically, creatively, and insightfully, and we
-            engage in their own lives, their communities, and the world.
-          </p>
-        </div>
+            engage in their own lives, their communities, and the world.</p>
       </div>
-    </section>
-  );
-};
+    </div>
 
+    
 
-export default Mision;
+    
+  )
+}
+
+export default Mission
+
 
 

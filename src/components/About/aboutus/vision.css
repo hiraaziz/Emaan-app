@@ -1,38 +1,35 @@
-.AboutMission-container {
+.AboutVision-container {
     display: flex;
     align-items: center;
-    margin-bottom: 8%;
   }
   
-  .Mission-image-container {
-    width: 48%;
-    margin-left: 6%;
-
+  .Vision-image-container {
+    width: 42%;
+    margin-left: 5%;
   }
   
   .Mission-image-container img {
     max-width: 100%;
-
   }
   
-  .Mission-message-container {
-   width: 40%; /* Decrease the width to 40% */
-  padding: 0 20px;
+  .Vision-message-container {
+    width: 40%; /* Decrease the width to 40% */
+    padding: 0 20px;
+    margin-left: 8%;
   }
   
-  .Mission-message-container h2 {
+  .Vision-message-container h2 {
     font-size: 2.3rem;
     margin-bottom: 10px;
     color: rgb(114, 0, 0);
     font-weight: 700;
     font-family: Georgia, serif;
-
   }
   
-  .Mission-message-container p {
+  .Vision-message-container p {
     font-size: 19px;
     text-align: justify;
     text-justify: inter-word;
     font-family: Georgia, serif;
-}
-
+  }
+  

@@ -9,9 +9,10 @@
 .event-heading {
   color: #fff;
   font-size: 50px;
-  font-weight: 500;
   margin-top: 0;
   margin-bottom: 5%;
+  font-family: Ogg Regular;
+  font-weight: 600;
 }
 
 .image-container {
@@ -32,4 +33,24 @@
 
 .image-container img:hover, .image-container img:active {
   transform: scale(1.4);
+}
+@media (max-width: 767px) {
+  .event-heading {
+    font-size: 35px;
+  }
+  
+  .event-container {
+    margin-top: -16%;
+  }
+  .image-container {
+    margin-top: -2px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image-container img {
+    width: 45%;
+    margin: 0 7px;
+    margin-bottom: 10px;
+  }
 }

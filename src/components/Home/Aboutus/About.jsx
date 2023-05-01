@@ -17,7 +17,7 @@ const About = () => {
     <div className="table-container">
       <div className="left">
         <div className="row" onClick={handleAboutClick}>
-          <p>About IU</p>
+        <p>About EIMS</p>
         </div>
         <div className="row" onClick={handleMissionClick}>
           <p>Mission</p>
