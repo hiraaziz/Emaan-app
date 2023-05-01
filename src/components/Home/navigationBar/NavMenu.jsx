@@ -21,11 +21,19 @@ const NavMenu = () => {
           link: "/aboutus",
         },
         {
+
           label: "Chairmen Message",
           link: "/message",
         },
         {
           label: "Rector Message",
+
+          label: "Vision, Mission, Objectives",
+          link: "/",
+        },
+        {
+          label: "Rector Messages",
+
           link: "/rectormessages",
         },
         {
@@ -37,11 +45,19 @@ const NavMenu = () => {
           link: "/",
         },
         {
+
           label: "Board of Governors",
           link: "/",
         },
         {
           label: "Academic Council",
+
+          label: "Board of Governce",
+          link: "/",
+        },
+        {
+          label: "Acadamic Council",
+
           link: "/",
         },
         {
