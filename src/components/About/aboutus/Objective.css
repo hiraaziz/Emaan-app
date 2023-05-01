@@ -38,9 +38,11 @@
   font-weight: bold;
   text-align: left;
   margin-left: 8%; /* Add margin-left to match list margin */
-  color: #9c1414;
+  color: #810000;
   top: 60px;
   position: relative;
+  font-family: Ogg Regular;
+
 }
 
 .objective-list li {

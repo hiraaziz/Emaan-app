@@ -1,9 +1,11 @@
 import React, { useRef, useEffect } from "react";
-import Navbar from "../../Home/navigationBar/Navbar";
 import Footer from "../../Home/footer/Footer";
 import Middlebar from "../../Home/middleBar/Middlebar";
 import Topheader from "../../Home/topHeader/Topheader";
+import Recimg from "../../About/Rector/assests/rector.jpg";
+
 import "./Rector.css";
+import NavMenu from "../../Home/navigationBar/NavMenu";
 
 const Rector = () => {
   const RecRef = useRef(null);
@@ -22,20 +24,21 @@ const Rector = () => {
     <div>
       <Topheader />
       <Middlebar />
-      <Navbar />
+      <NavMenu />
 
-      <div className="recHead-container">
-        <header className="rector-header">
-          <div className="rector-text">
-            <h1>Rector Message</h1>
-          </div>
-        </header>
+      <div className="RecImg-container">
+        <div className="Rector-image-container">
+          <img src={Recimg} alt="Rector" />
+        </div>
+        <div className="rector-info-container">
+          <div className="rector-name">Professor Dr. Nasir U Din Khan</div>
+          <div className="rector-description">Rector, EIMS</div>
+        </div>
       </div>
 
       <section class="Recmessage-section">
         <div class="Recmessage-container" ref={RecRef}>
           <h2 class="Recmessage-heading1">RECTOR MESSAGE:</h2>
-          <div class="Recred-underline"></div>
           <h3 class="Recmessage-heading2">Prof: Dr. Nasir U Din Khan:</h3>
           <div class="Recmessage-paragraph">
             <div class="bold-Red">Dear Students,</div>
@@ -87,7 +90,6 @@ const Rector = () => {
             </div>
           </div>
         </div>
-       
       </section>
 
       <Footer />

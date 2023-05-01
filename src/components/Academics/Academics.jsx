@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../Home/footer/Footer";
 import Middlebar from "../Home/middleBar/Middlebar";
-import Navbar from "../Home/navigationBar/Navbar";
+import NavMenu from "../Home/navigationBar/NavMenu";
 import Topheader from "../Home/topHeader/Topheader";
 
 const Academics = () => {
@@ -9,7 +9,7 @@ const Academics = () => {
     <div>
       <Topheader />
       <Middlebar />
-      <Navbar />
+      <NavMenu />
       Academics
       <Footer />
     </div>

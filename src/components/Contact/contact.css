@@ -1,0 +1,236 @@
+.contact-header {
+  background-image: url('../../../public/contact.jpg');
+  background-color: rgba(255, 255, 255, 0.925); /* black with 50% opacity */
+  background-blend-mode: multiply; /* blend background image with black */
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  padding: 50px;
+  height: 400px;
+  text-align: center;
+}
+
+.contact-heading {
+  color: #910202;
+  font-weight: 540;
+  font-size: 2.8rem;
+  margin-top: 5%;
+  text-transform: uppercase;
+}
+.contact-info-container {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to bottom, #f8f8f8, #f8f1f1);
+  padding: 74px;
+  margin-top: -9%; /* move the container up by 50 pixels */
+  max-width: 82%; /* decrease the maximum width to 80% */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18%;
+  border-radius: 25px;
+}
+.contact-info-item p {
+  text-align: center; /* Add this line to center the paragraph */
+  margin-top: 10px;
+  line-height: 1;
+  font-size: 20px;
+  color: rgb(94, 94, 94);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contact-info-item h2 {
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 2px;
+  color: #910202;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px; /* set the minimum height as required */
+  margin-top: -8%;
+  margin-bottom: 10%;
+}
+
+.map-column {
+  flex: 1;
+  margin-left: 140px; /* adjust the margin as required */
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 70px; /* adjust the margin as required */
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 88%;
+  padding: 10px;
+  margin-bottom: 30px; /* add some margin between the input fields */
+  border: none;
+  border-radius: 5px;
+  outline: 1px solid #940000; /* add this line to change the outline color */
+  margin-top: -10px; /* adjust the margin-top value as required */
+}
+textarea {
+  width: 88%;
+  height: 170px; /* set the height to 200px or any value you prefer */
+  padding: 10px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  outline: 1px solid #b10000;
+  margin-top: -10px;
+}
+
+button[type="submit"] {
+  padding: 11px;
+  width: 88%;
+  border: none;
+  border-radius: 5px;
+  background-color: #920505;
+  color: white;
+  font-weight: bold;
+  margin-right: -9%;
+  margin-top: -18px;
+}
+.Map-heading {
+  font-size: 37px;
+  font-weight: bold;
+  color: #990101;
+  margin-bottom: 20px;
+  margin-left: 15%;
+}
+.form-heading {
+  font-size: 37px;
+  font-weight: bold;
+  color: #990101;
+  margin-bottom: 26px; /* add some margin between the form heading and the form */
+  margin-left: -20%;
+}
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  .contact-header {
+    padding: 20px;
+    height: 100px;
+  }
+  
+  .contact-heading {
+    font-size: 1.2rem;
+    
+  }
+
+.contact-info-container {
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 0%;
+max-width: 100%;
+padding: 30px;
+border-radius: 0;
+}
+
+.contact-info-item {
+margin-bottom: 30px;
+text-align: center;
+}
+
+.contact-info-item h2 {
+font-weight: bold;
+color: #700000;
+font-size: 22px;
+margin-bottom: 10px;
+}
+
+.contact-info-item p {
+color: rgb(94, 94, 94);
+font-size: 17px;
+line-height: 1;
+font-family: "product-sans-regular";
+}
+
+.contact-info-item.mail p:first-child,
+.contact-info-item.phone p:first-child,
+.contact-info-item.address p:first-child {
+display: none;
+}
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    margin-top: -8%;
+    margin-bottom: 10%;
+  }
+  
+  .map-column {
+    width: 99%;
+    margin-left: 5%;
+    margin-right: auto;
+  }
+  
+  .form-column {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 16%;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    outline: 1px solid #940000;
+    font-size: 16px; /* make the font size slightly smaller */
+  }
+  
+  textarea {
+    height: 170px;
+  }
+  
+  button[type="submit"] {
+    padding: 9px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    background-color: #920505;
+    color: white;
+    font-weight: bold;
+    margin-top: -8px;
+    margin-left: 13%;
+    font-size: 17px; /* make the font size slightly larger */
+  }
+  
+  .Map-heading {
+    font-size: 23px;
+    font-weight: bold;
+    color: #860707;
+    margin-bottom: 20px;
+    margin-left: 20%;
+
+  }
+  
+  .form-heading {
+    font-size: 23px;
+    font-weight: bold;
+    color: #860707;
+    margin-bottom: 26px;
+    margin-left: -5%;
+  }
+}

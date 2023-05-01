@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../Home/footer/Footer";
 import Middlebar from "../../Home/middleBar/Middlebar";
-import Navbar from "../../Home/navigationBar/Navbar";
+import NavMenu from "../../Home/navigationBar/NavMenu";
 import Topheader from "../../Home/topHeader/Topheader";
 import styles from "./styles.module.css";
 import { motion } from "framer-motion";
@@ -11,7 +11,7 @@ const FeeStructure = () => {
     <>
       <Topheader />
       <Middlebar />
-      <Navbar />
+      <NavMenu />
       <section
         className="flex flex-col justify-start items-center w-full  lg:h-fit
       mt-20 text-center mb-[200px] md:mb-[150px] "

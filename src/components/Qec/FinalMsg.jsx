@@ -1,31 +1,34 @@
 import React from "react";
-import Navbar from "../Home/navigationBar/Navbar";
 import Footer from "../Home/footer/Footer";
 import Middlebar from "../Home/middleBar/Middlebar";
 import Topheader from "../Home/topHeader/Topheader";
 import "./FinalMsg.css";
+import NavMenu from "../Home/navigationBar/NavMenu";
 
 const FinalMsg = () => {
   return (
     <div>
       <Topheader />
       <Middlebar />
-      <Navbar />
+      <NavMenu />
 
-      <div className="messHead-container">
-        <header className="message-header">
-          <div className="message-text">
-            <h1>Final Message Director</h1>
+      <div className="chairImg-container">
+        <div className="chair-image-container">
+          <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
+        </div>
+        <div className="chair-info-container">
+          <div className="chair-name">Saleem Raza Bhatti (Ph.D.)</div>
+          <div className="chair-description">
+            Director Quality Enhancement Cell
           </div>
-        </header>
+        </div>
       </div>
 
       <section class="message-section">
         <div class="message-container">
           <h2 class="Qecmessage-heading1">DIRECTOR (QEC) MESSAGE:</h2>
-          <div class="Greenred-underline"></div>
-          <h3 class="message-heading2">Saleem Raza Bhatti (Ph.D.)</h3>
-          <p class="message-paragraph">
+          <h3 class="Qecmessage-heading2">Saleem Raza Bhatti (Ph.D.)</h3>
+          <p class="Qecmessage-paragraph">
             "Education is the basis of progress, and innovative. Quality
             education is the key to unlocking our full potential as individuals
             and as a society. Through education, we learn new skills, enhance
@@ -51,30 +54,29 @@ const FinalMsg = () => {
             going beyond the traditional classroom and finding new and creative
             ways to engage students in the learning process. <br />
             My message is to inspire and encourage{" "}
-            <span class="light-red">innovative education </span>.
-            Innovative education is about empowering students to think outside
-            the box and challenge the status quo. Let's create a learning
-            environment that inspires creativity and curiosity!" "The future
-            belongs to those who can adapt and innovate. Let's equip our
-            students with the skills and knowledge they need to succeed in the
-            21st century." "Innovative education is not just about technology or
-            implements, it's about creating meaningful learning experiences that
-            prepare students for real-world challenges and opportunities."
-            "Let's embrace the power of collaboration, critical thinking, and
-            problem-solving to foster a culture of innovation in our
-            Institutions "Innovative education is about meeting students where
-            we are helping them to discover their full potential. Let's create
-            personalized learning pathways that cater to each student's unique
-            interests and abilities." Remember, innovation starts with a
-            willingness to experiment and take risks. Let's inspire the next
-            generation of learners to dream big and push the boundaries of
-            what's possible!<br></br>
-            <span className="bold-red">Saleem Raza Bhatti (Ph.D.)</span> <br />
-            <span className="bold-red">
+            <span class="light-red">innovative education </span>. Innovative
+            education is about empowering students to think outside the box and
+            challenge the status quo. Let's create a learning environment that
+            inspires creativity and curiosity!" "The future belongs to those who
+            can adapt and innovate. Let's equip our students with the skills and
+            knowledge they need to succeed in the 21st century." "Innovative
+            education is not just about technology or implements, it's about
+            creating meaningful learning experiences that prepare students for
+            real-world challenges and opportunities." "Let's embrace the power
+            of collaboration, critical thinking, and problem-solving to foster a
+            culture of innovation in our Institutions "Innovative education is
+            about meeting students where we are helping them to discover their
+            full potential. Let's create personalized learning pathways that
+            cater to each student's unique interests and abilities." Remember,
+            innovation starts with a willingness to experiment and take risks.
+            Let's inspire the next generation of learners to dream big and push
+            the boundaries of what's possible!<br></br>
+            <span className="bold-grey">Saleem Raza Bhatti (Ph.D.)</span> <br />
+            <span className="bold-grey">
               Director Quality Enhancement Cell
             </span>{" "}
             <br />
-            <span className="bold-red">
+            <span className="bold-grey">
               Emaan Institute of Management & Sciences Karachi.
             </span>
           </p>

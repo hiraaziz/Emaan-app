@@ -1,36 +1,5 @@
-.recHead-container {
-  display: flex;
-  justify-content: center;
-}
-
-.rector-header {
-  background-image: url("../aboutus/assests/mess.jpeg");
-  background-color: rgba(0, 0, 0, 0.925); /* black with 50% opacity */
-  background-blend-mode: multiply; /* blend background image with black */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-  position: relative;
-}
-.rector-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: rgb(224, 224, 224);
-  font-size: 300%;
-}
-
-.Recmessage-text h1 {
-  font-size: 50px;
-  margin-bottom: 0;
-}
-
 .Recmessage-section {
-  background-color: #f3f3f3;
+  background-color: #f8f8f8ec;
   padding-top: 80px;
   padding-bottom: 80px;
   transition: opacity 1s ease-out, transform 1s ease-out;
@@ -48,22 +17,22 @@
 }
 
 .Recmessage-heading1 {
-  font-size: 50px;
+  font-size: 43px;
   font-weight: bold;
   text-align: left;
   color: rgb(138, 10, 10);
-  margin-bottom: 28px;
+  margin-bottom: 2px;
   position: relative;
-  animation: slide-in 1s ease-in-out; /* Add slide-in animation with 1 second duration */
-
+  font-family: Georgia, serif;
 }
 .Recmessage-heading2 {
-  font-size: 33px;
+  font-size: 28px;
   font-weight: bold;
   text-align: left;
   color: rgb(138, 10, 10);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   position: relative;
+  font-family: Georgia, serif;
 
 }
 .bold-Red {
@@ -76,7 +45,6 @@
   color: rgb(66, 66, 66);
   font-weight: bold;
   font-size: 110%;
-
 }
 .light-red {
   color: rgb(180, 8, 8);
@@ -84,49 +52,116 @@
 .Recmessage-paragraph {
   text-align: justify;
   text-justify: inter-word;
-  font-size: 110%;
-
-}
-.Recred-underline {
-  width: 15%;
-  height: 4px;
-  background-color: #085014;
-  position: absolute;
-  top: 649px; /* Adjust the top value to position the red line correctly */
-  left: 24%; /* Position the red line at the center of the heading */
-  animation: underline 2s ease-in-out infinite;
-  transform: translateX(-50%); /* Center the red line horizontally */
+  font-size: 115%;
+  color: rgb(80, 80, 80);
+  font-family: Georgia, serif;
 }
 
+.RecImg-container {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 10%;
+  background: linear-gradient(
+    to right,
+    #640109,
+    #c72727
+  ); /* set the background to a gradient of two colors */
+}
 
-@keyframes underline {
-  0% {
-    transform: translateX(-50%) scaleX(0); /* Start with no width */
-  }
-  50% {
-    transform: translateX(-50%) scaleX(1.2); /* Scale up to a little larger than the original width */
-  }
-  100% {
-    transform: translateX(-50%) scaleX(0); /* End with no width again */
-  }
+.Rector-image-container {
+  width: 30%;
 }
-@keyframes heading {
-  0% {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+
+.Rector-image-container img {
+  width: 88%;
+  height: auto;
 }
-@keyframes slide-in {
-  from {
-    transform: translateX(-20%); /* Move the element from left to right */
-    opacity: 0; /* Start with 0 opacity */
+
+.rector-info-container {
+  width: 70%;
+  padding-left: 50px;
+}
+
+.rector-name {
+  font-size: 40px;
+  font-weight: bold;
+  color: white; /* set heading color to white */
+  font-family: Georgia, serif;
+
+}
+.rector-description {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(255, 255, 255); /* change color as needed */
+  font-family: Georgia, serif;
+
+}
+@media (max-width: 767px) {
+  .RecImg-container {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 5%;
+    padding-bottom: 30px;
   }
-  to {
-    transform: translateX(0); /* Move the element to its original position */
-    opacity: 1; /* End with 100% opacity */
+
+  .Rector-image-container {
+    width: 100%;
+    margin-bottom: 20px;
   }
+
+  .Rector-image-container img {
+    width: 100%;
+    max-height: 370px; /* Set a maximum height for the image */
+
+  }
+  .rector-info-container {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .rector-name {
+    font-size: 18px;
+  }
+
+  .rector-description {
+    font-size: 17px;
+  }
+  .Recmessage-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+    
+    .Recmessage-container {
+    max-width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+    
+    .Recmessage-heading1 {
+    font-size: 27px;
+    text-align: left;
+    margin-bottom: 5px;
+    }
+    
+    .Recmessage-heading2 {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 14px;
+    }
+    
+    .Recmessage-paragraph {
+    font-size: 15px;
+    text-align: justify;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    .bold-Red {
+    font-size: 14px;
+    }
+    
+    .bold-grey {
+    font-size: 14px;
+    }
 }

@@ -1,34 +1,37 @@
 .table-container {
   display: flex;
   width: 100%;
-  height: 400px;
-  margin-top: 4%;
+  height: 450px;
+  margin-top: 7%;
   margin-bottom: 11%;
-
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .left {
   display: flex;
   flex-direction: column;
-  min-width: 21%;
+  min-width: 22%;
   background-color: #f0f0f0;
 }
 
 .row {
   padding: 40px;
-  line-height: 6rem; /* Add line-height to move the font down */
+  line-height: 8rem; /* Add line-height to move the font down */
   cursor: pointer;
   height: 50%;
   background-color: #800000; /* set background color to dark red */
   color: #fff; /* set font color to white */
-  font-size: 26px;
+  font-size: 30px;
   text-align: center;
+  font-weight: 800;
+  font-family: Georgia, serif;
 }
 
 .row:hover {
   background-color: #cc3333;
   transition: background-color 0.3s ease;
+  width: 47%;
+  font-family: Georgia, serif;
 }
 
 .row:first-child:hover,
@@ -46,15 +49,17 @@
 
 .table-about-heading {
   color: #800000;
-  font-size: 35px;
+  font-size: 38px;
   margin: 30px;
   font-weight: bold;
+  font-family: Georgia, serif;
+
 }
 
 .table-about-paragraph {
   color: #6b6b6b;
-  font-size: 16px;
-  line-height: 2;
+  font-size: 18px;
+  line-height: 1.7;
   margin: 30px;
   padding-bottom: 20px;
 }
@@ -96,4 +101,56 @@
 img {
   max-width: 104.1%;
   height: 105%;
+}
+@media only screen and (max-width: 767px) {
+  .table-container {
+    flex-direction: column;
+    height: auto;
+    margin-top: 30%;
+    margin-bottom: 5%;
+  }
+
+  .left {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .middle {
+    width: 100%;
+  }
+  .table-about-heading {
+    color: #800000;
+    font-size: 30px;
+    margin: 30px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+  
+  }
+  
+  .table-about-paragraph {
+    color: #6b6b6b;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 30px;
+    text-align: justify;
+    padding-bottom: 20px;
+    word-spacing: -2px; /* adjust this value as needed */
+
+  }
+  
+
+  .right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .row {
+    line-height: 6rem;
+    height: auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
