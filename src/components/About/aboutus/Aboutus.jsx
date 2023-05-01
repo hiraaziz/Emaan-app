@@ -2,12 +2,11 @@ import React, { useRef, useEffect } from "react";
 import Mission from "./Mission"; // import the Mission component
 import Vision from "./Vision";
 import Objective from "./Objective";
-
-import Navbar from "../../Home/navigationBar/Navbar";
 import Footer from "../../Home/footer/Footer";
 import Middlebar from "../../Home/middleBar/Middlebar";
 import Topheader from "../../Home/topHeader/Topheader";
 import "./AboutUs.css";
+import NavMenu from "../../Home/navigationBar/NavMenu";
 
 const Aboutus = () => {
   const welcomeSectionRef = useRef(null);
@@ -41,7 +40,7 @@ const Aboutus = () => {
     <div>
       <Topheader />
       <Middlebar />
-      <Navbar />
+      <NavMenu />
 
       <div class="about-container">
         <h1 class="about-heading">ABOUT E I M S</h1>
@@ -82,23 +81,31 @@ const Aboutus = () => {
         </div>
       </section>
       <section class="recognized-section">
-  <div class="recognized-container">
-    <div class="recognized-heading-container">
-      <h2 class="recognized-heading">Chartered by Government of Sindh,<br>
-      </br> RECOGNIZED BY HEC (HIGHER EDUCATION COMMISSION)</h2>
-    </div>
-    <div class="recognized-images-container">
-    <img src={process.env.PUBLIC_URL + '/chartered.png'} alt="Image 1" class="chartered" />
-    <img src={process.env.PUBLIC_URL + '/hec.png'} alt="Image 2" class="hec" />
-
-    </div>
-  </div>
-</section>
-
+        <div class="recognized-container">
+          <div class="recognized-heading-container">
+            <h2 class="recognized-heading">
+              Chartered by Government of Sindh,<br></br> RECOGNIZED BY HEC
+              (HIGHER EDUCATION COMMISSION)
+            </h2>
+          </div>
+          <div class="recognized-images-container">
+            <img
+              src={process.env.PUBLIC_URL + "/chartered.png"}
+              alt="Image 1"
+              class="chartered"
+            />
+            <img
+              src={process.env.PUBLIC_URL + "/hec.png"}
+              alt="Image 2"
+              class="hec"
+            />
+          </div>
+        </div>
+      </section>
 
       {/* Render the Mission component */}
       <Mission />
-      <Vision/>
+      <Vision />
       <Objective />
 
       <Footer />
