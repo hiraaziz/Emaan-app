@@ -38,6 +38,9 @@ import Cs from './components/Department/bachleorComputerScience/Cs';
 import Bba from './components/Department/bachelorBusinessAdministration/Bba';
 
 import SeminarsandWorkshop, { Seminars } from './components/Research/ORIC/Seminars/SeminarsandWorkshop';
+import CRP from './components/Research/ORIC/Research Reward/CRP.Js';
+import JournalsResearch from './components/Research/Journals/JournalsResearch';
+import EJMS from './components/Research/Journals/EJMS';
 
 import { Commerce } from './components/Department/commerce/Commerce';
 import { Database } from './components/Department/database/Database';
@@ -88,7 +91,9 @@ function App() {
         <Route path="/researchgrands3" element={<Researchgrands3/>}/>
         <Route path="/researchgrands4" element={<Researchgrands4/>}/>
         <Route path="/Seminars" element={<SeminarsandWorkshop/>}/>
-     
+        <Route path="/crp" element={<CRP/>}/>
+        <Route path='/journals' element={<JournalsResearch/>}/>
+        <Route path='/ejms' element={<EJMS/>}/>
       </Routes>
       </BrowserRouter>
     </div>
