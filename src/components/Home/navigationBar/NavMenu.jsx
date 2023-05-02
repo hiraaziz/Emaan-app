@@ -279,7 +279,7 @@ const NavMenu = () => {
 
   return (
     <nav className="bg-maroon w-full h-16 flex-shrink flex justify-center list-none">
-      <ul className=" hidden md:flex justify-evenly w-[90%] m-auto">
+      <ul className=" hidden lg:flex justify-evenly w-[90%] m-auto">
         <button className="text-white px-3 py-2 ">Home</button>
         {menu.map((item, i) => (
           <li key={i} className="relative">
