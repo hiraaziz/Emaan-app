@@ -21,6 +21,7 @@ const NavMenu = () => {
           link: "/aboutus",
         },
         {
+
           label: "Chairmen Message",
           link: "/message",
         },
@@ -44,6 +45,7 @@ const NavMenu = () => {
           link: "/",
         },
         {
+
           label: "Board of Governors",
           link: "/",
         },
@@ -184,51 +186,15 @@ const NavMenu = () => {
       link: "/",
       dropdownItems: [
         {
-          label: "ORIC",
-          link: "/oric",
+          label: "Sub Item 4.1",
           hasSubDropdowns: true,
           subDropdownItems: [
-            {
-              label: "Research grants",
-              link: "/",
-              hasSubDropdowns: true,
-              subDropdownItems: [
-                {
-                  label:
-                    "grant for research fellowship abroad / national universities",
-                  link: "/",
-                  label: "research publications",
-                  link: "/",
-                  label: "grant proposals",
-                  link: "/",
-                  label: "resource developement initiative grants",
-                  link: "/",
-                  label: "faculty / student / alumni research grant proposals",
-                  link: "/",
-                  label: "EIMS conference workshop grant program",
-                  link: "/",
-                },
-              ],
-            },
-            {
-              label: "Research Rewards",
-              link: "/",
-              hasSubDropdowns: true,
-              dropdownItems: [
-                {
-                  label: "citation reward program form",
-                  link: "/",
-                },
-              ],
-            },
-            { label: "research support program", link: "/" },
-            { label: "faculty research information form", link: "/" },
-            { label: "research support initiative", link: "/" },
-            { label: "workshop", link: "/" },
+            { label: "Sub Sub Item 4.1.1" },
+            { label: "Sub Sub Item 4.1.2" },
           ],
         },
-        { label: "Journals", link: "/" },
-        { label: "Conferences", link: "/" },
+        { label: "Sub Item 4.2" },
+        { label: "Sub Item 4.3" },
       ],
     },
     {
@@ -279,7 +245,7 @@ const NavMenu = () => {
 
   return (
     <nav className="bg-maroon w-full h-16 flex-shrink flex justify-center list-none">
-      <ul className=" hidden lg:flex justify-evenly w-[90%] m-auto">
+      <ul className=" hidden md:flex justify-evenly w-[90%] m-auto">
         <button className="text-white px-3 py-2 ">Home</button>
         {menu.map((item, i) => (
           <li key={i} className="relative">

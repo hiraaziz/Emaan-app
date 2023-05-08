@@ -1,10 +1,10 @@
 import React from 'react'
 import Footer from '../../../Home/footer/Footer';
 import Middlebar from '../../../Home/middleBar/Middlebar';
+import Navbar from '../../../Home/navigationBar/Navbar';
 import Topheader from '../../../Home/topHeader/Topheader';
 import Seminarform from './Seminarform';
 import Workshopform from './Workshopform';
-import NavMenu from '../../../Home/navigationBar/NavMenu';
 // import ReadMore from './ReadMore';
 // import ReadMore1 from './readmore'
 
@@ -15,9 +15,9 @@ export default function SeminarsandWorkshop() {
    <>  
    <Topheader/>
    <Middlebar/>
-   <NavMenu/>
+   <Navbar/>
       <div className=''>   
-           <div className='flex mb-24 mt-10'>
+           <div className='flex mb-28 mt-10'>
             <div className='w-2/3 mx-8 mt-6'>
 
                 <div className='text-5xl my-10  '>EIMS WORKSHOP HOSTED BY ORIC<hr className='w-24 h-1 bg-red-800 mt-3 mx-1'/></div>
@@ -57,7 +57,7 @@ export default function SeminarsandWorkshop() {
               <div className='w-1/3 mt-28 drop-shadow-2xl'><img className='max-w-sm transition duration-300 ease-in-out hover:scale-110' src='EMAAN confrence Grand.jpeg' alt=''/></div>
            </div>  
 
-                         <div className=''> <hr className='w-800 h-1 bg-red-800 mt-1 mx-24 '/></div>
+                         <div className=''> <hr className='w-800 h-2 bg-red-800 mt-1 mx-24 '/></div>
 
 
         <div className=' flex mb-28'> 
@@ -85,7 +85,7 @@ export default function SeminarsandWorkshop() {
                                       <li className='mt-2'>Giving students the opportunity to investigate a topic in-depth and with relevant facts.</li>
                                       <li className='mt-2'>Cultivating a diverse set of communication and intellectual abilities.</li>
                                       <li className='mt-2'>Developing self-esteem and personality.</li>
-                                      <li className='mt-2 mb-4'>Facilitating interaction between students and the speaker.</li>
+                                      <li className='mt-2'>Facilitating interaction between students and the speaker.</li>
                                       
                                     </ul>
                                        

@@ -1,11 +1,11 @@
 import React, { useRef, useEffect } from "react";
+import Navbar from "../../Home/navigationBar/Navbar";
 import Footer from "../../Home/footer/Footer";
 import Middlebar from "../../Home/middleBar/Middlebar";
 import Topheader from "../../Home/topHeader/Topheader";
-import Recimg from "../../About/Rector/assests/rector.jpg";
+import Recimg from '../../About/Rector/assests/rector.jpg';
 
 import "./Rector.css";
-import NavMenu from "../../Home/navigationBar/NavMenu";
 
 const Rector = () => {
   const RecRef = useRef(null);
@@ -24,11 +24,13 @@ const Rector = () => {
     <div>
       <Topheader />
       <Middlebar />
-      <NavMenu />
+      <Navbar />
+
+   
 
       <div className="RecImg-container">
         <div className="Rector-image-container">
-          <img src={Recimg} alt="Rector" />
+        <img src={Recimg} alt="Rector" />
         </div>
         <div className="rector-info-container">
           <div className="rector-name">Professor Dr. Nasir U Din Khan</div>

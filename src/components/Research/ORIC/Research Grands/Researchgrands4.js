@@ -4,7 +4,6 @@ import Middlebar from '../../../Home/middleBar/Middlebar';
 import Navbar from '../../../Home/navigationBar/Navbar';
 import Topheader from '../../../Home/topHeader/Topheader';
 import ReadMore from './ReadMore';
-import NavMenu from '../../../Home/navigationBar/NavMenu';
 // import ReadMore1 from './readmore'
 
 export default function Researchgrands4() {
@@ -14,7 +13,7 @@ export default function Researchgrands4() {
    <>  
    <Topheader/>
    <Middlebar/>
-   <NavMenu/>
+   <Navbar/>
       <div className='flex mb-32'>   
              <div className='w-2/3 mx-8 mt-6'>
                 <div className='text-4xl my-10 font-bold'>EIMS CONFERENCE WORKSHOP GRANT PROGRAM (CWGP)<hr className='w-96 h-2 bg-red-800 mt-5'/></div>

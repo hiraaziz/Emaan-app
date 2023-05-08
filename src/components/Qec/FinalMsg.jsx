@@ -1,26 +1,24 @@
 import React from "react";
+import Navbar from "../Home/navigationBar/Navbar";
 import Footer from "../Home/footer/Footer";
 import Middlebar from "../Home/middleBar/Middlebar";
 import Topheader from "../Home/topHeader/Topheader";
 import "./FinalMsg.css";
-import NavMenu from "../Home/navigationBar/NavMenu";
 
 const FinalMsg = () => {
   return (
     <div>
       <Topheader />
       <Middlebar />
-      <NavMenu />
+      <Navbar />
 
       <div className="chairImg-container">
         <div className="chair-image-container">
-          <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
         </div>
         <div className="chair-info-container">
           <div className="chair-name">Saleem Raza Bhatti (Ph.D.)</div>
-          <div className="chair-description">
-            Director Quality Enhancement Cell
-          </div>
+          <div className="chair-description">Director Quality Enhancement Cell</div>
         </div>
       </div>
 
@@ -54,23 +52,24 @@ const FinalMsg = () => {
             going beyond the traditional classroom and finding new and creative
             ways to engage students in the learning process. <br />
             My message is to inspire and encourage{" "}
-            <span class="light-red">innovative education </span>. Innovative
-            education is about empowering students to think outside the box and
-            challenge the status quo. Let's create a learning environment that
-            inspires creativity and curiosity!" "The future belongs to those who
-            can adapt and innovate. Let's equip our students with the skills and
-            knowledge they need to succeed in the 21st century." "Innovative
-            education is not just about technology or implements, it's about
-            creating meaningful learning experiences that prepare students for
-            real-world challenges and opportunities." "Let's embrace the power
-            of collaboration, critical thinking, and problem-solving to foster a
-            culture of innovation in our Institutions "Innovative education is
-            about meeting students where we are helping them to discover their
-            full potential. Let's create personalized learning pathways that
-            cater to each student's unique interests and abilities." Remember,
-            innovation starts with a willingness to experiment and take risks.
-            Let's inspire the next generation of learners to dream big and push
-            the boundaries of what's possible!<br></br>
+            <span class="light-red">innovative education </span>.
+            Innovative education is about empowering students to think outside
+            the box and challenge the status quo. Let's create a learning
+            environment that inspires creativity and curiosity!" "The future
+            belongs to those who can adapt and innovate. Let's equip our
+            students with the skills and knowledge they need to succeed in the
+            21st century." "Innovative education is not just about technology or
+            implements, it's about creating meaningful learning experiences that
+            prepare students for real-world challenges and opportunities."
+            "Let's embrace the power of collaboration, critical thinking, and
+            problem-solving to foster a culture of innovation in our
+            Institutions "Innovative education is about meeting students where
+            we are helping them to discover their full potential. Let's create
+            personalized learning pathways that cater to each student's unique
+            interests and abilities." Remember, innovation starts with a
+            willingness to experiment and take risks. Let's inspire the next
+            generation of learners to dream big and push the boundaries of
+            what's possible!<br></br>
             <span className="bold-grey">Saleem Raza Bhatti (Ph.D.)</span> <br />
             <span className="bold-grey">
               Director Quality Enhancement Cell

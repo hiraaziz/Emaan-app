@@ -1,21 +1,21 @@
 import React from "react";
+import Navbar from "../../Home/navigationBar/Navbar";
 import Footer from "../../Home/footer/Footer";
 import Middlebar from "../../Home/middleBar/Middlebar";
 import Topheader from "../../Home/topHeader/Topheader";
 
 import "./Message.css";
-import NavMenu from "../../Home/navigationBar/NavMenu";
 
 const Message = () => {
   return (
     <div>
       <Topheader />
       <Middlebar />
-      <NavMenu />
+      <Navbar />
 
       <div className="chairImg-container">
         <div className="chair-image-container">
-          <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
         </div>
         <div className="chair-info-container">
           <div className="chair-name">Dr Raza Mughal</div>
