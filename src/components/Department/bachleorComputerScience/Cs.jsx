@@ -2,18 +2,18 @@ import React from "react";
 import LinksRight from "../LinksRight";
 import Footer from "../../Home/footer/Footer";
 import Middlebar from "../../Home/middleBar/Middlebar";
-import Navbar from "../../Home/navigationBar/Navbar";
 import Topheader from "../../Home/topHeader/Topheader";
 import { motion } from "framer-motion";
 import AccordionCard from "./AccordionCard";
 import { ChakraProvider } from "@chakra-ui/react";
+import NavMenu from "../../Home/navigationBar/NavMenu";
 
 const Cs = () => {
   return (
     <>
       <Topheader />
       <Middlebar />
-      <Navbar />
+      <NavMenu />
       <section className="flex flexcol lg:flex-row w-full mt-20 mb-20">
         <div className="basis-4/5 flex flex-col items-start lg:items-start">
           <motion.h1

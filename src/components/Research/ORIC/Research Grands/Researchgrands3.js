@@ -1,9 +1,9 @@
 import React from 'react'
 import Footer from '../../../Home/footer/Footer';
 import Middlebar from '../../../Home/middleBar/Middlebar';
-import Navbar from '../../../Home/navigationBar/Navbar';
 import Topheader from '../../../Home/topHeader/Topheader';
 import ReadMore from './ReadMore';
+import NavMenu from '../../../Home/navigationBar/NavMenu';
 // import ReadMore1 from './readmore'
 
 export default function Researchgrands3() {
@@ -13,7 +13,7 @@ export default function Researchgrands3() {
    <>  
    <Topheader/>
    <Middlebar/>
-   <Navbar/>
+   <NavMenu/>
       <div className='flex mb-32'>   
              <div className='w-2/3 mx-8 mt-6'>
                 <div className='text-4xl my-10 font-bold'>EIMS FACULTY / STUDENT / ALUMNI RESEARCH GRANT PROPOSAL (ERGP)<hr className='w-96 h-2 bg-red-800 mt-5'/></div>

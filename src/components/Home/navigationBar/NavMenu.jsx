@@ -21,7 +21,6 @@ const NavMenu = () => {
           link: "/aboutus",
         },
         {
-
           label: "Chairmen Message",
           link: "/message",
         },
@@ -45,7 +44,6 @@ const NavMenu = () => {
           link: "/",
         },
         {
-
           label: "Board of Governors",
           link: "/",
         },
@@ -245,7 +243,7 @@ const NavMenu = () => {
 
   return (
     <nav className="bg-maroon w-full h-16 flex-shrink flex justify-center list-none">
-      <ul className=" hidden md:flex justify-evenly w-[90%] m-auto">
+      <ul className=" hidden lg:flex justify-evenly w-[90%] m-auto">
         <button className="text-white px-3 py-2 ">Home</button>
         {menu.map((item, i) => (
           <li key={i} className="relative">
@@ -303,7 +301,7 @@ const NavMenu = () => {
         </Link>
       </ul>
       {/* Mobile view*/}
-      <nav className="flex justify-between items-center w-full md:hidden z-30">
+      <nav className="flex justify-between items-center w-full lg:hidden z-30">
         <img
           src={"./logo.jpeg"}
           alt="logo"

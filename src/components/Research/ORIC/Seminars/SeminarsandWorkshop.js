@@ -1,10 +1,10 @@
 import React from 'react'
 import Footer from '../../../Home/footer/Footer';
 import Middlebar from '../../../Home/middleBar/Middlebar';
-import Navbar from '../../../Home/navigationBar/Navbar';
 import Topheader from '../../../Home/topHeader/Topheader';
 import Seminarform from './Seminarform';
 import Workshopform from './Workshopform';
+import NavMenu from '../../../Home/navigationBar/NavMenu';
 // import ReadMore from './ReadMore';
 // import ReadMore1 from './readmore'
 
@@ -15,7 +15,7 @@ export default function SeminarsandWorkshop() {
    <>  
    <Topheader/>
    <Middlebar/>
-   <Navbar/>
+   <NavMenu/>
       <div className=''>   
            <div className='flex mb-28 mt-10'>
             <div className='w-2/3 mx-8 mt-6'>

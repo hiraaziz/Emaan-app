@@ -1,19 +1,19 @@
 import React from "react";
 import Footer from "../../Home/footer/Footer";
 import Middlebar from "../../Home/middleBar/Middlebar";
-import Navbar from "../../Home/navigationBar/Navbar";
 import Topheader from "../../Home/topHeader/Topheader";
 import { motion } from "framer-motion";
 import { ChakraProvider } from "@chakra-ui/react";
 import AccordionCard from "./AccordionCard";
 import LinksRight from "../LinksRight";
+import NavMenu from "../../Home/navigationBar/NavMenu";
 
 export const Database = () => {
   return (
     <>
       <Topheader />
       <Middlebar />
-      <Navbar />
+      <NavMenu />
       <section className="flex flexcol lg:flex-row w-full mt-20 mb-20">
         <div className="basis-4/5 flex flex-col items-start lg:items-start">
           <motion.h1
