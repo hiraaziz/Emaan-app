@@ -13,7 +13,7 @@ export default function Workshopform() {
   return (
     <>
       <div>
-        <button className=' py-1 px-6 mt-8 mb-5 w-2/3 font-medium rounded-full text-white hover:text-red-900 hover:bg-white hover:border-red-800 bg-red-900 text-2xl border-2' onClick={openForm} >
+        <button className=' py-1 px-6 mt-8 mb-5 w-3/4 font-medium rounded-lg text-white hover:text-red-900 hover:bg-white hover:border-red-800 bg-red-900 text-3xl border-2' onClick={openForm} >
            {isOpen ? 'Registration for Workshop' : 'Registration for Workshop'}
         </button>
 

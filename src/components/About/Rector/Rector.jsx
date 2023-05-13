@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import Navbar from "../../Home/navigationBar/Navbar";
 import Footer from "../../Home/footer/Footer";
 import Middlebar from "../../Home/middleBar/Middlebar";
 import Topheader from "../../Home/topHeader/Topheader";

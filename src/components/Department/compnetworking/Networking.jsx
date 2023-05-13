@@ -1,12 +1,12 @@
 import React from "react";
 import Footer from "../../Home/footer/Footer";
 import Middlebar from "../../Home/middleBar/Middlebar";
-import NavMenu from "../../Home/navigationBar/NavMenu";
 import Topheader from "../../Home/topHeader/Topheader";
 import { motion } from "framer-motion";
 import { ChakraProvider } from "@chakra-ui/react";
 import AccordionCard from "./AccordionCard";
 import LinksRight from "../LinksRight";
+import NavMenu from "../../Home/navigationBar/NavMenu";
 
 export const Networking = () => {
   return (

@@ -9,6 +9,14 @@ import {
   FcCommandLine,
   FcMindMap,
 } from "react-icons/fc";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination } from "swiper";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "./style.css";
 
 const responsive = {
   0: { items: 1 },
@@ -56,7 +64,7 @@ const itemlist = [
 
 const Programs = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-900 mt-20 mb-20 m-auto ">
+    <div className="h-[600px] mb-[120px]  flex flex-col items-center w-[70%] m-auto ">
       <div className="mb-16">
         <motion.div
           initial={{ opacity: 0, x: -80 }}
@@ -68,34 +76,42 @@ const Programs = () => {
         </motion.div>
         <div className="bg-maroon w-48 md:w-96 h-1 ml-4"></div>
       </div>
-      <AliceCarousel
-        mouseTracking
-        autoPlay
-        autoPlayInterval={"3000"}
-        responsive={responsive}
-        controlsStrategy="alternate"
-        setHeight={true}
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        className="mySwiper h-full border-b-4 border-maroon"
       >
         {itemlist.map((item) => (
-          <div
-            className=" w-800 h-96  drop-shadow-xl bg-white flex flex-col justify-start items-center
-          hover:scale-105 transition-all duration-200 overflow-hidden hover:shadow-lg"
-          >
-            <img
-              src={item.img}
-              data-value="1"
-              className="w-full h-60  hover:scale-110 transition-all duration-300"
-            />
-            <div className="flex justify-center items-start space-x-4 pt-8 md:p-10 w-full h-12 ">
-              {item.icon}
-              <div className="flex flex-col w-full justify-center font-medium text-sm tracking-wide">
-                <h1 className="text-sm">{item.courseName}</h1>
-                <h1 className="text-maroon">{item.courseLength}</h1>
+          <SwiperSlide>
+            <div
+              className=" w-[400px] h-[400px]  drop-shadow-xl bg-white flex flex-col justify-start items-center
+           hover:scale-105 transition-all duration-200 overflow-hidden hover:shadow-lg"
+            >
+              <img
+                src={item.img}
+                data-value="1"
+                className="w-full h-60  hover:scale-110 transition-all duration-300"
+              />
+              <div className="flex justify-center items-start space-x-4 pt-8 md:p-10 w-full h-12 ">
+                {item.icon}
+                <div className="flex flex-col w-full justify-center font-medium text-sm tracking-wide">
+                  <h1 className="text-sm">{item.courseName}</h1>
+                  <h1 className="text-maroon">{item.courseLength}</h1>
+                </div>
               </div>
             </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </AliceCarousel>
+      </Swiper>
     </div>
   );
 };

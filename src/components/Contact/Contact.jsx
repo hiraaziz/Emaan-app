@@ -1,9 +1,9 @@
 import React from "react";
 import Footer from "../Home/footer/Footer";
 import Middlebar from "../Home/middleBar/Middlebar";
+import NavMenu from "../Home/navigationBar/NavMenu";
 import Topheader from "../Home/topHeader/Topheader";
 import "./contact.css";
-import NavMenu from "../Home/navigationBar/NavMenu";
 
 const Contact = () => {
   return (

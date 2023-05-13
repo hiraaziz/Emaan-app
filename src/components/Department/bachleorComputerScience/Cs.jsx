@@ -2,11 +2,11 @@ import React from "react";
 import LinksRight from "../LinksRight";
 import Footer from "../../Home/footer/Footer";
 import Middlebar from "../../Home/middleBar/Middlebar";
-import NavMenu from "../../Home/navigationBar/NavMenu";
 import Topheader from "../../Home/topHeader/Topheader";
 import { motion } from "framer-motion";
 import AccordionCard from "./AccordionCard";
 import { ChakraProvider } from "@chakra-ui/react";
+import NavMenu from "../../Home/navigationBar/NavMenu";
 
 const Cs = () => {
   return (
