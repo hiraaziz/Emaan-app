@@ -1,11 +1,13 @@
 import './App.css';
 import Home from './components/Home';
 import Aboutus from './components/About/aboutus/Aboutus'
+import Mission from './components/About/aboutus/Mission';
 import Message from './components/About/message/Message'
 import Rector from './components/About/Rector/Rector'
 
+import Gallery from './components/EventGallery/Gallery'
+
 import Academics from './components/Academics/Academics'
-import Alumni from './components/Alumni/Alumni'
 import MobileAppdevelopement from './components/Certificates/MobileAppdevelopement'
 import Pythoncourse from './components/Certificates/Pythoncourse'
 import Blockchain from './components/Certificates/Blockchain'
@@ -56,6 +58,10 @@ function App() {
         
         <Route path="/" element={<Home/>} />
         <Route path="/aboutus" element={<Aboutus/>} />
+        <Route path="/mission" element={<Mission/>} />
+        <Route path="/gallery" element={<Gallery/>} />
+
+
         <Route path="/message" element={<Message/>} />
         <Route path="/rectormessages" element={<Rector/>} />
         <Route path="/intro" element={<Qec/>} />
@@ -83,7 +89,6 @@ function App() {
         <Route path="/scholarship" element={<Scholarship/>} />
         <Route path="/lms" element={<Lms/>} />
         <Route path="/contact" element={<Contact/>} />
-        <Route path="/alumni" element={<Alumni/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/oric" element={<Oric/>} />
         <Route path="/researchgrands1" element={<Researchgrands1/>}/>

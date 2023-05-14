@@ -332,8 +332,8 @@ const NavMenu = () => {
         <Link to="/contact">
           <button className="text-white px-3 py-2 "> Contact </button>
         </Link>
-        <Link to="/alumni">
-          <button className="text-white px-3 py-2 "> Alumni </button>
+        <Link to="/gallery">
+          <button className="text-white px-3 py-2 "> Gallery </button>
         </Link>
       </ul>
       {/* Mobile view*/}
