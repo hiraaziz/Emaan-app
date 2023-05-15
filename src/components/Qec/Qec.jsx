@@ -9,6 +9,7 @@ import NavMenu from "../Home/navigationBar/NavMenu";
 
 const Qec = () => {
 
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -17,7 +18,6 @@ const Qec = () => {
     });
   });
   
-
   return (
     <div>
       <Topheader />

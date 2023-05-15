@@ -16,6 +16,7 @@ const NetDevelopment = () => {
         height="1160"
         allow="autoplay"
       ></iframe>{" "}
+      <Footer />
     </div>
   );
 };

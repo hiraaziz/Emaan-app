@@ -11,7 +11,7 @@ import styles from "./styles.module.css";
 
 const Topheader = () => {
   return (
-    <div className="hidden md:w-full h-11 bg-maroon md:flex md:flex-shrink md:justify-evenly md:items-center">
+    <div className="hidden lg:w-full h-11 bg-maroon lg:flex md:flex-shrink md:justify-evenly md:items-center">
       <button className="w-32 h-7 text-maroon bg-white rounded-3xl font-bold">
         Apply Now!
       </button>
