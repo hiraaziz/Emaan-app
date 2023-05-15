@@ -1,0 +1,74 @@
+.carousel {
+  position: relative;
+  height: 100%;
+  margin-bottom: 4%;
+}
+
+.carousel img {
+  height: auto;
+  max-width: 100%;
+  display: none;
+}
+
+.carousel img.active {
+  display: block;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 4.5px;
+  margin: 0 5px;
+  padding: 0;
+  width: 65px;
+  position: relative;
+}
+
+.pagination button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #c4c4c4;
+}
+
+.pagination button.active:before {
+  background-color: #6e0000;
+}
+
+.pagination button:hover:before {
+  background-color: #d16e6e;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: auto;
+    position: relative;
+  }
+  
+  .pagination {
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+  }
+  
+  .pagination button {
+    width: 10px;
+    height: 3px;
+  }
+  
+  .pagination button:before {
+    border-radius: 30%;
+  }
+}

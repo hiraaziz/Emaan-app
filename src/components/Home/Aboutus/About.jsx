@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
+
 import imgtab from "../Aboutus/assests/tab.jpg";
 import "./about.css";
 
@@ -32,7 +34,10 @@ const About = () => {
               established via Sindh Act No: XXXV of 2018 and recognized by HEC
               (Higher Education Commission) as Degree Awarding Institute.
             </p>
-            <button className="read-more-button">Read More</button>
+            <button className="read-more-button">
+            <Link to="/aboutus">Read More</Link>
+            </button>
+
           </div>
         ) : (
           <div>
@@ -44,7 +49,9 @@ const About = () => {
               the evolving workplace. Prepare young people to find their place
               in the world.
             </p>
-            <button className="read-more-button">Read More</button>
+            <button className="read-more-button">
+            <Link to="/mission">Read More</Link>
+              </button>
           </div>
         )}
       </div>
