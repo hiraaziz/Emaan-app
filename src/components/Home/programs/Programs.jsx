@@ -65,7 +65,7 @@ const itemlist = [
 const Programs = () => {
   return (
     <div className="h-[600px] mb-[120px]  flex flex-col items-center w-[70%] m-auto ">
-      <div className="mb-16">
+      <div className="mb-12">
         <motion.div
           initial={{ opacity: 0, x: -80 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -88,20 +88,22 @@ const Programs = () => {
           modifier: 1,
           slideShadows: true,
         }}
-        className="mySwiper h-full border-b-4 border-maroon"
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
+        className="swiper"
       >
         {itemlist.map((item) => (
           <SwiperSlide>
             <div
-              className=" w-[400px] h-[400px]  drop-shadow-xl bg-white flex flex-col justify-start items-center
+              className="swiper-slide w-[400px] h-[400px]  drop-shadow-xl bg-white flex flex-col justify-start items-center
            hover:scale-105 transition-all duration-200 overflow-hidden hover:shadow-lg"
             >
               <img
                 src={item.img}
                 data-value="1"
-                className="w-full h-60  hover:scale-110 transition-all duration-300"
+                className="w-full h-52  hover:scale-110 transition-all duration-300 cover"
               />
-              <div className="flex justify-center items-start space-x-4 pt-8 md:p-10 w-full h-12 ">
+              <div className="flex justify-center items-start space-x-4 pt-8 md:p-6 w-full h-12 ">
                 {item.icon}
                 <div className="flex flex-col w-full justify-center font-medium text-sm tracking-wide">
                   <h1 className="text-sm">{item.courseName}</h1>

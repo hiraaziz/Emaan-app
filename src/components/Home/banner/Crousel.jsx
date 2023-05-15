@@ -12,8 +12,6 @@ const Crousel = ({ images }) => {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  console.log(images);
-
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1

@@ -6,6 +6,7 @@ import { BsChevronCompactDown } from "react-icons/bs";
 const NavMenu = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [activeSubDropdown, setActiveSubDropdown] = useState(null);
+  const [activesubSubDropdown, setActivesubSubDropdown] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -17,30 +18,27 @@ const NavMenu = () => {
       link: null,
       dropdownItems: [
         {
-          label: "About Us",
-          link: "/aboutus",
-        },
-        {
-          label: "Chairmen Message",
-          link: "/message",
-        },
-        {
-          label: "Rector Message",
-
-          label: "Vision, Mission, Objectives",
+          label: "Vision and Mission",
           link: "/",
-        },
-        {
-          label: "Rector Messages",
-
-          link: "/rectormessages",
         },
         {
           label: "Chancellor Message",
           link: "/",
         },
         {
-          label: "Registator Message",
+          label: "About Us",
+          link: "/aboutus",
+        },
+        {
+          label: "Chairman Message",
+          link: "/message",
+        },
+        {
+          label: "Rector Messages",
+          link: "/rectormessages",
+        },
+        {
+          label: "Registrar Message",
           link: "/",
         },
         {
@@ -49,13 +47,6 @@ const NavMenu = () => {
         },
         {
           label: "Academic Council",
-
-          label: "Board of Governce",
-          link: "/",
-        },
-        {
-          label: "Acadamic Council",
-
           link: "/",
         },
         {
@@ -184,15 +175,61 @@ const NavMenu = () => {
       link: "/",
       dropdownItems: [
         {
-          label: "Sub Item 4.1",
+          label: "ORIC",
           hasSubDropdowns: true,
           subDropdownItems: [
-            { label: "Sub Sub Item 4.1.1" },
-            { label: "Sub Sub Item 4.1.2" },
+            { label: "oric", link: "/oric" },
+            {
+              label: "Research Grants",
+
+              hasSubDropdowns: true,
+              subDropdownItems: [
+                {
+                  label:
+                    "Grant for Research Fellowship Abroad National University",
+                  link: "/researchgrands1",
+                },
+                {
+                  label: "Research Publications Grant Proposal",
+                  link: "/researchgrands2",
+                },
+                {
+                  label:
+                    "Faculty/ Students/ Alumni Research Grand Proposal (ERGP)",
+                  link: "/researchgrands3",
+                },
+                {
+                  label: "FIMS Conference Workshop Grant Proposal",
+                  link: "/researchgrands4",
+                },
+              ],
+            },
+            {
+              label: "Research Rewards",
+              link: "/",
+              hasSubDropdowns: true,
+              subDropdownItems: [
+                {
+                  label: "Citation Reward Program form (CRP)",
+                  link: "/",
+                },
+              ],
+            },
+            { label: "Research Support Program ", link: "/" },
+            { label: "Faculty Research Information Form", link: "/" },
+            { label: "Seminars", link: "/" },
+            { label: "Research Artical Regional", link: "/" },
           ],
         },
-        { label: "Sub Item 4.2" },
-        { label: "Sub Item 4.3" },
+        {
+          label: "Journals",
+          hasSubDropdowns: true,
+          subDropdownItems: [
+            { label: "Journal of Business and Science", link: "/" },
+            { label: "Journal of Computer Science", link: "/" },
+          ],
+        },
+        { label: "Conference" },
       ],
     },
     {
@@ -244,7 +281,10 @@ const NavMenu = () => {
   return (
     <nav className="bg-maroon w-full h-16 flex-shrink flex justify-center list-none">
       <ul className=" hidden lg:flex justify-evenly w-[90%] m-auto">
-        <button className="text-white px-3 py-2 ">Home</button>
+        <Link to="/" className="text-white px-3 py-2 ">
+          Home
+        </Link>
+        {/*First Drop Down*/}
         {menu.map((item, i) => (
           <li key={i} className="relative">
             <button
@@ -253,7 +293,7 @@ const NavMenu = () => {
             >
               {item.label}
             </button>
-
+            {/*second Drop Down*/}
             {activeDropdown === i && (
               <ul className="absolute bg-black opacity-90 text-white shadow rounded mt-2 py-1 z-20 w-[200px]">
                 {item.dropdownItems.map((subItem, j) => (
@@ -274,15 +314,42 @@ const NavMenu = () => {
                         {subItem.label}
                       </button>
                     </Link>
+                    {/*Third Drop Down*/}
                     {subItem.hasSubDropdowns && activeSubDropdown === j && (
                       <ul className="absolute left-full z-20 top-0 mt-[-0.25rem] bg-black opacity-90 text-white shadow rounded py-1 w-[200px]">
                         {subItem.subDropdownItems.map((subSubItem, k) => (
                           <li key={k}>
                             <Link to={subSubItem.link}>
-                              <button className=" block px-4 py-2 text-sm text-left border-b-[1px] border-white w-[90%] m-auto hover:bg-slate-50 hover:text-black">
+                              <button
+                                onClick={() => {
+                                  subSubItem.hasSubDropdowns &&
+                                    setActivesubSubDropdown(
+                                      activesubSubDropdown === k ? null : k
+                                    );
+                                }}
+                                className=" block px-4 py-2 text-sm text-left border-b-[1px] border-white w-[90%] m-auto hover:bg-slate-50 hover:text-black"
+                              >
                                 {subSubItem.label}
                               </button>
                             </Link>
+                            {/*last sub dropdownItems*/}
+
+                            {subSubItem.hasSubDropdowns &&
+                              activesubSubDropdown === k && (
+                                <ul className="absolute left-full z-20 top-0 mt-[-0.25rem] bg-black opacity-90 text-white shadow rounded py-1 w-[200px]">
+                                  {subSubItem.subDropdownItems.map(
+                                    (SsubSubItem, l) => (
+                                      <li key={l}>
+                                        <Link to={SsubSubItem.link}>
+                                          <button className=" block px-4 py-2 text-sm text-left border-b-[1px] border-white w-[90%] m-auto hover:bg-slate-50 hover:text-black">
+                                            {SsubSubItem.label}
+                                          </button>
+                                        </Link>
+                                      </li>
+                                    )
+                                  )}
+                                </ul>
+                              )}
                           </li>
                         ))}
                       </ul>
@@ -316,7 +383,7 @@ const NavMenu = () => {
 
         {/* Menu items */}
         {isMenuOpen && (
-          <div className="md:hidden z-10 absolute top-16 bg-maroon w-full">
+          <div className="lg:hidden z-10 absolute top-16 bg-maroon w-full">
             <button className="text-white px-3 py-2 ">Home</button>
             {menu.map((item, i) => (
               <li key={i} className="relative">
@@ -350,14 +417,41 @@ const NavMenu = () => {
                           </button>
                         </Link>
                         {subItem.hasSubDropdowns && activeSubDropdown === j && (
-                          <ul className=" z-20 mt-[-0.25rem] bg-black opacity-90 text-white shadow rounded py-1 w-[200px]">
+                          <ul className=" z-20 mt-[-0.25rem] bg-gray-700 opacity-90 text-white shadow rounded py-1 w-[200px]">
                             {subItem.subDropdownItems.map((subSubItem, k) => (
                               <li key={k}>
                                 <Link to={subSubItem.link}>
-                                  <button className=" block px-4 py-2 text-sm text-left border-b-[1px] border-white w-[90%] m-auto hover:bg-slate-50 hover:text-black">
+                                  <button
+                                    onClick={() => {
+                                      subSubItem.hasSubDropdowns &&
+                                        setActivesubSubDropdown(
+                                          activesubSubDropdown === k ? null : k
+                                        );
+                                    }}
+                                    className=" block px-4 py-2 text-sm text-left border-b-[1px] border-white w-[90%] m-auto hover:bg-slate-50 hover:text-black"
+                                  >
                                     {subSubItem.label}
                                   </button>
                                 </Link>
+
+                                {/*last sub dropdownItems*/}
+
+                                {subSubItem.hasSubDropdowns &&
+                                  activesubSubDropdown === k && (
+                                    <ul className="absolute left-full z-20 top-0 mt-[-0.25rem] bg-gray-600 opacity-90 text-white shadow rounded py-1 w-[200px]">
+                                      {subSubItem.subDropdownItems.map(
+                                        (SsubSubItem, l) => (
+                                          <li key={l}>
+                                            <Link to={SsubSubItem.link}>
+                                              <button className=" block px-4 py-2 text-sm text-left border-b-[1px] border-white w-[90%] m-auto hover:bg-slate-50 hover:text-black">
+                                                {SsubSubItem.label}
+                                              </button>
+                                            </Link>
+                                          </li>
+                                        )
+                                      )}
+                                    </ul>
+                                  )}
                               </li>
                             ))}
                           </ul>

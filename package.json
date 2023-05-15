@@ -1,5 +1,6 @@
 {
   "name": "emaan-app",
+  "homepage": "https://emaan.edu.pk/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

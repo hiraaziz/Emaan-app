@@ -17,8 +17,6 @@ const Topheader = () => {
       </button>
       <div className="text-gray-200 flex justify-evenly w-48">
         <FaFacebookF />
-        <BsFillTelephoneFill />
-        <BsMessenger />
         <BsInstagram />
         <BsWhatsapp />
       </div>

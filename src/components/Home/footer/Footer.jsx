@@ -73,7 +73,7 @@ const Footer = () => {
                 </nav>
               </div>
 
-              <div class="flex flex-col justify-evenly w-full mt-[20px] md:mt-0">
+              <div class="flex flex-col justify-evenly w-full mt-[20px] md:mt-10">
                 <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
                   Useful Links
                 </p>
