@@ -18,6 +18,7 @@ const Contact = () => {
         <div className="contact-info-item mail">
           <h2>EMAIL</h2>
           <p>Admission@emaan.edu.pk</p>
+          <p>info@emaan.edu.pk</p>
           <p>hr@emaan.edu.pk</p>
         </div>
         <div className="contact-info-item address">
@@ -29,7 +30,6 @@ const Contact = () => {
           <h2>PHONE</h2>
           <p>0333 1316577</p>
           <p>03041113467</p>
-
         </div>
       </div>
 
