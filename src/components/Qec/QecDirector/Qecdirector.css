@@ -4,7 +4,7 @@
   height: 70vh;
   width: 94%;
   margin: 0 auto;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   border-radius: 10px;
 }
 
@@ -35,6 +35,11 @@
   text-justify: inter-word;
 }
 
+.WhiteBold {
+  color: rgb(218, 218, 218);
+  font-weight: bold;
+  font-size: 110%;
+}
 .QecDirectorHeading {
   color: #ffffff;
   font-size: 40px;
@@ -42,6 +47,57 @@
   margin-bottom: 4%;
   font-family: Lato;
 }
+
+.Qecbanner {
+  background-color: #880606;
+  padding: 10px 10px;
+  text-align: center;
+  width: 40%;
+  margin: 10px auto 30px;
+  padding-left: 6%;
+  margin-right: 54%;
+}
+.Qecbanner h1 {
+  margin: 0;
+  font-size: 24px;
+  text-align: left;
+  color: beige;
+  font-family: Georgia, serif;
+}
+.vision-message {
+  text-align: left;
+  padding-left: 6%;
+  width: 90%;
+}
+.vision-message ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vision-message ul li:before {
+  content: "\2192";
+  color: #880606;
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+.vision-message ul li {
+  font-size: 18px;
+  font-family: 'Georgia', serif;
+  color: rgb(66, 66, 66);
+}
+
+.vision-message h3 {
+  color: #880606;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: Georgia, serif;
+}
+
+
+
+
 @media only screen and (max-width: 768px) {
   .director-container {
     height: auto;

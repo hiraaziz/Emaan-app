@@ -7,6 +7,7 @@
   text-justify: inter-word;
   padding: 0;
   margin: 5%;
+  margin-right: 10%;
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
@@ -37,7 +38,7 @@
   font-size: 42px;
   font-weight: bold;
   text-align: left;
-  margin-left: 8%; /* Add margin-left to match list margin */
+  margin-left: 6%; /* Add margin-left to match list margin */
   color: #810000;
   top: 60px;
   position: relative;

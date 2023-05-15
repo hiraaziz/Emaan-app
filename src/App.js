@@ -19,8 +19,8 @@ import NetDevelopment from './components/Certificates/NetDevelopment'
 import Contact from './components/Contact/Contact'
 import Lms from './components/Lms/Lms'
 import Login from './components/Login/Login'
-import Qec from './components/Qec/Qec'
-import FinalMsg from './components/Qec/FinalMsg'
+import Qec from './components/Qec/QecHeader/Qec'
+import FinalMsg from './components/Qec/FinalMessage/FinalMsg'
 
 import Research from './components/Research/Research'
 import FeeStructure from './components/Admission/feeStructure/FeeStructure';
