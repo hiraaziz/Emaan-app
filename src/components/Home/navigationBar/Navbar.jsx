@@ -189,7 +189,7 @@ const Navbar = () => {
             </button>
 
             <button className="mb-2">
-              <Link to="/alumni">Alumni</Link>
+              <Link to="/gallery">Gallery</Link>
             </button>
           </div>
         </div>

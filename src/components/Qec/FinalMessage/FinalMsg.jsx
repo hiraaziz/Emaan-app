@@ -1,9 +1,9 @@
 import React from "react";
-import Footer from "../Home/footer/Footer";
-import Middlebar from "../Home/middleBar/Middlebar";
-import Topheader from "../Home/topHeader/Topheader";
+import Footer from "../../Home/footer/Footer";
+import Middlebar from "../../Home/middleBar/Middlebar";
+import Topheader from "../../Home/topHeader/Topheader";
 import "./FinalMsg.css";
-import NavMenu from "../Home/navigationBar/NavMenu";
+import NavMenu from "../../Home/navigationBar/NavMenu";
 
 const FinalMsg = () => {
   return (
