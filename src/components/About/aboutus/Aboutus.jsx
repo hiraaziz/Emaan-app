@@ -9,33 +9,6 @@ import "./AboutUs.css";
 import NavMenu from "../../Home/navigationBar/NavMenu";
 
 const Aboutus = () => {
-  const welcomeSectionRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate");
-          } else {
-            entry.target.classList.remove("animate");
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    if (welcomeSectionRef.current) {
-      observer.observe(welcomeSectionRef.current);
-    }
-
-    return () => {
-      if (welcomeSectionRef.current) {
-        observer.unobserve(welcomeSectionRef.current);
-      }
-    };
-  }, []);
-
   return (
     <div>
       <Topheader />
@@ -51,7 +24,7 @@ const Aboutus = () => {
         />
       </div>
 
-      <section class="welcome-section" ref={welcomeSectionRef}>
+      <section class="welcome-section">
         <div class="wel-container">
           <div class="welcome-container">
             <h2 class="welcome-heading">Welcome to Emaan Institute</h2>

@@ -36,3 +36,45 @@
     font-family: Georgia, serif;
 }
 
+@media (max-width: 768px) {
+  .AboutMission-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+    justify-content: space-between; /* Add space between flex items */
+    margin-bottom: 8%;
+  }
+  
+  .Mission-image-container {
+    width: 100%; /* Occupy full width on small screens */
+    max-width: 300px; /* Limit the maximum width */
+    margin-bottom: 20px;
+  }
+  
+  .Mission-image-container img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .Mission-message-container {
+    width: 100%; /* Occupy full width on small screens */
+    max-width: 500px; /* Limit the maximum width */
+    padding: 0 20px;
+  }
+  
+  .Mission-message-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: rgb(114, 0, 0);
+    font-weight: 700;
+    font-family: Georgia, serif;
+  }
+  
+  .Mission-message-container p {
+    font-size: 16px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family:Arial, Helvetica, sans-serif
+  }
+  
+
+}
