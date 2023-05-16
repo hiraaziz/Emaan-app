@@ -84,7 +84,7 @@
 
 .vision-message ul li {
   font-size: 18px;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   color: rgb(66, 66, 66);
 }
 
@@ -94,9 +94,6 @@
   font-size: 35px;
   font-family: Georgia, serif;
 }
-
-
-
 
 @media only screen and (max-width: 768px) {
   .director-container {
@@ -135,5 +132,49 @@
     text-align: center;
     text-align: justify;
     text-justify: inter-word;
+    font-size: 12px;
+  }
+  .Qecbanner {
+    background-color: #880606;
+    padding: 6px 6px;
+    text-align: center;
+    width: 50%;
+    margin: 10px auto 30px;
+    padding-left: 15%;
+    margin-right: 44%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+  }
+  .Qecbanner h1 {
+    margin: 0;
+    font-size: 20px;
+    text-align: left;
+    color: beige;
+    font-family: Georgia, serif;
+  }
+  .vision-message {
+    text-align: left;
+    padding-left: 6%;
+    width: 90%;
+  }
+
+  .vision-message ul li:before {
+    content: none;
+    color: #880606;
+    font-size: 35px;
+    margin-right: 10px;
+  }
+
+  .vision-message ul li {
+    font-size: 17px;
+    font-family: "Georgia", serif;
+    color: rgb(66, 66, 66);
+  }
+
+  .vision-message h3 {
+    color: #880606;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Georgia, serif;
   }
 }
