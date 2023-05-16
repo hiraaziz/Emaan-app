@@ -18,6 +18,10 @@ const NavMenu = () => {
       link: null,
       dropdownItems: [
         {
+          label: "About Us",
+          link: "/aboutus",
+        },
+        {
           label: "Vision and Mission",
           link: "/",
         },
@@ -25,10 +29,7 @@ const NavMenu = () => {
           label: "Chancellor Message",
           link: "/",
         },
-        {
-          label: "About Us",
-          link: "/aboutus",
-        },
+
         {
           label: "Chairman Message",
           link: "/message",
