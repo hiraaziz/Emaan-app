@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-import { MapContainer } from "react-leaflet/MapContainer";
-import { TileLayer } from "react-leaflet/TileLayer";
-import { Marker } from "react-leaflet/Marker";
-import { Popup } from "react-leaflet/Popup";
-import { useMap } from "react-leaflet/hooks";
+import { Link } from "react-router-dom";
 import "leaflet/dist/leaflet.css";
 import { footernav } from "./constant";
 
@@ -40,7 +36,7 @@ const Footer = () => {
 
         <div className="flex flex-col  lg:gap-8 ">
           <section className="flex flex-col md:flex-row md:h-[400px] items-start md:space-x-2">
-            <div className="md:w-1/5">
+            <div className="md:w-2/5  md:flex md:items-start md:justify-start ">
               <div class="flex flex-col justify-evenly w-full   ">
                 <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
                   GET IN TOUCH
@@ -73,7 +69,7 @@ const Footer = () => {
                 </nav>
               </div>
 
-              <div class="flex flex-col justify-evenly w-full mt-[20px] md:mt-10">
+              <div class="flex flex-col justify-evenly w-full mt-[20px] md:mt-0">
                 <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
                   Useful Links
                 </p>
@@ -93,54 +89,21 @@ const Footer = () => {
                       >
                         Academic Calender
                       </a>
-                      <a
-                        href="#"
+                      <Link
+                        to="/eligibility"
                         class="text-gray-200 transition hover:opacity-75 "
                       >
                         Eligibility Criteria
-                      </a>
-                      <a
-                        href="#"
+                      </Link>
+                      <Link
+                        to="/scholarship"
                         class="text-gray-200 transition hover:opacity-75 "
                       >
                         Scholarship Policy
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </nav>
-              </div>
-            </div>
-
-            <div class="flex flex-col justify-evenly w-full md:w-2/5 mt-[20px] md:mt-0">
-              <p class="font-bold tracking-widest text-lightpink mt-0 lg:mt-0 ">
-                GALLERY
-              </p>
-              <div className="flex gap-4">
-                <div>
-                  <img
-                    src={"/gallery1.jpg"}
-                    alt="gallery1"
-                    className="w-[180px] h-[130px] border-2 border-white"
-                  />
-                  <img
-                    src={"/gallery2.jpg"}
-                    alt="gallery2"
-                    className="w-[180px] h-[130px] border-2 border-white mt-4"
-                  />
-                </div>
-
-                <div>
-                  <img
-                    src={"/gallery3.jpg"}
-                    alt="gallery3"
-                    className="w-[180px] h-[130px] border-2 border-white"
-                  />
-                  <img
-                    src={"/gallery4.jpg"}
-                    alt="gallery4"
-                    className="w-[180px] h-[130px] border-2 border-white mt-4"
-                  />
-                </div>
               </div>
             </div>
 
