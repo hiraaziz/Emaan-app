@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import imgtab from "../Aboutus/assests/tab.jpg";
 import "./about.css";
@@ -19,7 +19,7 @@ const About = () => {
     <div className="table-container">
       <div className="left">
         <div className="row" onClick={handleAboutClick}>
-        <p>About EIMS</p>
+          <p>About EIMS</p>
         </div>
         <div className="row" onClick={handleMissionClick}>
           <p>Mission</p>
@@ -35,28 +35,26 @@ const About = () => {
               (Higher Education Commission) as Degree Awarding Institute.
             </p>
             <button className="read-more-button">
-            <Link to="/aboutus">Read More</Link>
+              <Link to="/aboutus">Read More</Link>
             </button>
-
           </div>
         ) : (
           <div>
             <h2 className="table-mission-heading">Mission</h2>
             <p className="table-mission-paragraph">
               {" "}
-              Provide superior undergraduate and graduate programs that are
-              technology-enriched and responsive to the needs of students and
-              the evolving workplace. Prepare young people to find their place
-              in the world.
+              Our mission is to provide students with a transformative education
+              that prepares them to be leaders in their fields and in their
+              communities. We strive to create a dynamic environment. that
+              fosters intellectual curiosity, critical thining and creaive
+              problem-solving.Through our innovative programs, outstanding
+              faculty, and supportive campus community,
             </p>
             <button className="read-more-button">
-            <Link to="/mission">Read More</Link>
-              </button>
+              <Link to="/mission">Read More</Link>
+            </button>
           </div>
         )}
-      </div>
-      <div className="right">
-        <img src={imgtab} alt="IU Image" />
       </div>
     </div>
   );

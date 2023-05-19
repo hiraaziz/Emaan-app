@@ -52,12 +52,7 @@ const Event = () => {
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.2 }}
         />
-        <motion.img
-          src={process.env.PUBLIC_URL + "/e1.png"}
-          alt="Event 4"
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 0.2 }}
-        />
+       
       </motion.div>
 
       
