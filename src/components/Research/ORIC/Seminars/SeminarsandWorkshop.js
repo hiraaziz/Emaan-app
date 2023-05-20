@@ -54,8 +54,10 @@ export default function SeminarsandWorkshop() {
 
                    <div><Workshopform/></div>
               </div>
+              <div className='image'>
               <div className='w-1/3 mt-28 drop-shadow-2xl'><img className='max-w-sm transition duration-300 ease-in-out hover:scale-110' src='EMAAN confrence Grand.jpeg' alt=''/></div>
            </div>  
+           </div>
 
                          <div className=''> <hr className='w-800 h-2 bg-red-800 mt-1 mx-24 '/></div>
 
@@ -97,7 +99,9 @@ export default function SeminarsandWorkshop() {
 
                  <div><Seminarform/></div>
                  </div>
-                 <div className='w-1/3 mt-28 drop-shadow-2xl'><img className='max-w-sm transition duration-300 ease-in-out hover:scale-110' src='EMAAN confrence Grand.jpeg' alt=''/></div>
+                <div> 
+                  <div className='w-1/3 mt-28 drop-shadow-2xl'><img className='max-w-sm transition duration-300 ease-in-out hover:scale-110' src='EMAAN confrence Grand.jpeg' alt=''/></div>
+                </div>
           </div>
 
               
