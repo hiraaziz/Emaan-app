@@ -6,7 +6,7 @@ import Footer from '../../../Home/footer/Footer'
 import Researchquiklinks from '../../Researchquiklinks'
 
 export default function Citation() {
-    const text = "";
+    const text = "lorrem ipsum";
   return (
     <>
      <Topheader/>
