@@ -45,6 +45,7 @@ import { Commerce } from './components/Department/commerce/Commerce';
 import { Database } from './components/Department/database/Database';
 import { Networking } from './components/Department/compnetworking/Networking';
 import { Web } from './components/Department/wedesign/Web';
+import Citation from './components/Research/ORIC/Research Reward/Citation';
 
 
 function App() {
@@ -93,6 +94,7 @@ function App() {
         <Route path="/researchgrands3" element={<Researchgrands3/>}/>
         <Route path="/researchgrands4" element={<Researchgrands4/>}/>
         <Route path="/Seminars" element={<SeminarsandWorkshop/>}/>
+        <Route path="/Citation" element={<Citation/>}/>
      
       </Routes>
       </BrowserRouter>
