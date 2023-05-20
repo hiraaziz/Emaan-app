@@ -212,7 +212,7 @@ const NavMenu = () => {
               subDropdownItems: [
                 {
                   label: "Citation Reward Program form (CRP)",
-                  link: "/",
+                  link: "/Citation",
                 },
               ],
             },
