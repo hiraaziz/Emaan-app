@@ -7,6 +7,7 @@
   text-justify: inter-word;
   padding: 0;
   margin: 5%;
+  margin-right: 10%;
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
@@ -37,7 +38,7 @@
   font-size: 42px;
   font-weight: bold;
   text-align: left;
-  margin-left: 8%; /* Add margin-left to match list margin */
+  margin-left: 6%; /* Add margin-left to match list margin */
   color: #810000;
   top: 60px;
   position: relative;
@@ -83,5 +84,37 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .objective-heading {
+    font-size: 28px;
+    margin-left: 5%;
+    margin-bottom: 20%;
+  }
+
+  .objective-list {
+    margin: 3% 5%;
+  }
+
+  .objective-list li {
+    width: 100%;
+    padding: 15px 20px 15px 35px;
+    margin-bottom: 15px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: none; /* Remove the transition properties */
+    position: relative;
+  }
+
+  .objective-list li::before {
+    content: "✔";
+    color: rgb(168, 3, 3);
+    font-size: 18px;
+    margin-right: 8px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
   }
 }

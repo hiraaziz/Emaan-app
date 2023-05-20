@@ -1,8 +1,8 @@
 .table-container {
   display: flex;
   width: 100%;
-  height: 450px;
-  margin-top: 7%;
+  height: 400px;
+  margin-top: 5%;
   margin-bottom: 11%;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -16,11 +16,11 @@
 
 .row {
   padding: 40px;
-  line-height: 8rem; /* Add line-height to move the font down */
+  line-height: 8rem;
   cursor: pointer;
   height: 50%;
-  background-color: #800000; /* set background color to dark red */
-  color: #fff; /* set font color to white */
+  background-color: #800000;
+  color: #fff;
   font-size: 30px;
   text-align: center;
   font-weight: 800;
@@ -30,8 +30,7 @@
 .row:hover {
   background-color: #cc3333;
   transition: background-color 0.3s ease;
-  width: 47%;
-  font-family: Georgia, serif;
+  width: 100%; /* Change from 47% to 100% */
 }
 
 .row:first-child:hover,
@@ -42,18 +41,17 @@
 }
 
 .middle {
-  padding: 20px;
+  padding: 30px;
   background: linear-gradient(to bottom, #f0e3e3, #f7f7f7);
-  width: 48%;
+  width: 78%;
 }
 
 .table-about-heading {
   color: #800000;
-  font-size: 38px;
+  font-size: 42px;
   margin: 30px;
   font-weight: bold;
   font-family: Georgia, serif;
-
 }
 
 .table-about-paragraph {
@@ -66,15 +64,16 @@
 
 .table-mission-heading {
   color: #800000;
-  font-size: 35px;
+  font-size: 42px;
   margin: 30px;
   font-weight: bold;
+  font-family: Georgia, serif;
 }
 
 .table-mission-paragraph {
   color: #6b6b6b;
-  font-size: 16px;
-  line-height: 2;
+  font-size: 18px;
+  line-height: 1.7;
   margin: 30px;
   padding-bottom: 12px;
 }
@@ -90,18 +89,6 @@
   margin-top: -20px; /* add negative margin-top */
 }
 
-.right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  width: 35%;
-}
-
-img {
-  max-width: 104.1%;
-  height: 105%;
-}
 @media only screen and (max-width: 767px) {
   .table-container {
     flex-direction: column;
@@ -120,13 +107,12 @@ img {
   }
   .table-about-heading {
     color: #800000;
-    font-size: 30px;
+    font-size: 27px;
     margin: 30px;
     font-weight: bold;
     font-family: Georgia, serif;
-  
   }
-  
+
   .table-about-paragraph {
     color: #6b6b6b;
     font-size: 16px;
@@ -135,22 +121,15 @@ img {
     text-align: justify;
     padding-bottom: 20px;
     word-spacing: -2px; /* adjust this value as needed */
-
   }
-  
-
-  .right {
-    width: 100%;
-    padding: 0;
-  }
-
-  .row {
-    line-height: 6rem;
-    height: auto;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
+  .table-mission-paragraph {
+    color: #6b6b6b;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 30px;
+    text-align: justify;
+    padding-bottom: 12px;
+    word-spacing: normal; /* Use 'normal' instead of a specific value */
+    width: 90%; /* Increase the width as needed */
   }
 }

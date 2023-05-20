@@ -32,4 +32,46 @@
     text-justify: inter-word;
     font-family: Georgia, serif;
   }
+  @media (max-width: 768px) {
+    .AboutVision-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 8%;
+      margin-left: -9%; /* Add margin to the left */
+    }
+  
+    .Vision-image-container {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px;
+      margin-left: 20%;
+    }
+  
+    .Vision-image-container img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .Vision-message-container {
+      width: 100%;
+      max-width: 500px;
+      padding: 0 20px;
+    }
+  
+    .Vision-message-container h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: rgb(114, 0, 0);
+      font-weight: 700;
+      font-family: Georgia, serif;
+    }
+  
+    .Vision-message-container p {
+      font-size: 16px;
+      text-align: justify;
+      text-justify: inter-word;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
   

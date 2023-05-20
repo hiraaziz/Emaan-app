@@ -3,6 +3,7 @@
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
+    height: 70%;
   }
   
   .swiper-slide {
@@ -12,7 +13,7 @@
     height: 300px;
   }
   
-  .swiper-slide img {
+  .swiper-slide  img {
     display: block;
     width: 100%;
   }
