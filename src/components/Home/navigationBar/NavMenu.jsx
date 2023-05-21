@@ -218,7 +218,7 @@ const NavMenu = () => {
             },
             { label: "Research Support Program ", link: "/" },
             { label: "Faculty Research Information Form", link: "/" },
-            { label: "Seminars", link: "/" },
+            { label: "Seminars", link: "/SeminarsandWorkshop" },
             { label: "Research Artical Regional", link: "/" },
           ],
         },
@@ -226,7 +226,8 @@ const NavMenu = () => {
           label: "Journals",
           hasSubDropdowns: true,
           subDropdownItems: [
-            { label: "Journal of Business and Science", link: "/" },
+            { label: "JOURNALS", link: "/JournalsResearch" },
+            { label: "Journal of Business and Science", link: "/EJMS" },
             { label: "Journal of Computer Science", link: "/" },
           ],
         },
