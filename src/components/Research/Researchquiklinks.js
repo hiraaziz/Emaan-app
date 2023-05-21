@@ -4,7 +4,7 @@ import { HiOutlineChevronRight } from "react-icons/hi";
 export default function Researchquiklinks() {
   return (
     <>
-    <div className='container w-1/3'>
+    <div className='container w-1000'>
         <h1 className='text-3xl font-serif'>Research</h1>
         <hr className='w-20 max-w-full h-1 bg-red-600'/>
         <ul className='mt-6'>
