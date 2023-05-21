@@ -46,6 +46,8 @@ import { Database } from './components/Department/database/Database';
 import { Networking } from './components/Department/compnetworking/Networking';
 import { Web } from './components/Department/wedesign/Web';
 import Citation from './components/Research/ORIC/Research Reward/Citation';
+import JournalsResearch from './components/Research/Journals/JournalsResearch';
+import EJMS from './components/Research/Journals/EJMS';
 
 
 function App() {
@@ -93,8 +95,10 @@ function App() {
         <Route path="/researchgrands2" element={<Researchgrands2/>}/>
         <Route path="/researchgrands3" element={<Researchgrands3/>}/>
         <Route path="/researchgrands4" element={<Researchgrands4/>}/>
-        <Route path="/Seminars" element={<SeminarsandWorkshop/>}/>
+        <Route path="/SeminarsandWorkshop" element={<SeminarsandWorkshop/>}/>
         <Route path="/Citation" element={<Citation/>}/>
+        <Route path="/JournalsResearch" element={<JournalsResearch/>}/>
+        <Route path="/EJMS" element={<EJMS/>}/>
      
       </Routes>
       </BrowserRouter>
